@@ -45,14 +45,8 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'userType'); ?>
-		<?php echo $form->textField($model,'userType',array('size'=>7,'maxlength'=>7)); ?>
+                <?php echo $form->dropDownList($model,'userType',array("Agent"=>"Agent","General"=>"General User"),array('empty'=>'Select User Type')); ?>
 		<?php echo $form->error($model,'userType'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'profilePic'); ?>
-		<?php echo $form->textField($model,'profilePic',array('size'=>60,'maxlength'=>256)); ?>
-		<?php echo $form->error($model,'profilePic'); ?>
 	</div>
 
 	<div class="row">
@@ -60,24 +54,19 @@
 		<?php echo $form->textField($model,'contact',array('size'=>60,'maxlength'=>80)); ?>
 		<?php echo $form->error($model,'contact'); ?>
 	</div>
-
+        
+        <?php if(CCaptcha::checkRequirements()): ?>
 	<div class="row">
-		<?php echo $form->labelEx($model,'createdOn'); ?>
-		<?php echo $form->textField($model,'createdOn',array('size'=>60,'maxlength'=>256)); ?>
-		<?php echo $form->error($model,'createdOn'); ?>
+		<?php echo $form->labelEx($model,'verifyCode'); ?>
+		<div>
+		<?php $this->widget('CCaptcha'); ?>
+		<?php echo $form->textField($model,'verifyCode'); ?>
+		</div>
+		<div class="hint">Please enter the letters as they are shown in the image above.
+		<br/>Letters are not case-sensitive.</div>
+		<?php echo $form->error($model,'verifyCode'); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model,'status'); ?>
-		<?php echo $form->error($model,'status'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'updatedOn'); ?>
-		<?php echo $form->textField($model,'updatedOn',array('size'=>60,'maxlength'=>256)); ?>
-		<?php echo $form->error($model,'updatedOn'); ?>
-	</div>
+	<?php endif; ?>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

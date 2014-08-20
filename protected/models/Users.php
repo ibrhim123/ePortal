@@ -34,7 +34,8 @@ class Users extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('firstName, lastName, email, password, contact', 'required'),
+                        array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
+			array('firstName, lastName, email, password, contact,userType, captcha', 'required'),
 			array('status', 'numerical', 'integerOnly'=>true),
 			array('firstName, lastName, email, password, profilePic, createdOn, updatedOn', 'length', 'max'=>256),
 			array('userType', 'length', 'max'=>7),
@@ -73,6 +74,7 @@ class Users extends CActiveRecord
 			'createdOn' => 'Created On',
 			'status' => 'Status',
 			'updatedOn' => 'Updated On',
+                        'verifyCode'=>'Verification Code',
 		);
 	}
 

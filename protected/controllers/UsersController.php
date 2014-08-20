@@ -7,7 +7,19 @@ class UsersController extends Controller
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
 	public $layout='//layouts/column2';
-
+        
+        public function actions()
+	{
+		return array(
+			// captcha action renders the CAPTCHA image displayed on the Registration page
+			'captcha'=>array(
+				'class'=>'CCaptchaAction',
+				'backColor'=>0xFFFFFF,
+			),
+			
+		);
+	}
+        
 	/**
 	 * @return array action filters
 	 */
@@ -28,15 +40,15 @@ class UsersController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('create','captcha'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('update','view'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','index','delete'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -62,6 +74,7 @@ class UsersController extends Controller
 	 */
 	public function actionCreate()
 	{
+            
 		$model=new Users;
 
 		// Uncomment the following line if AJAX validation is needed

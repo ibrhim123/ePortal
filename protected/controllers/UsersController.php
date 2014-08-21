@@ -39,19 +39,19 @@ class UsersController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
+			array('allow',  
 				'actions'=>array('create','captcha'),
 				'users'=>array('*'),
 			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('update','view'),
+			array('allow', 
+				'actions'=>array('update','view','Profile','myProfile'),
 				'users'=>array('@'),
 			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
+			array('allow', 
 				'actions'=>array('admin','index','delete'),
 				'users'=>array('admin'),
 			),
-			array('deny',  // deny all users
+			array('deny',  
 				'users'=>array('*'),
 			),
 		);
@@ -149,6 +149,61 @@ class UsersController extends Controller
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
+	}
+        /**
+         * CreatedOn:08-21-2014
+         * CreatedBy:Muhammad Ibrahim
+         */
+        public function actionProfile(){
+            //$baseUrl = Yii::app()->request->baseUrl;
+            //Yii::app()->clientScript->registerScriptFile($baseUrl.'/public/plugins/jquery-1.10.1.min');
+            Yii::app()->clientScript->registerCoreScript('jquery'); 
+            $this->layout = 'admin';
+            $this->render('admin/index');           
+            //$this->renderFile('admin/index.php');
+        }
+        
+        public function actionmyProfile(){
+         $this->layout = 'admin';
+        $id = Yii::app()->user->id;
+
+        $model=$this->loadModel($id);
+
+        // Uncomment the following line if AJAX validation is needed
+         $this->performAjaxValidation($model);
+
+        if(isset($_POST['Users']))
+        {
+            $model->attributes=$_POST['Users'];
+            $file = $_FILES;
+            $path_to = RESPATH.'documents'.DS;
+
+            $uploadedFile=CUploadedFile::getInstance($model,'image');
+            if(!empty($uploadedFile))  // check if uploaded file is set or not
+            {
+                $md5_file = md5_file($file['Users']['tmp_name']['image']);
+                $fileName = $md5_file;
+                $dir = substr($md5_file, -2);
+                if ( !is_dir($path_to.$dir))
+                    mkdir($path_to.$dir);
+                $full_path = $path_to.$dir;
+                $new_filename = $md5_file.substr($uploadedFile,strrpos($uploadedFile,'.'));
+                $uploadedFile->saveAs($full_path.'/'.$new_filename);
+                $model->profilePic = $new_filename;
+            }
+            $model->changedOn = date("Y-m-d H:i:s");
+            if($model->save()){
+                Yii::app()->user->setFlash('success', "Your Profile has been Updated!");
+                $this->redirect('myProfile');
+            }else{
+                Yii::app()->user->setFlash('error', "There seems some problem in your Profile Update!");
+                $this->redirect('myProfile');
+            }
+        }
+
+        $this->render('admin/profile',array(
+            'model'=>$model,
+        ));
 	}
 
 	/**

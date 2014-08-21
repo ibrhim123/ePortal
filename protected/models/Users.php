@@ -40,6 +40,7 @@ class Users extends CActiveRecord
 			array('firstName, lastName, email, password, profilePic, createdOn, updatedOn', 'length', 'max'=>256),
 			array('userType', 'length', 'max'=>7),
 			array('contact', 'length', 'max'=>80),
+                        array('emil','unique','message'=>'Your account resgisterd with the enterd email.'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('uid, firstName, lastName, email, userType, contact, createdOn, status', 'safe', 'on'=>'search'),

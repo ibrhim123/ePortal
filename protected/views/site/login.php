@@ -8,6 +8,11 @@ $this->breadcrumbs=array(
 	'Login',
 );
 ?>
+<?php if(Yii::app()->user->hasFlash('success')):?>
+    <div class="alert alert-success info">
+        <button data-dismiss="alert" class="close"></button> <?php echo Yii::app()->user->getFlash('success'); ?>
+    </div>
+<?php endif; ?>
 
 <h1>Login</h1>
 

@@ -35,7 +35,7 @@ class Users extends CActiveRecord
 		// will receive user inputs.
 		return array(
                         array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements()),
-			array('firstName, lastName, email, password, contact,userType, captcha', 'required'),
+			array('firstName, lastName, email, password, contact,userType, verifyCode', 'required'),
 			array('status', 'numerical', 'integerOnly'=>true),
 			array('firstName, lastName, email, password, profilePic, createdOn, updatedOn', 'length', 'max'=>256),
 			array('userType', 'length', 'max'=>7),

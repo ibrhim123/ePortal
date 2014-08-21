@@ -83,8 +83,17 @@ class UsersController extends Controller
 		if(isset($_POST['Users']))
 		{
 			$model->attributes=$_POST['Users'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->uid));
+                        $model->password = md5($_POST['Users']['password']);
+                        $model->createdOn = date("Y-m-d H:i:s");
+                        $model->status = '1';
+			if($model->save()){
+                            Yii::app()->user->setFlash('success', "Your Profile has been Created Login Here.!");
+                            $this->redirect(array('site/login'));
+                        }else{
+                            Yii::app()->user->setFlash('error', "There seems some problem!");
+                            $this->redirect(array('site/login'));
+                        }
+				//$this->redirect(array('view','id'=>$model->uid));
 		}
 
 		$this->render('create',array(
@@ -102,11 +111,12 @@ class UsersController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		 $this->performAjaxValidation($model);
 
 		if(isset($_POST['Users']))
 		{
 			$model->attributes=$_POST['Users'];
+                        
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->uid));
 		}

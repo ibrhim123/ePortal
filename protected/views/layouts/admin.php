@@ -20,8 +20,6 @@
 	<link href="<?php echo Yii::app()->request->baseUrl; ?>/public/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/public/plugins/select2/select2_metro.css" />
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/public/plugins/jquery-ui/jquery-ui-1.10.1.custom.min.css" rel="stylesheet"/>
-    <link href="<?php echo Yii::app()->request->baseUrl; ?>/public/plugins/jquery-ui/jquery.ui.slider.css" rel="stylesheet"/>
-<!--    <link rel="stylesheet" type="text/css" href="<?php //echo Yii::app()->request->baseUrl; ?>/public/css/jquery.mobile-1.4.2.min.css" /> -->
     <!-- END GLOBAL MANDATORY STYLES -->
 	<link rel="shortcut icon" href="favicon.ico" />
 </head>
@@ -71,11 +69,11 @@
 						<i class="icon-angle-down"></i>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="<?php echo Yii::app()->request->baseUrl;?>/users/myProfile"><i class="icon-user"></i> My Profile</a></li>
-      							<li><a href="<?php echo Yii::app()->request->baseUrl;?>/users/changePass"><i class="icon-user"></i> Change Password</a></li>
+							<li><a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/users/myProfile"><i class="icon-user"></i> My Profile</a></li>
+      							<li><a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/users/updatePass"><i class="icon-user"></i> Change Password</a></li>
 							<li class="divider"></li>
 							<li><a href="javascript:;" id="trigger_fullscreen"><i class="icon-move"></i> Full Screen</a></li>
-							<li><a href="<?php echo Yii::app()->request->baseUrl;?>/site/logout"><i class="icon-key"></i> Log Out</a></li>
+							<li><a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/site/logout"><i class="icon-key"></i> Log Out</a></li>
 						</ul>
 					</li>
 					<!-- END USER LOGIN DROPDOWN -->
@@ -173,8 +171,7 @@
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/public/scripts/app.js" type="text/javascript"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/public/scripts/login.js" type="text/javascript"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/public/scripts/form-components.js"></script>
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/public/scripts/ui-sliders.js"></script>
-
+    
 
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/public/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/public/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
@@ -190,8 +187,7 @@
 	       Login.init();
 		   TableAdvanced.init();
            FormComponents.init();
-           UISliders.initSliders();
-           UISliders.initKnowElements();
+           
     });
 
 	</script>    

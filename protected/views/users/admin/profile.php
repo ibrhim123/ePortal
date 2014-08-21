@@ -32,7 +32,11 @@ User Profile Section
         <button data-dismiss="alert" class="close"></button> <?php echo Yii::app()->user->getFlash('success'); ?>
     </div>
 <?php endif; ?>
-
+<?php if(Yii::app()->user->hasFlash('error')):?>
+    <div class="alert alert-warning">
+        <button data-dismiss="alert" class="close"></button> <?php echo Yii::app()->user->getFlash('error'); ?>
+    </div>
+<?php endif; ?>
 <div class="row-fluid">
 
 <div class="span12">
@@ -83,10 +87,9 @@ User Profile Section
 	<div class="control-group">
 		<label class="control-label">User Type</label>
 		<div class="controls">
-            <?php echo $form->textField($model,'userType',array('class'=>'m-wrap large','size'=>8,'maxlength'=>8,'readonly'=>'readonly')); ?>
-            <span class="help-inline"><?php echo $form->error($model,'userType'); ?></span>
-        </div>
-
+                    <?php echo $form->textField($model,'userType',array('class'=>'m-wrap large','size'=>8,'maxlength'=>8,'readonly'=>'readonly')); ?>
+                    <span class="help-inline"><?php echo $form->error($model,'userType'); ?></span>
+                </div>
 	</div>
 
 	<div class="control-group">
@@ -118,8 +121,10 @@ User Profile Section
         <span class="help-inline"><?php echo $form->error($model,'image'); ?></span>
         </div>
 	</div>
-
-	<div class="control-group">
+        
+      
+        
+       <div class="control-group">
 		<label class="control-label">Status </label>
 		<div class="controls">
             <?php echo $form->textField($model,'status',array('class'=>'m-wrap large','readonly'=> 'readonly')); ?>

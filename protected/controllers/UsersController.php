@@ -44,11 +44,11 @@ class UsersController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', 
-				'actions'=>array('update','view','Profile','myProfile'),
+				'actions'=>array('update','view','Profile','myProfile','updatePass','passChange'),
 				'users'=>array('@'),
 			),
 			array('allow', 
-				'actions'=>array('admin','index','delete'),
+				'actions'=>array('admin','index','delete','myProfile','updatePass','passChange'),
 				'users'=>array('admin'),
 			),
 			array('deny',  
@@ -164,34 +164,26 @@ class UsersController extends Controller
         }
         
         public function actionmyProfile(){
-         $this->layout = 'admin';
+        $this->layout = 'admin';
         $id = Yii::app()->user->id;
-
         $model=$this->loadModel($id);
-
-        // Uncomment the following line if AJAX validation is needed
-         $this->performAjaxValidation($model);
-
-        if(isset($_POST['Users']))
-        {
+        //$this->performAjaxValidation($model);
+        if(isset($_POST['Users'])){
             $model->attributes=$_POST['Users'];
-            $file = $_FILES;
-            $path_to = RESPATH.'documents'.DS;
-
-            $uploadedFile=CUploadedFile::getInstance($model,'image');
-            if(!empty($uploadedFile))  // check if uploaded file is set or not
-            {
+            /**$file = $_FILES;
+            if( (!empty($file['Users']['tmp_name']['image'])) && ($file['Users']['error']['image'] == '0' )){
                 $md5_file = md5_file($file['Users']['tmp_name']['image']);
-                $fileName = $md5_file;
                 $dir = substr($md5_file, -2);
-                if ( !is_dir($path_to.$dir))
-                    mkdir($path_to.$dir);
-                $full_path = $path_to.$dir;
-                $new_filename = $md5_file.substr($uploadedFile,strrpos($uploadedFile,'.'));
-                $uploadedFile->saveAs($full_path.'/'.$new_filename);
+                $img_name = $file['Users']['name']['image'];
+                $lastDot = strrpos($img_name, ".");
+                $img_name = str_replace(".", "", substr($img_name, 0, $lastDot)) . substr($img_name, $lastDot);
+                $new_filename = $md5_file.substr($img_name,strpos($img_name,'.'));
+                $full_path = Yii::app()->request->baseUrl.'/resources/documents/'.$dir.'/'.$new_filename;
+                move_uploaded_file($file['Users']['tmp_name']['image'],$full_path);
                 $model->profilePic = $new_filename;
-            }
-            $model->changedOn = date("Y-m-d H:i:s");
+            }**/
+            //$model->contact = $_POST['Users']['contact'];
+            $model->updatedOn = date("Y-m-d H:i:s");
             if($model->save()){
                 Yii::app()->user->setFlash('success', "Your Profile has been Updated!");
                 $this->redirect('myProfile');
@@ -200,7 +192,6 @@ class UsersController extends Controller
                 $this->redirect('myProfile');
             }
         }
-
         $this->render('admin/profile',array(
             'model'=>$model,
         ));
@@ -248,4 +239,45 @@ class UsersController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionupdatePass(){
+            $this->layout = 'admin' ;
+            $this->render('admin/changePass');
+        }
+         
+
+        public function actionpassChange(){
+            $this->layout = 'admin';
+            $newPass = $_POST['password'];
+            $rePass = $_POST['rpassword'];
+            if(empty($_POST['exsPass'])){
+                Yii::app()->user->setFlash('error', "Existing Password seems Empty");
+                $this->render('admin/changePass');
+            }
+            $existingPass = $_POST['exsPass'];
+            if( $newPass != $rePass){
+                Yii::app()->user->setFlash('error', "New Password and retype Password Mismatch");
+                $this->render('admin/changePass');
+            }else{
+                $id = yii::app()->user->id;
+                $pass = Users::getPass($id);
+                $exPass = md5($existingPass);
+                if($pass != $exPass){
+                    Yii::app()->user->setFlash('error', "Existing Password is wrong");
+                    $this->render('admin/changePass');
+                }else{
+                    $sql = "UPDATE users SET password = '".md5($newPass)."'  WHERE uid = '".$id."'";
+                    $command=Yii::app()->db->createCommand($sql);
+                    $result = $command->query();
+                    if($result){
+                        
+                        Yii::app()->user->setFlash('success', "Password Update Successfully");
+                        $this->render('admin/changePass');
+                    }else{
+                        Yii::app()->user->setFlash('error', "Unable to update password,there might be problem in Query execution.");
+                        $this->render('admin/changePass');
+                    }
+                }
+            }
+        }
 }

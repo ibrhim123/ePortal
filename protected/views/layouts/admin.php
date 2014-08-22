@@ -54,17 +54,17 @@
 					<li class="dropdown user">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                             <?php
-                            //$id = Yii::app()->user->id;
-                            //$sql = 'SELECT profilePic FROM users WHERE uid = '. $id;
-                           // $pic = Yii::app()->db->createCommand($sql)->queryAll();
-                            //foreach($pic as $proPic => $val){
-                             //   $proPic = $val['profilePic'];
-                            //}
+                            $id = Yii::app()->user->id;
+                            $sql = 'SELECT profilePic FROM users WHERE uid = '. $id;
+                            $pic = Yii::app()->db->createCommand($sql)->queryAll();
+                            foreach($pic as $proPic => $val){
+                                $proPic = $val['profilePic'];
+                            }
                             //exit;
                             //$id = Yii::app()->
                             //$user=User::model()->find('LOWER(username)=?',array($username));
                             //Users::model()->findAll(array("condition"=>"role = 'Driver' ","order"=>"uid")), 'uid', 'name'?>
-                            <img alt="DP" width="29" height="29" src="<?php //echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($proPic)?>" />
+                            <img alt="DP" width="29" height="29" src="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($proPic)?>" />
 						<span class="username"><?php echo Yii::app()->user->name;?></span>
 						<i class="icon-angle-down"></i>
 						</a>
@@ -112,7 +112,25 @@
                 </a>
             </li>
             
-             <li>
+            <li class="">
+        <a href="javascript:;">
+            <i class="icon-search"></i>
+            <span class="title"> Administrate Users</span>
+            <span class="arrow"></span>
+        </a>
+        <ul class="sub-menu" style="display: none;">
+                <li>
+                    <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Users/AdminGen">
+                        View All Gerenal Users</a>
+                </li>
+            
+                <li>
+                    <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Users/AdminAgent">
+                    View All Agents</a></li>
+        </ul>
+        </li>
+            
+            <li>
             <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/users/myProfile">
                 <i class="icon-user"></i>
                 <span class="title"> <?php echo $userRole; ?> Profile</span>
@@ -133,12 +151,11 @@
             </a>
             </li>    
              <?php }?>
+           
             <li>
                 <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/site/logout">
-                    <i class="icon-key"></i> Log Out</a>
+                    <i class="icon-key"></i> <span class="title">Log Out</span></a>
             </li>
-
-            
         </ul>
 	
     </div>

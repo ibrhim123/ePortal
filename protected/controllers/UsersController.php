@@ -38,23 +38,32 @@ class UsersController extends Controller
 	 */
 	public function accessRules()
 	{
-		return array(
-			array('allow',  
-				'actions'=>array('create','captcha'),
-				'users'=>array('*'),
-			),
-			array('allow', 
-				'actions'=>array('update','view','Profile','myProfile','updatePass','passChange'),
-				'users'=>array('@'),
-			),
-			array('allow', 
-				'actions'=>array('admin','index','delete','myProfile','updatePass','passChange'),
-				'users'=>array('admin'),
-			),
-			array('deny',  
-				'users'=>array('*'),
-			),
-		);
+            
+            if( Yii::app()->user->getState('userType') =="General")
+            {
+                $arr =array('update','view','Profile','myProfile','updatePass','passChange');   // Access to Gerenal User
+            }else if( Yii::app()->user->getState('userType') =="Agent")
+            {
+                $arr =array('update','view','Profile','myProfile','updatePass','passChange');   // Access to Agent
+            }
+            else if( Yii::app()->user->getState('userType') =="Admin")
+            {
+                $arr = array('admin','index','delete','myProfile','update','updatePass','passChange','AdminGen','AdminAgent','Profile','myProfile');          //  Admin Access
+            }else{
+                $arr =array('create','captcha');
+            }
+
+            return array(
+                array('allow', 'actions'=>$arr, 'users'=>array('@'),
+                ),
+                array('allow',  // allow all users to perform 'index' and 'view' actions
+                'actions'=>array('create','captcha'),
+                'users'=>array('*'),
+                ),
+                array('deny',  // deny all users
+                    'users'=>array('*'),
+                ),
+            );
 	}
 
 	/**
@@ -170,7 +179,7 @@ class UsersController extends Controller
         
         if(isset($_POST['Users'])){
             //echo '<pre>'; print_r($_POST); exit;
-            /**$file = $_FILES;
+            $file = $_FILES;
             if( (!empty($file['Users']['tmp_name']['image'])) && ($file['Users']['error']['image'] == '0' )){
                 $md5_file = md5_file($file['Users']['tmp_name']['image']);
                 $dir = substr($md5_file, -2);
@@ -178,15 +187,19 @@ class UsersController extends Controller
                 $lastDot = strrpos($img_name, ".");
                 $img_name = str_replace(".", "", substr($img_name, 0, $lastDot)) . substr($img_name, $lastDot);
                 $new_filename = $md5_file.substr($img_name,strpos($img_name,'.'));
-                $full_path = Yii::app()->request->baseUrl.'/resources/documents/'.$dir.'/'.$new_filename;
+                $lPath =  $_SERVER['DOCUMENT_ROOT'];
+                $full_path = $lPath.'/newWeb/resources/documents/'.$dir.'/'.$new_filename;
+                
+                //echo $full_path; exit;
                 move_uploaded_file($file['Users']['tmp_name']['image'],$full_path);
                 //$model->profilePic = $new_filename;
-            }*/
+            }
             $fname = CHtml::encode($_POST['Users']['firstName']);
             $lname = CHtml::encode($_POST['Users']['lastName']);
             $contact = CHtml::decode($_POST['Users']['contact']);
             $updatedOn = date("Y-m-d H:i:s");
-                $sql = "UPDATE users SET firstName = '".$fname."',lastName = '".$lname."',contact = '".$contact."',updatedOn = '".$updatedOn."'  WHERE uid = '".$id."'";
+            $profilePic =   $new_filename;
+                $sql = "UPDATE users SET firstName = '".$fname."',lastName = '".$lname."',profilePic = '".$profilePic."',contact = '".$contact."',updatedOn = '".$updatedOn."'  WHERE uid = '".$id."'";
                 $command=Yii::app()->db->createCommand($sql);
                 $result = $command->query();
                 if($result){
@@ -207,6 +220,7 @@ class UsersController extends Controller
 	 */
 	public function actionAdmin()
 	{
+            $this->layout = 'admin';
 		$model=new Users('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Users']))
@@ -231,13 +245,35 @@ class UsersController extends Controller
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
+        
+        public function actionAdminGen()
+        {
+            $this->layout = 'admin';
+            $model=new Users('getGen');
+            $model->unsetAttributes();  // clear any default values
+            if(isset($_GET['Users']))
+                $model->attributes=$_GET['Users'];
+
+            $this->render('admin/adminGen',array(
+                'model'=>$model,
+            ));
+        }
+
+        public function actionAdminAgent(){
+            $this->layout = 'admin';
+            $model=new Users('getAgent');
+            $model->unsetAttributes();  // clear any default values
+            if(isset($_GET['Users']))
+                $model->attributes=$_GET['Users'];
+                $this->render('admin/adminAgent',array(
+                'model'=>$model,));
+        }
 
 	/**
 	 * Performs the AJAX validation.
 	 * @param Users $model the model to be validated
 	 */
-	protected function performAjaxValidation($model)
-	{
+	protected function performAjaxValidation($model){
 		if(isset($_POST['ajax']) && $_POST['ajax']==='users-form')
 		{
 			echo CActiveForm::validate($model);

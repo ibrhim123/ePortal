@@ -96,7 +96,6 @@ class Users extends CActiveRecord
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
 		$criteria=new CDbCriteria;
-
 		$criteria->compare('uid',$this->uid);
 		$criteria->compare('firstName',$this->firstName,true);
 		$criteria->compare('lastName',$this->lastName,true);
@@ -111,6 +110,58 @@ class Users extends CActiveRecord
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+		));
+	}
+        
+        public function getAgent()
+	{
+		// @todo Please modify the following code to remove attributes that should not be searched.
+
+		$criteria=new CDbCriteria;
+                $criteria->addCondition("userType ='Agent' ");
+		$criteria->compare('uid',$this->uid);
+		$criteria->compare('firstName',$this->firstName,true);
+		$criteria->compare('lastName',$this->lastName,true);
+		$criteria->compare('email',$this->email,true);
+		$criteria->compare('password',$this->password,true);
+		$criteria->compare('userType',$this->userType,true);
+		$criteria->compare('profilePic',$this->profilePic,true);
+		$criteria->compare('contact',$this->contact,true);
+		$criteria->compare('createdOn',$this->createdOn,true);
+		$criteria->compare('status',$this->status);
+		$criteria->compare('updatedOn',$this->updatedOn,true);
+
+		return new CActiveDataProvider($this, array(
+			'criteria'=>$criteria,
+                        'pagination'=>array(
+                            'pageSize'=>40,
+                        ),
+		));
+	}
+        
+        public function getGen()
+	{
+		// @todo Please modify the following code to remove attributes that should not be searched.
+
+		$criteria=new CDbCriteria;
+                $criteria->addCondition("userType ='General' ");
+		$criteria->compare('uid',$this->uid);
+		$criteria->compare('firstName',$this->firstName,true);
+		$criteria->compare('lastName',$this->lastName,true);
+		$criteria->compare('email',$this->email,true);
+		$criteria->compare('password',$this->password,true);
+		$criteria->compare('userType',$this->userType,true);
+		$criteria->compare('profilePic',$this->profilePic,true);
+		$criteria->compare('contact',$this->contact,true);
+		$criteria->compare('createdOn',$this->createdOn,true);
+		$criteria->compare('status',$this->status);
+		$criteria->compare('updatedOn',$this->updatedOn,true);
+
+		return new CActiveDataProvider($this, array(
+			'criteria'=>$criteria,
+                        'pagination'=>array(
+                            'pageSize'=>40,
+                        ),
 		));
 	}
 

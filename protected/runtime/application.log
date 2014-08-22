@@ -813,3 +813,51 @@ in D:\php\htdocs\newWeb\index.php (22)
 2014/08/21 23:40:53 [warning] [application] Failed to set unsafe attribute "image" of "Users".
 in D:\php\htdocs\newWeb\protected\controllers\UsersController.php (172)
 in D:\php\htdocs\newWeb\index.php (22)
+2014/08/22 01:14:22 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's',contact = '+923216810383',updatedOn = '2014-08-22 01:14:22'  WHERE uid = '1'' at line 1. The SQL statement executed was: UPDATE users SET firstName = 'Muhammad',lastName = 'Ibrahim's',contact = '+923216810383',updatedOn = '2014-08-22 01:14:22'  WHERE uid = '1'.
+in D:\php\htdocs\newWeb\protected\controllers\UsersController.php (191)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/22 01:14:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's',contact = '+923216810383',updatedOn = '2014-08-22 01:14:22'  WHERE uid = '1'' at line 1. The SQL statement executed was: UPDATE users SET firstName = 'Muhammad',lastName = 'Ibrahim's',contact = '+923216810383',updatedOn = '2014-08-22 01:14:22'  WHERE uid = '1'' in D:\php\htdocs\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\php\htdocs\yii\framework\db\CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 D:\php\htdocs\newWeb\protected\controllers\UsersController.php(191): CDbCommand->query()
+#2 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionmyProfile()
+#3 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\php\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\php\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\php\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('myProfile')
+#12 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/myProfile')
+#13 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#15 {main}
+REQUEST_URI=/newWeb/index.php/users/myProfile
+HTTP_REFERER=http://localhost/newWeb/index.php/users/myProfile
+---
+2014/08/22 01:36:43 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's',contact = '+923216810383',updatedOn = '2014-08-22 01:36:43'  WHERE uid = '1'' at line 1. The SQL statement executed was: UPDATE users SET firstName = 'Muhammade',lastName = 'Ibrahim's',contact = '+923216810383',updatedOn = '2014-08-22 01:36:43'  WHERE uid = '1'.
+in D:\php\htdocs\newWeb\protected\controllers\UsersController.php (191)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/22 01:36:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's',contact = '+923216810383',updatedOn = '2014-08-22 01:36:43'  WHERE uid = '1'' at line 1. The SQL statement executed was: UPDATE users SET firstName = 'Muhammade',lastName = 'Ibrahim's',contact = '+923216810383',updatedOn = '2014-08-22 01:36:43'  WHERE uid = '1'' in D:\php\htdocs\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\php\htdocs\yii\framework\db\CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 D:\php\htdocs\newWeb\protected\controllers\UsersController.php(191): CDbCommand->query()
+#2 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionmyProfile()
+#3 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 D:\php\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\php\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\php\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('myProfile')
+#12 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/myProfile')
+#13 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#15 {main}
+REQUEST_URI=/newWeb/index.php/users/myProfile
+HTTP_REFERER=http://localhost/newWeb/index.php/users/myProfile
+---

@@ -111,13 +111,33 @@
                     <span class="selected"></span>
                 </a>
             </li>
+            
+             <li>
+            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/users/myProfile">
+                <i class="icon-user"></i>
+                <span class="title"> <?php echo $userRole; ?> Profile</span>
+            </a>
+            </li>
           <?php  }elseif ($userRole == 'Agent') { ?>
-                
-            <?php }else {
-                
-             
-          }
-          ?>
+            <li>
+            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/users/myProfile">
+                <i class="icon-user"></i>
+                <span class="title"> <?php echo $userRole; ?> Profile</span>
+            </a>
+            </li>
+            <?php }else { ?>
+            <li>
+            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/users/myProfile">
+                <i class="icon-user"></i>
+                <span class="title"><?php echo $userRole; ?>  Profile</span>
+            </a>
+            </li>    
+             <?php }?>
+            <li>
+                <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/site/logout">
+                    <i class="icon-key"></i> Log Out</a>
+            </li>
+
             
         </ul>
 	

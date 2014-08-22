@@ -167,9 +167,9 @@ class UsersController extends Controller
         $this->layout = 'admin';
         $id = Yii::app()->user->id;
         $model=$this->loadModel($id);
-        //$this->performAjaxValidation($model);
+        
         if(isset($_POST['Users'])){
-            $model->attributes=$_POST['Users'];
+            //echo '<pre>'; print_r($_POST); exit;
             /**$file = $_FILES;
             if( (!empty($file['Users']['tmp_name']['image'])) && ($file['Users']['error']['image'] == '0' )){
                 $md5_file = md5_file($file['Users']['tmp_name']['image']);
@@ -180,17 +180,22 @@ class UsersController extends Controller
                 $new_filename = $md5_file.substr($img_name,strpos($img_name,'.'));
                 $full_path = Yii::app()->request->baseUrl.'/resources/documents/'.$dir.'/'.$new_filename;
                 move_uploaded_file($file['Users']['tmp_name']['image'],$full_path);
-                $model->profilePic = $new_filename;
-            }**/
-            //$model->contact = $_POST['Users']['contact'];
-            $model->updatedOn = date("Y-m-d H:i:s");
-            if($model->save()){
-                Yii::app()->user->setFlash('success', "Your Profile has been Updated!");
-                $this->redirect('myProfile');
-            }else{
-                Yii::app()->user->setFlash('error', "There seems some problem in your Profile Update!");
-                $this->redirect('myProfile');
-            }
+                //$model->profilePic = $new_filename;
+            }*/
+            $fname = CHtml::encode($_POST['Users']['firstName']);
+            $lname = CHtml::encode($_POST['Users']['lastName']);
+            $contact = CHtml::decode($_POST['Users']['contact']);
+            $updatedOn = date("Y-m-d H:i:s");
+                $sql = "UPDATE users SET firstName = '".$fname."',lastName = '".$lname."',contact = '".$contact."',updatedOn = '".$updatedOn."'  WHERE uid = '".$id."'";
+                $command=Yii::app()->db->createCommand($sql);
+                $result = $command->query();
+                if($result){
+                    Yii::app()->user->setFlash('success', "Your Profile has been Updated!");
+                    $this->redirect('myProfile');
+                }else{
+                    Yii::app()->user->setFlash('error', "There seems some problem in your Profile Update!");
+                    $this->redirect('myProfile');
+                }
         }
         $this->render('admin/profile',array(
             'model'=>$model,

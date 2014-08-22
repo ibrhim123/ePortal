@@ -25,15 +25,21 @@ User Profile Section
 </div>
 </div>
 <!-- END PAGE HEADER-->
-
+<?php
+    Yii::app()->clientScript->registerScript(
+        'myHideEffect',
+        '$(".info").animate({opacity: 1.0}, 3000).fadeOut("slow");',
+        CClientScript::POS_READY
+    );
+    ?>
 <!-- BEGIN PAGE CONTENT-->
 <?php if(Yii::app()->user->hasFlash('success')):?>
-    <div class="alert alert-success">
+    <div class="alert alert-success info">
         <button data-dismiss="alert" class="close"></button> <?php echo Yii::app()->user->getFlash('success'); ?>
     </div>
 <?php endif; ?>
 <?php if(Yii::app()->user->hasFlash('error')):?>
-    <div class="alert alert-warning">
+    <div class="alert alert-warning info">
         <button data-dismiss="alert" class="close"></button> <?php echo Yii::app()->user->getFlash('error'); ?>
     </div>
 <?php endif; ?>
@@ -122,6 +128,12 @@ User Profile Section
         </div>
 	</div>
         
+        <div class="control-group">
+		<label class="control-label">Contact </label>
+		<div class="controls"><?php echo $form->textField($model,'contact',array('class'=>'m-wrap large','size'=>30,'maxlength'=>30)); ?>
+        <span class="help-inline"><?php echo $form->error($model,'contact'); ?> </span>
+        </div>
+        </div>
       
         
        <div class="control-group">

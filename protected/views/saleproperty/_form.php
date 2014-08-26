@@ -4,7 +4,46 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form">
+<div class="page-content">
+
+    <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <!-- BEGIN PAGE CONTAINER-->
+    <div class="container-fluid">
+        <!-- BEGIN PAGE HEADER-->
+        <div class="row-fluid">
+            <div class="span12">
+
+                <h3 class="page-title">
+                    Sale your Property
+                </h3>
+
+            </div>
+        </div>
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="row-fluid">
+            <div class="span12">
+                <!-- BEGIN SAMPLE FORM PORTLET-->
+                <div class="portlet box blue tabbable">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="icon-reorder"></i>
+                            <span class="hidden-480"> <?php $actionId  = Yii::app()->controller->action->id;
+                                if($actionId == 'update'){
+                                    echo 'Update notice';
+                                }
+                                else{
+                                    echo 'Post Add';
+                                }?></span>
+                        </div>
+                    </div>
+                    <div class="portlet-body form">
+                        <div class="tabbable portlet-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#portlet_tab1">Default</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="portlet_tab1">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'saleproperty-form',
@@ -15,104 +54,119 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
 	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'pid'); ?>
-		<?php echo $form->textField($model,'pid'); ?>
-		<?php echo $form->error($model,'pid'); ?>
+                                    
+	
+        <div class="control-group">
+             <label class="control-label"><?php echo $form->labelEx($model,'category'); ?></label>
+		<div class="controls">
+                      <?php echo CHtml::dropDownList('Complaints[subject]', $model,
+                array('apartments' => 'Apartments for Sale', 'house or villa' => ' Houses & Villas for Sale',
+                    'commercial property' => 'Commercial Property for Sale', 'Towers or Building' => 'Towers & Building for Sale',
+                    'Plots or Land' => 'Plots & Land for Sale'),
+                array('empty' => 'Select Property Type','class'=>'m-wrap large')); ?>
+                    
+                    <?php //echo $form->textField($model,'category',array('class'=>'m-wrap large','size'=>60,'maxlength'=>230)); ?>
+                    <span for="email" class="help-inline">  <?php echo $form->error($model,'category'); ?></span>
+                </div>    
 	</div>
+                                    
+        <div class="control-group">
+             <label class="control-label"><?php echo $form->labelEx($model,'title'); ?></label>
+		<div class="controls">
+                    <?php echo $form->textField($model,'title',array('class'=>'m-wrap large','size'=>60,'maxlength'=>256)); ?>
+                    <span for="email" class="help-inline">  <?php echo $form->error($model,'title'); ?></span>
+                </div>    
+	</div>                            
+	              
+        <div class="control-group">
+            <label class="control-label"><?php echo $form->labelEx($model,'descr'); ?></label>
+            <div class="controls">
+                <?php echo $form->textArea($model,'descr',array('class'=>'m-wrap large','rows'=>6, 'cols'=>50)); ?>
+                <span for="email" class="help-inline"> <?php echo $form->error($model,'descr'); ?> </span>
+            </div>
+        </div>                            
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'category'); ?>
-		<?php echo $form->textField($model,'category',array('size'=>60,'maxlength'=>230)); ?>
-		<?php echo $form->error($model,'category'); ?>
+	<div class="control-group">
+             <label class="control-label"><?php echo $form->labelEx($model,'mainPic'); ?></label>
+		<div class="controls">
+                    <?php echo $form->textField($model,'mainPic',array('class'=>'m-wrap large','size'=>60,'maxlength'=>256)); ?>
+                    <span for="email" class="help-inline">  <?php echo $form->error($model,'mainPic'); ?></span>
+                </div>    
 	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'title'); ?>
-		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>256)); ?>
-		<?php echo $form->error($model,'title'); ?>
+                                    
+        <div class="control-group">
+             <label class="control-label"><?php echo $form->labelEx($model,'gallPics'); ?></label>
+		<div class="controls">
+                    <?php echo $form->textField($model,'gallPics',array('class'=>'m-wrap large','size'=>60,'maxlength'=>256)); ?>
+                    <span for="email" class="help-inline">  <?php echo $form->error($model,'gallPics'); ?></span>
+                </div>    
 	</div>
+        <div class="control-group">
+             <label class="control-label"><?php echo $form->labelEx($model,'beds'); ?></label>
+		<div class="controls">
+                    <?php echo $form->textField($model,'beds',array('class'=>'m-wrap large','size'=>40,'maxlength'=>40)); ?>
+                    <span for="email" class="help-inline">  <?php echo $form->error($model,'beds'); ?></span>
+                </div>    
+	</div>                            
+                                    
+	<div class="control-group">
+             <label class="control-label"><?php echo $form->labelEx($model,'baths'); ?></label>
+		<div class="controls">
+                    <?php echo $form->textField($model,'baths',array('class'=>'m-wrap large','size'=>40,'maxlength'=>40)); ?>
+                    <span for="email" class="help-inline">  <?php echo $form->error($model,'baths'); ?></span>
+                </div>    
+	</div>   
+                                    
+	<div class="control-group">
+             <label class="control-label"><?php echo $form->labelEx($model,'size'); ?></label>
+		<div class="controls">
+                    <?php echo $form->textField($model,'size',array('class'=>'m-wrap large','size'=>40,'maxlength'=>40)); ?>
+                    <span for="email" class="help-inline">  <?php echo $form->error($model,'size'); ?></span>
+                </div>    
+	</div>   
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'descr'); ?>
-		<?php echo $form->textArea($model,'descr',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'descr'); ?>
-	</div>
+	<div class="control-group">
+             <label class="control-label"><?php echo $form->labelEx($model,'price'); ?></label>
+		<div class="controls">
+                    <?php echo $form->textField($model,'price',array('class'=>'m-wrap large','size'=>60,'maxlength'=>100)); ?>
+                    <span for="email" class="help-inline">  <?php echo $form->error($model,'price'); ?></span>
+                </div>    
+	</div> 
+                                    
+	<div class="control-group">
+             <label class="control-label"><?php echo $form->labelEx($model,'location'); ?></label>
+		<div class="controls">
+                    <?php echo $form->textField($model,'location',array('class'=>'m-wrap large','size'=>60,'maxlength'=>256)); ?>
+                    <span for="email" class="help-inline">  <?php echo $form->error($model,'location'); ?></span>
+                </div>    
+	</div> 
+                                    
+        <div class="control-group">
+             <label class="control-label"><?php echo $form->labelEx($model,'city'); ?></label>
+		<div class="controls">
+                    <?php echo $form->textField($model,'city',array('class'=>'m-wrap large','size'=>60,'maxlength'=>140)); ?>
+                    <span for="email" class="help-inline">  <?php echo $form->error($model,'city'); ?></span>
+                </div>    
+	</div>                             
+      
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'mainPic'); ?>
-		<?php echo $form->textField($model,'mainPic',array('size'=>60,'maxlength'=>256)); ?>
-		<?php echo $form->error($model,'mainPic'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'gallPics'); ?>
-		<?php echo $form->textArea($model,'gallPics',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'gallPics'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'beds'); ?>
-		<?php echo $form->textField($model,'beds',array('size'=>40,'maxlength'=>40)); ?>
-		<?php echo $form->error($model,'beds'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'baths'); ?>
-		<?php echo $form->textField($model,'baths',array('size'=>40,'maxlength'=>40)); ?>
-		<?php echo $form->error($model,'baths'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'size'); ?>
-		<?php echo $form->textField($model,'size',array('size'=>40,'maxlength'=>40)); ?>
-		<?php echo $form->error($model,'size'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'price'); ?>
-		<?php echo $form->textField($model,'price',array('size'=>60,'maxlength'=>100)); ?>
-		<?php echo $form->error($model,'price'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'location'); ?>
-		<?php echo $form->textField($model,'location',array('size'=>60,'maxlength'=>256)); ?>
-		<?php echo $form->error($model,'location'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'city'); ?>
-		<?php echo $form->textField($model,'city',array('size'=>60,'maxlength'=>140)); ?>
-		<?php echo $form->error($model,'city'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'postedOn'); ?>
-		<?php echo $form->textField($model,'postedOn',array('size'=>60,'maxlength'=>256)); ?>
-		<?php echo $form->error($model,'postedOn'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'postedBy'); ?>
-		<?php echo $form->textField($model,'postedBy',array('size'=>60,'maxlength'=>256)); ?>
-		<?php echo $form->error($model,'postedBy'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model,'status'); ?>
-		<?php echo $form->error($model,'status'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="form-actions">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class' => 'btn blue')); ?>
+            <button class="btn blue" type="reset">Cancel</button>
 	</div>
 
 <?php $this->endWidget(); ?>
 
-</div><!-- form -->
+ </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE CONTAINER-->
+    </div>
+
+</div>

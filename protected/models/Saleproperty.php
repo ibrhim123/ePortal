@@ -39,10 +39,10 @@ class Saleproperty extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('pid, category, title, descr, mainPic, gallPics, beds, baths, size, price, location, city, postedOn, postedBy, status', 'required'),
+			array('category, title, descr, mainPic, gallPics, size, price, location, city', 'required'),
 			array('pid, status', 'numerical', 'integerOnly'=>true),
 			array('category', 'length', 'max'=>230),
-			array('title, mainPic, location, postedOn, postedBy', 'length', 'max'=>256),
+			array('title, mainPic, location', 'length', 'max'=>256),
 			array('beds, baths, size', 'length', 'max'=>40),
 			array('price', 'length', 'max'=>100),
 			array('city', 'length', 'max'=>140),

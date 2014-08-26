@@ -1581,3 +1581,476 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/newWeb/index.php/Saleproperty/favicon.ico
 ---
+2014/08/26 12:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image2.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image4.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:34:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image3.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:35:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image2.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:35:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:35:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image3.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:35:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image4.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:36:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image4.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:36:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image2.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:36:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image3.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:36:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image3.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image4.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image2.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:37:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:38:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image2.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:38:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:38:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image4.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:38:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image3.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:39:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image3.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:39:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:39:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image2.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:39:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image4.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:40:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:40:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image4.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:40:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image3.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:40:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image2.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image2.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image4.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image3.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:40:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image2.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:40:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image4.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:40:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:40:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image3.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:49:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:50:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:51:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:51:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/26 12:59:05 [error] [php] Undefined variable: data (D:\php\htdocs\newWeb\protected\views\saleproperty\myPosts.php:18)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(869): SalepropertyController->renderFile()
+#1 D:\php\htdocs\yii\framework\web\CController.php(782): SalepropertyController->renderPartial()
+#2 D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php(206): SalepropertyController->render()
+#3 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): SalepropertyController->actionmyPosts()
+#4 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(133): SalepropertyController->runAction()
+#6 D:\php\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\php\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): SalepropertyController->filterAccessControl()
+#9 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\php\htdocs\yii\framework\web\CController.php(265): SalepropertyController->runActionWithFilters()
+#12 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SalepropertyController->run()
+#13 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/index.php/Saleproperty/myPosts
+in D:\php\htdocs\newWeb\protected\views\saleproperty\myPosts.php (18)
+in D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php (206)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/26 13:05:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('assets')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('assets')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/as...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---

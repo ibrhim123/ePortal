@@ -139,6 +139,13 @@
             </a>
             </li>
           <?php  }elseif ($userRole == 'Agent') { ?>
+             <li class="start">
+                <a href="<?php echo Yii::app()->homeUrl;?>">
+                    <i class="icon-home"></i>
+                    <span class="title">Dashboard</span>
+                    <span class="selected"></span>
+                </a>
+            </li>
             <li>
             <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/users/myProfile">
                 <i class="icon-user"></i>
@@ -163,6 +170,13 @@
                 </ul>
             </li>
             <?php }else { ?>
+             <li class="start">
+                <a href="<?php echo Yii::app()->homeUrl;?>">
+                    <i class="icon-home"></i>
+                    <span class="title">Dashboard</span>
+                    <span class="selected"></span>
+                </a>
+            </li>
             <li>
             <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/users/myProfile">
                 <i class="icon-user"></i>

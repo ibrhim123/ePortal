@@ -17,9 +17,6 @@
  * @property string $price
  * @property string $location
  * @property string $city
- * @property string $postedOn
- * @property string $postedBy
- * @property integer $status
  */
 class Saleproperty extends CActiveRecord
 {
@@ -40,7 +37,7 @@ class Saleproperty extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('category, title, descr, mainPic, gallPics, size, price, location, city', 'required'),
-			array('pid, status', 'numerical', 'integerOnly'=>true),
+			array('pid', 'numerical', 'integerOnly'=>true),
 			array('category', 'length', 'max'=>230),
 			array('title, mainPic, location', 'length', 'max'=>256),
 			array('beds, baths, size', 'length', 'max'=>40),
@@ -48,7 +45,7 @@ class Saleproperty extends CActiveRecord
 			array('city', 'length', 'max'=>140),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('spid, pid, category, title, descr, mainPic, gallPics, beds, baths, size, price, location, city, postedOn, postedBy, status', 'safe', 'on'=>'search'),
+			array('spid, pid, category, title, descr, mainPic, gallPics, beds, baths, size, price, location, city', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -82,9 +79,7 @@ class Saleproperty extends CActiveRecord
 			'price' => 'Price',
 			'location' => 'Location',
 			'city' => 'City',
-			'postedOn' => 'Posted On',
-			'postedBy' => 'Posted By',
-			'status' => 'Status',
+			
 		);
 	}
 
@@ -119,9 +114,7 @@ class Saleproperty extends CActiveRecord
 		$criteria->compare('price',$this->price,true);
 		$criteria->compare('location',$this->location,true);
 		$criteria->compare('city',$this->city,true);
-		$criteria->compare('postedOn',$this->postedOn,true);
-		$criteria->compare('postedBy',$this->postedBy,true);
-		$criteria->compare('status',$this->status);
+		
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

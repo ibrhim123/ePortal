@@ -32,7 +32,7 @@ class SalepropertyController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','myPosts'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -78,6 +78,7 @@ class SalepropertyController extends Controller
                     $transaction=$connection->beginTransaction();
                     try{                         
                         if( (!empty($file['mainPic']['tmp_name'])) && ($file['mainPic']['error'] == '0' )){
+                            
                             $md5_file = md5_file($file['mainPic']['tmp_name']);
                             //echo $md5_file; exit;
                             $dir = substr($md5_file, -2);
@@ -101,7 +102,7 @@ class SalepropertyController extends Controller
                         $location = CHtml::encode($_POST['Saleproperty']['location']);
                         $city = CHtml::encode($_POST['Saleproperty']['city']);
                         $createdOn = date('Y-m-d H:i:s');
-                        $sql = "insert into property (category,postedBy,postedOn,isFeat,status)
+                        $sql = "insert into property (cat,postedBy,postedOn,isFeat,status)
                         values (:cat, :user_id, :created, :feat, :status)";
                         $parameters = array(":cat"=>'Sale',":user_id"=>$postedBy,":created" =>$createdOn,":feat" => '0',":status"=>'1');
                         Yii::app()->db->createCommand($sql)->execute($parameters);
@@ -128,7 +129,7 @@ class SalepropertyController extends Controller
                         } 
                         $sql = "insert into saleproperty (pid,category,title,descr,mainPic,gallPics,beds,baths,size,price,location,city)
                         values (:pid, :category, :title, :descr, :mainPic, :gallPics,:beds,:baths,:size,:price,:location,:city)";
-                        $params = array(":pid"=>$last_id,":category" =>$cat,":title"=>$last_id,":descr" =>$cat,":mainPic"=>$main_filename ,":gallPics"=>$media,
+                        $params = array(":pid"=>$last_id,":category" =>$cat,":title"=>$title,":descr" =>$descr,":mainPic"=>$main_filename ,":gallPics"=>$media,
                            ":beds"=>$beds,":baths" =>$baths,":size"=>$size,":price" =>$price,":location"=>$location,":city"=> $city  );
                         Yii::app()->db->createCommand($sql)->execute($params);
                         $newFile = array();
@@ -193,6 +194,17 @@ class SalepropertyController extends Controller
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
+	}
+        
+        public function actionmyPosts()
+	{
+                Yii::app()->clientScript->registerCoreScript('jquery');
+		$me = Yii::app()->user->id;
+                $sql = "SELECT a.*,b.*  FROM property a JOIN saleproperty b on a.pid = b.pid WHERE a.status = 1 AND a.postedBy= {$me} ORDER BY a.pid DESC ";
+                $command=Yii::app()->db->createCommand($sql);
+                $result= $command->queryAll();
+                
+                $this->render('myPosts',array('data'=>$result));
 	}
 
 	/**

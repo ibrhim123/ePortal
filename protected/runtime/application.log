@@ -1395,3 +1395,189 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/newWeb/index.php/Saleproperty/favicon.ico
 ---
+2014/08/26 10:30:19 [error] [php] Undefined index: files (D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php:82)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(133): SalepropertyController->runAction()
+#1 D:\php\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\php\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): SalepropertyController->filterAccessControl()
+#4 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\htdocs\yii\framework\web\CController.php(265): SalepropertyController->runActionWithFilters()
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SalepropertyController->run()
+#8 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/index.php/Saleproperty/Create
+in D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php (82)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/26 10:46:33 [error] [php] Undefined variable: new_filename (D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php:114)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(133): SalepropertyController->runAction()
+#1 D:\php\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\php\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): SalepropertyController->filterAccessControl()
+#4 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\htdocs\yii\framework\web\CController.php(265): SalepropertyController->runActionWithFilters()
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SalepropertyController->run()
+#8 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/index.php/Saleproperty/Create
+in D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php (114)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/26 10:47:58 [error] [php] Undefined variable: new_filename (D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php:114)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(133): SalepropertyController->runAction()
+#1 D:\php\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\php\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): SalepropertyController->filterAccessControl()
+#4 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\htdocs\yii\framework\web\CController.php(265): SalepropertyController->runActionWithFilters()
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SalepropertyController->run()
+#8 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/index.php/Saleproperty/Create
+in D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php (114)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/26 10:51:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: insert into saleproperty (pid,category,title,descr,mainPic,gallPics,beds,baths,size,price,location,city)
+                        values (:pid, :category, :title, :descr, :mainPic, :gallPics,:beds,:baths,:size,:price,:location,:city).
+in D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php (116)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/26 11:09:59 [error] [php] Array to string conversion (D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php:80)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(133): SalepropertyController->runAction()
+#1 D:\php\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\php\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): SalepropertyController->filterAccessControl()
+#4 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\htdocs\yii\framework\web\CController.php(265): SalepropertyController->runActionWithFilters()
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SalepropertyController->run()
+#8 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/index.php/Saleproperty/Create
+in D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php (80)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/26 11:13:53 [error] [php] Undefined index: name (D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php:81)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(133): SalepropertyController->runAction()
+#1 D:\php\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\php\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): SalepropertyController->filterAccessControl()
+#4 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\htdocs\yii\framework\web\CController.php(265): SalepropertyController->runActionWithFilters()
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SalepropertyController->run()
+#8 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/index.php/Saleproperty/Create
+in D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php (81)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/26 11:14:12 [error] [php] Undefined index: name (D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php:81)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(133): SalepropertyController->runAction()
+#1 D:\php\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\php\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): SalepropertyController->filterAccessControl()
+#4 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\htdocs\yii\framework\web\CController.php(265): SalepropertyController->runActionWithFilters()
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SalepropertyController->run()
+#8 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/index.php/Saleproperty/Create
+in D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php (81)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/26 11:25:50 [error] [php] Undefined index: files (D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php:85)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(133): SalepropertyController->runAction()
+#1 D:\php\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\php\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): SalepropertyController->filterAccessControl()
+#4 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\htdocs\yii\framework\web\CController.php(265): SalepropertyController->runActionWithFilters()
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SalepropertyController->run()
+#8 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/index.php/Saleproperty/Create
+in D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php (85)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/26 11:46:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/saleproperty/favicon.ico
+---
+2014/08/26 11:47:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/08/26 11:47:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/08/26 11:47:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/favicon.ico
+---
+2014/08/26 11:47:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/favicon.ico
+---
+2014/08/26 11:47:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/favicon.ico
+---
+2014/08/26 11:47:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/favicon.ico
+---

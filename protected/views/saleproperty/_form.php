@@ -51,7 +51,8 @@
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
-	'enableAjaxValidation'=>false,
+	'enableAjaxValidation'=>true,
+    'htmlOptions'=>array('enctype'=>'multipart/form-data'),
 )); ?>
 
 	<?php echo $form->errorSummary($model); ?>
@@ -60,7 +61,7 @@
         <div class="control-group">
              <label class="control-label"><?php echo $form->labelEx($model,'category'); ?></label>
 		<div class="controls">
-                      <?php echo CHtml::dropDownList('Complaints[subject]', $model,
+                      <?php echo CHtml::dropDownList('Saleproperty[category]', $model,
                 array('apartments' => 'Apartments for Sale', 'house or villa' => ' Houses & Villas for Sale',
                     'commercial property' => 'Commercial Property for Sale', 'Towers or Building' => 'Towers & Building for Sale',
                     'Plots or Land' => 'Plots & Land for Sale'),
@@ -90,7 +91,8 @@
 	<div class="control-group">
              <label class="control-label"><?php echo $form->labelEx($model,'mainPic'); ?></label>
 		<div class="controls">
-                    <?php echo $form->textField($model,'mainPic',array('class'=>'m-wrap large','size'=>60,'maxlength'=>256)); ?>
+                    <input class="fileupload" type="file" name="mainPic">
+
                     <span for="email" class="help-inline">  <?php echo $form->error($model,'mainPic'); ?></span>
                 </div>    
 	</div>
@@ -98,7 +100,7 @@
         <div class="control-group">
              <label class="control-label"><?php echo $form->labelEx($model,'gallPics'); ?></label>
 		<div class="controls">
-                    <?php echo $form->textField($model,'gallPics',array('class'=>'m-wrap large','size'=>60,'maxlength'=>256)); ?>
+                    <input class="fileupload" type="file" name="files[]" multiple>
                     <span for="email" class="help-inline">  <?php echo $form->error($model,'gallPics'); ?></span>
                 </div>    
 	</div>

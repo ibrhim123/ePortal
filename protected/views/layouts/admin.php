@@ -25,7 +25,9 @@
 </head>
 <!-- END HEAD -->
 <!-- BEGIN BODY -->
-
+<?php if(Yii::app()->user->isGuest){
+    $this->redirect(array('site/login'));
+}else{ ?>
 <body  class="page-header-fixed" id="bodyPage">
 
     <!-- BEGIN HEADER -->
@@ -113,22 +115,22 @@
             </li>
             
             <li class="">
-        <a href="javascript:;">
-            <i class="icon-search"></i>
-            <span class="title"> Administrate Users</span>
-            <span class="arrow"></span>
-        </a>
-        <ul class="sub-menu" style="display: none;">
-                <li>
-                    <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Users/AdminGen">
-                        View All Gerenal Users</a>
-                </li>
-            
-                <li>
-                    <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Users/AdminAgent">
-                    View All Agents</a></li>
-        </ul>
-        </li>
+                <a href="javascript:;">
+                    <i class="icon-search"></i>
+                    <span class="title"> Administrate Users</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu" style="display: none;">
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Users/AdminGen">
+                                View All Gerenal Users</a>
+                        </li>
+
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Users/AdminAgent">
+                            View All Agents</a></li>
+                </ul>
+            </li>
             
             <li>
             <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/users/myProfile">
@@ -143,13 +145,48 @@
                 <span class="title"> <?php echo $userRole; ?> Profile</span>
             </a>
             </li>
+             <li class="">
+                <a href="javascript:;">
+                    <i class="icon-search"></i>
+                    <span class="title"> Sale your property</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu" style="display: none;">
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Users/AdminGen">
+                                View All Gerenal Users</a>
+                        </li>
+
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Users/AdminAgent">
+                            View All Agents</a></li>
+                </ul>
+            </li>
             <?php }else { ?>
             <li>
             <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/users/myProfile">
                 <i class="icon-user"></i>
                 <span class="title"><?php echo $userRole; ?>  Profile</span>
             </a>
-            </li>    
+            </li>  
+            <li class="">
+                <a href="javascript:;">
+                    <i class="icon-search"></i>
+                    <span class="title"> Property for Sale</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu" style="display: none;">
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/Create">
+                            Post add</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/myPosts">
+                                View My postings</a>
+                        </li>
+
+                </ul>
+            </li>
              <?php }?>
            
             <li>
@@ -231,5 +268,6 @@
 <!-- END JAVASCRIPTS -->
 
 </body>
+<?php } ?>
 <!-- END BODY -->
 </html>

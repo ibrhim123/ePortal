@@ -52,7 +52,13 @@
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>true,
-    'htmlOptions'=>array('enctype'=>'multipart/form-data'),
+        'enableClientValidation'=> true,
+        'clientOptions' => array(
+                'validateOnSubmit'=>true,
+                'validateOnChange'=>true,
+                'validateOnType'=>false,
+        ),
+        'htmlOptions'=>array('enctype'=>'multipart/form-data'),
 )); ?>
 
 	<?php echo $form->errorSummary($model); ?>

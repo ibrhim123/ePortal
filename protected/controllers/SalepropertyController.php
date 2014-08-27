@@ -69,76 +69,83 @@ class SalepropertyController extends Controller
 
 		if(isset($_POST['Saleproperty']))
 		{
-                    $newFile = array();
-                    $fileType = array();
-                    $postedBy=Yii::app()->user->id;
-                    $values = $_POST;
-                    $file = $_FILES;
-                    $connection=Yii::app()->db;
-                    $transaction=$connection->beginTransaction();
-                    try{                         
-                        if( (!empty($file['mainPic']['tmp_name'])) && ($file['mainPic']['error'] == '0' )){
-                            
-                            $md5_file = md5_file($file['mainPic']['tmp_name']);
-                            //echo $md5_file; exit;
-                            $dir = substr($md5_file, -2);
-                            $img_name = $file['mainPic']['name'];
-                            $lastDot = strrpos($img_name, ".");
-                            $img_name = str_replace(".", "", substr($img_name, 0, $lastDot)) . substr($img_name, $lastDot);
-                            $main_filename = $md5_file.substr($img_name,strpos($img_name,'.'));
-                            $lPath =  $_SERVER['DOCUMENT_ROOT'];
-                            $full_path = $lPath.'/newWeb/resources/documents/'.$dir.'/'.$main_filename;
-                            //echo $full_path; exit;
-                            move_uploaded_file($file['mainPic']['tmp_name'],$full_path);
-                            //$model->profilePic = $new_filename;*/
-                        }
-                        $cat = $_POST['Saleproperty']['category'];
-                        $title = CHtml::encode($_POST['Saleproperty']['title']);
-                        $descr = CHtml::encode($_POST['Saleproperty']['descr']);
-                        $beds = $_POST['Saleproperty']['beds'];
-                        $baths = $_POST['Saleproperty']['baths'];
-                        $size = $_POST['Saleproperty']['size'];
-                        $price = $_POST['Saleproperty']['price'];
-                        $location = CHtml::encode($_POST['Saleproperty']['location']);
-                        $city = CHtml::encode($_POST['Saleproperty']['city']);
-                        $createdOn = date('Y-m-d H:i:s');
-                        $sql = "insert into property (cat,postedBy,postedOn,isFeat,status)
-                        values (:cat, :user_id, :created, :feat, :status)";
-                        $parameters = array(":cat"=>'Sale',":user_id"=>$postedBy,":created" =>$createdOn,":feat" => '0',":status"=>'1');
-                        Yii::app()->db->createCommand($sql)->execute($parameters);
-                        $last_id = Yii::app()->db->getLastInsertID();
-                        for($i=0; $i<count($_FILES['files']['tmp_name']); $i++) {
-                            $md5_file = md5($_FILES['files']['tmp_name'][$i]);
-                            $dir =  substr($md5_file, -2);
-                            $img_name = $_FILES['files']['name'][$i];
-                            $fType = $_FILES['files']['type'][$i];
-                            $lastDot = strrpos($img_name, ".");
-                            $img_name = str_replace(".", "", substr($img_name, 0, $lastDot)) . substr($img_name, $lastDot);
-                            $new_filename = $md5_file.substr($img_name,strpos($img_name,'.'));
-                            $lPath =  $_SERVER['DOCUMENT_ROOT'];
-                            $full_path = $lPath.'/newWeb/resources/documents/'.$dir.'/'.$new_filename;
-                            array_push($newFile, $new_filename);
-                            array_push($fileType,$fType);
-                            move_uploaded_file($_FILES['files']['tmp_name'][$i],$full_path);
-                        }
-                        $media = array_merge($newFile,$fileType);
-                        if(empty($media)){
-                            $media = null;
-                        }else{
-                            $media = json_encode($media);
-                        } 
-                        $sql = "insert into saleproperty (pid,category,title,descr,mainPic,gallPics,beds,baths,size,price,location,city)
-                        values (:pid, :category, :title, :descr, :mainPic, :gallPics,:beds,:baths,:size,:price,:location,:city)";
-                        $params = array(":pid"=>$last_id,":category" =>$cat,":title"=>$title,":descr" =>$descr,":mainPic"=>$main_filename ,":gallPics"=>$media,
-                           ":beds"=>$beds,":baths" =>$baths,":size"=>$size,":price" =>$price,":location"=>$location,":city"=> $city  );
-                        Yii::app()->db->createCommand($sql)->execute($params);
+                    $model->attributes=$_POST['Saleproperty'];
+                        $valid=$model->validate();            
+                        if($valid){
                         $newFile = array();
                         $fileType = array();
-                        $transaction->commit();
-                    }catch (Exception $ex) {
-                        $transaction->rollback();
-                        echo '<pre>'; print_r($ex); exit;
-                    }
+                        $postedBy=Yii::app()->user->id;
+                        $values = $_POST;
+                        $file = $_FILES;
+                        $connection=Yii::app()->db;
+                        $transaction=$connection->beginTransaction();
+                        try{                         
+                            if( (!empty($file['mainPic']['tmp_name'])) && ($file['mainPic']['error'] == '0' )){
+
+                                $md5_file = md5_file($file['mainPic']['tmp_name']);
+                                //echo $md5_file; exit;
+                                $dir = substr($md5_file, -2);
+                                $img_name = $file['mainPic']['name'];
+                                $lastDot = strrpos($img_name, ".");
+                                $img_name = str_replace(".", "", substr($img_name, 0, $lastDot)) . substr($img_name, $lastDot);
+                                $main_filename = $md5_file.substr($img_name,strpos($img_name,'.'));
+                                $lPath =  $_SERVER['DOCUMENT_ROOT'];
+                                $full_path = $lPath.'/newWeb/resources/documents/'.$dir.'/'.$main_filename;
+                                //echo $full_path; exit;
+                                move_uploaded_file($file['mainPic']['tmp_name'],$full_path);
+                                //$model->profilePic = $new_filename;*/
+                            }
+                            $cat = $_POST['Saleproperty']['category'];
+                            $title = CHtml::encode($_POST['Saleproperty']['title']);
+                            $descr = CHtml::encode($_POST['Saleproperty']['descr']);
+                            $beds = $_POST['Saleproperty']['beds'];
+                            $baths = $_POST['Saleproperty']['baths'];
+                            $size = $_POST['Saleproperty']['size'];
+                            $price = $_POST['Saleproperty']['price'];
+                            $location = CHtml::encode($_POST['Saleproperty']['location']);
+                            $city = CHtml::encode($_POST['Saleproperty']['city']);
+                            $createdOn = date('Y-m-d H:i:s');
+                            $sql = "insert into property (cat,postedBy,postedOn,isFeat,status)
+                            values (:cat, :user_id, :created, :feat, :status)";
+                            $parameters = array(":cat"=>'Sale',":user_id"=>$postedBy,":created" =>$createdOn,":feat" => '0',":status"=>'1');
+                            Yii::app()->db->createCommand($sql)->execute($parameters);
+                            $last_id = Yii::app()->db->getLastInsertID();
+                            for($i=0; $i<count($_FILES['files']['tmp_name']); $i++) {
+                                $md5_file = md5($_FILES['files']['tmp_name'][$i]);
+                                $dir =  substr($md5_file, -2);
+                                $img_name = $_FILES['files']['name'][$i];
+                                $fType = $_FILES['files']['type'][$i];
+                                $lastDot = strrpos($img_name, ".");
+                                $img_name = str_replace(".", "", substr($img_name, 0, $lastDot)) . substr($img_name, $lastDot);
+                                $new_filename = $md5_file.substr($img_name,strpos($img_name,'.'));
+                                $lPath =  $_SERVER['DOCUMENT_ROOT'];
+                                $full_path = $lPath.'/newWeb/resources/documents/'.$dir.'/'.$new_filename;
+                                array_push($newFile, $new_filename);
+                                array_push($fileType,$fType);
+                                move_uploaded_file($_FILES['files']['tmp_name'][$i],$full_path);
+                            }
+                            $media = array_merge($newFile,$fileType);
+                            if(empty($media)){
+                                $media = null;
+                            }else{
+                                $media = json_encode($media);
+                            } 
+                            $sql = "insert into saleproperty (pid,category,title,descr,mainPic,gallPics,beds,baths,size,price,location,city)
+                            values (:pid, :category, :title, :descr, :mainPic, :gallPics,:beds,:baths,:size,:price,:location,:city)";
+                            $params = array(":pid"=>$last_id,":category" =>$cat,":title"=>$title,":descr" =>$descr,":mainPic"=>$main_filename ,":gallPics"=>$media,
+                               ":beds"=>$beds,":baths" =>$baths,":size"=>$size,":price" =>$price,":location"=>$location,":city"=> $city  );
+                            Yii::app()->db->createCommand($sql)->execute($params);
+                            $newFile = array();
+                            $fileType = array();
+                            $transaction->commit();
+                        }catch (Exception $ex) {
+                            $transaction->rollback();
+                            echo '<pre>'; print_r($ex); exit;
+                        }
+                }else{
+                    $errores = $model->getErrors();
+                                        //$this->render('index', array('model' => $errores));
+                }
                     
                 }
 

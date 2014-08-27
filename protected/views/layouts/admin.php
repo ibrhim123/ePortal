@@ -138,6 +138,26 @@
                 <span class="title"> <?php echo $userRole; ?> Profile</span>
             </a>
             </li>
+            
+                        <li class="">
+                <a href="javascript:;">
+                    <i class="icon-search"></i>
+                    <span class="title"> Property for Sale</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu" style="display: none;">
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/Create">
+                            Post add</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/myPosts">
+                                View My postings</a>
+                        </li>
+
+                </ul>
+            </li>
+            
           <?php  }elseif ($userRole == 'Agent') { ?>
              <li class="start">
                 <a href="<?php echo Yii::app()->homeUrl;?>">
@@ -152,21 +172,23 @@
                 <span class="title"> <?php echo $userRole; ?> Profile</span>
             </a>
             </li>
-             <li class="">
+            
+            <li class="">
                 <a href="javascript:;">
                     <i class="icon-search"></i>
-                    <span class="title"> Sale your property</span>
+                    <span class="title"> Property for Sale</span>
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu" style="display: none;">
                         <li>
-                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Users/AdminGen">
-                                View All Gerenal Users</a>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/Create">
+                            Post add</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/myPosts">
+                                View My postings</a>
                         </li>
 
-                        <li>
-                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Users/AdminAgent">
-                            View All Agents</a></li>
                 </ul>
             </li>
             <?php }else { ?>

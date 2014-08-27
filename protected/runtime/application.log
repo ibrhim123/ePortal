@@ -2054,3 +2054,49 @@ Stack trace:
 REQUEST_URI=/newWeb/index.php/Saleproperty/assets/img/gallery/image5.jpg
 HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
 ---
+2014/08/27 19:21:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/08/27 19:29:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/favicon.ico
+---
+2014/08/27 19:56:27 [error] [php] Undefined variable: main_filename (D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php:132)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(133): SalepropertyController->runAction()
+#1 D:\php\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 D:\php\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): SalepropertyController->filterAccessControl()
+#4 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\htdocs\yii\framework\web\CController.php(265): SalepropertyController->runActionWithFilters()
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SalepropertyController->run()
+#8 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/index.php/Saleproperty/Create
+in D:\php\htdocs\newWeb\protected\controllers\SalepropertyController.php (132)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/27 20:05:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/favicon.ico
+---

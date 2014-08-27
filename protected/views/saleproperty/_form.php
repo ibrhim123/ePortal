@@ -44,13 +44,10 @@
                             </ul>
                             <div class="tab-content">
                                 <div class="tab-pane active" id="portlet_tab1">
+                                    
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'saleproperty-form',
-	// Please note: When you enable ajax validation, make sure the corresponding
-	// controller action is handling ajax validation correctly.
-	// There is a call to performAjaxValidation() commented in generated controller code.
-	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>true,
         'enableClientValidation'=> true,
         'clientOptions' => array(
@@ -59,7 +56,7 @@
                 'validateOnType'=>false,
         ),
         'htmlOptions'=>array('enctype'=>'multipart/form-data'),
-)); ?>
+        )); ?>
 
 	<?php echo $form->errorSummary($model); ?>
                                     

@@ -1,41 +1,24 @@
-<div class="page-content">
-    <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
-    <!-- BEGIN PAGE CONTAINER-->
-    <div class="container-fluid">
-        <!-- BEGIN PAGE HEADER-->
-        <div class="row-fluid">
-            <div class="span12">
-
-                <h3 class="page-title">
-                    Administrate Property Posts For Sale
-                 </h3>
-
-            </div>
-        </div>
-        
-        <div class="row-fluid">
 <?php
-/* @var $this SalepropertyController */
-/* @var $model Saleproperty */
+/* @var $this RentpropertyController */
+/* @var $model Rentproperty */
 
 $this->breadcrumbs=array(
-	'Saleproperties'=>array('index'),
+	'Rentproperties'=>array('index'),
 	'Manage',
 );
 
 $this->menu=array(
-	array('label'=>'List Saleproperty', 'url'=>array('index')),
-	array('label'=>'Create Saleproperty', 'url'=>array('create')),
+	array('label'=>'List Rentproperty', 'url'=>array('index')),
+	array('label'=>'Create Rentproperty', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
-alert('hi');
 	$('.search-form').toggle();
 	return false;
 });
 $('.search-form form').submit(function(){
-	$('#saleproperty-grid').yiiGridView('update', {
+	$('#rentproperty-grid').yiiGridView('update', {
 		data: $(this).serialize()
 	});
 	return false;
@@ -43,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Saleproperties</h1>
+<h1>Manage Rentproperties</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -58,25 +41,30 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'saleproperty-grid',
+	'id'=>'rentproperty-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		
+		'rpid',
+		'pid',
 		'category',
 		'title',
 		'descr',
-		'beds',
+		'mainPic',
+		/*
+		'gallPics',
 		'baths',
-		'size',
-		'price',
+		'beds',
 		'location',
 		'city',
+		'size',
+		'price',
+		'rentPolicy',
+		'amenty',
+		'furnished',
+		*/
 		array(
 			'class'=>'CButtonColumn',
 		),
 	),
 )); ?>
-        </div>
-    </div>
-</div>

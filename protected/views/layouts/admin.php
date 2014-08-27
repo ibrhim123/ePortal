@@ -139,10 +139,29 @@
             </a>
             </li>
             
-                        <li class="">
+            <li class="">
                 <a href="javascript:;">
                     <i class="icon-search"></i>
                     <span class="title"> Property for Sale</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu" style="display: none;">
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/Create">
+                            Post add</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/myPosts">
+                                View My postings</a>
+                        </li>
+
+                </ul>
+            </li>
+            
+             <li class="">
+                <a href="javascript:;">
+                    <i class="icon-search"></i>
+                    <span class="title"> Property for Rent</span>
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu" style="display: none;">
@@ -191,6 +210,24 @@
 
                 </ul>
             </li>
+            <li class="">
+                <a href="javascript:;">
+                    <i class="icon-search"></i>
+                    <span class="title"> Property for Rent</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu" style="display: none;">
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/Create">
+                            Post add</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/myPosts">
+                                View My postings</a>
+                        </li>
+
+                </ul>
+            </li>
             <?php }else { ?>
              <li class="start">
                 <a href="<?php echo Yii::app()->homeUrl;?>">
@@ -209,6 +246,24 @@
                 <a href="javascript:;">
                     <i class="icon-search"></i>
                     <span class="title"> Property for Sale</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu" style="display: none;">
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/Create">
+                            Post add</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/myPosts">
+                                View My postings</a>
+                        </li>
+
+                </ul>
+            </li>
+            <li class="">
+                <a href="javascript:;">
+                    <i class="icon-search"></i>
+                    <span class="title"> Property for Rent</span>
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu" style="display: none;">

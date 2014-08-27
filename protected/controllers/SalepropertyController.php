@@ -32,7 +32,7 @@ class SalepropertyController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','myPosts'),
+				'actions'=>array('create','update','myPosts','admin'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -205,6 +205,7 @@ class SalepropertyController extends Controller
         
         public function actionmyPosts()
 	{
+            $cs=Yii::app()->clientScript->registerCSSFile('/newWeb/public/css/pages/search.css');
                 Yii::app()->clientScript->registerCoreScript('jquery');
 		$me = Yii::app()->user->id;
                 $sql = "SELECT a.*,b.*  FROM property a JOIN saleproperty b on a.pid = b.pid WHERE a.status = 1 AND a.postedBy= {$me} ORDER BY a.pid DESC ";

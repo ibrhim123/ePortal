@@ -30,7 +30,7 @@
                             <i class="icon-reorder"></i>
                             <span class="hidden-480"> <?php $actionId  = Yii::app()->controller->action->id;
                                 if($actionId == 'update'){
-                                    echo 'Update notice';
+                                    echo 'Update Add';
                                 }
                                 else{
                                     echo 'Post Add';
@@ -55,7 +55,7 @@
                 'validateOnChange'=>true,
                 'validateOnType'=>false,
         ),
-        'htmlOptions'=>array('enctype'=>'multipart/form-data'),
+        'htmlOptions'=>array('class'=>'form-horizontal','enctype'=>'multipart/form-data'),
         )); ?>
 
 	<?php echo $form->errorSummary($model); ?>

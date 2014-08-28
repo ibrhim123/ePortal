@@ -39,8 +39,8 @@ class Rentproperty extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('pid, category, title, descr, mainPic, gallPics, baths, beds, location, city, size, price, rentPolicy, amenty, furnished', 'required'),
-			array('pid, category, title, mainPic', 'numerical', 'integerOnly'=>true),
+			array('category, title, descr, baths, beds, location, city, size, price, rentPolicy', 'required'),
+			array('pid', 'numerical', 'integerOnly'=>true),
 			array('baths', 'length', 'max'=>190),
 			array('beds', 'length', 'max'=>200),
 			array('city, price', 'length', 'max'=>250),
@@ -48,7 +48,7 @@ class Rentproperty extends CActiveRecord
 			array('furnished', 'length', 'max'=>8),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('rpid, pid, category, title, descr, mainPic, gallPics, baths, beds, location, city, size, price, rentPolicy, amenty, furnished', 'safe', 'on'=>'search'),
+			array('category, title, descr, baths, beds, location, city, size, price, rentPolicy, amenty, furnished', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -73,9 +73,9 @@ class Rentproperty extends CActiveRecord
 			'pid' => 'Pid',
 			'category' => 'Category',
 			'title' => 'Title',
-			'descr' => 'Descr',
-			'mainPic' => 'Main Pic',
-			'gallPics' => 'Gall Pics',
+			'descr' => 'Description',
+			'mainPic' => 'Main Picture',
+			'gallPics' => 'Gall Pictures',
 			'baths' => 'Baths',
 			'beds' => 'Beds',
 			'location' => 'Location',
@@ -83,7 +83,7 @@ class Rentproperty extends CActiveRecord
 			'size' => 'Size',
 			'price' => 'Price',
 			'rentPolicy' => 'Rent Policy',
-			'amenty' => 'Amenty',
+			'amenty' => 'Amenities',
 			'furnished' => 'Furnished',
 		);
 	}
@@ -111,8 +111,6 @@ class Rentproperty extends CActiveRecord
 		$criteria->compare('category',$this->category);
 		$criteria->compare('title',$this->title);
 		$criteria->compare('descr',$this->descr,true);
-		$criteria->compare('mainPic',$this->mainPic);
-		$criteria->compare('gallPics',$this->gallPics,true);
 		$criteria->compare('baths',$this->baths,true);
 		$criteria->compare('beds',$this->beds,true);
 		$criteria->compare('location',$this->location,true);

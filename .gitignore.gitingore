@@ -1,5 +1,4 @@
-resources/*
-
+resources/documents/*
 assets/*
 !assets/.gitignore
 protected/runtime/*

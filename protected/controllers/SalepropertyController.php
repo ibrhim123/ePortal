@@ -69,7 +69,7 @@ class SalepropertyController extends Controller
 
 		if(isset($_POST['Saleproperty']))
 		{
-                    $model->attributes=$_POST['Saleproperty'];
+                        $model->attributes=$_POST['Saleproperty'];
                         $valid=$model->validate();            
                         if($valid){
                         $newFile = array();
@@ -138,6 +138,8 @@ class SalepropertyController extends Controller
                             $newFile = array();
                             $fileType = array();
                             $transaction->commit();
+                            Yii::app()->user->setFlash('success', "Your Add has been Posted!");
+                            $this->redirect('myPosts');
                         }catch (Exception $ex) {
                             $transaction->rollback();
                             echo '<pre>'; print_r($ex); exit;
@@ -205,8 +207,7 @@ class SalepropertyController extends Controller
         
         public function actionmyPosts()
 	{
-            $cs=Yii::app()->clientScript->registerCSSFile('/newWeb/public/css/pages/search.css');
-                Yii::app()->clientScript->registerCoreScript('jquery');
+                $cs=Yii::app()->clientScript->registerCSSFile('/newWeb/public/css/pages/search.css');
 		$me = Yii::app()->user->id;
                 $sql = "SELECT a.*,b.*  FROM property a JOIN saleproperty b on a.pid = b.pid WHERE a.status = 1 AND a.postedBy= {$me} ORDER BY a.pid DESC ";
                 $command=Yii::app()->db->createCommand($sql);

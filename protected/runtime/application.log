@@ -2448,3 +2448,2453 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/newWeb/index.php/users/favicon.ico
 ---
+2014/08/27 23:26:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Rentproperty/favicon.ico
+---
+2014/08/27 23:31:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/index.php/favicon.ico
+---
+2014/08/27 23:34:42 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (72)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/27 23:54:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Rentproperty/favicon.ico
+---
+2014/08/27 23:54:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Rentproperty/favicon.ico
+---
+2014/08/28 01:10:36 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (72)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 01:23:46 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (72)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 01:29:13 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (72)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 01:45:02 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (75)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 02:05:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/08/28 02:05:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Rentproperty/favicon.ico
+---
+2014/08/28 02:06:40 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (75)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 02:08:49 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (75)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 02:13:10 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (75)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 02:16:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/favicon.ico
+---
+2014/08/28 02:18:38 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (75)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 02:19:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/08/28 02:19:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/08/28 02:19:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Rentproperty/favicon.ico
+---
+2014/08/28 02:19:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Rentproperty/favicon.ico
+---
+2014/08/28 02:22:38 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (75)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 02:26:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/favicon.ico
+---
+2014/08/28 02:27:38 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (75)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 02:28:34 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (75)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 18:59:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/favicon.ico
+---
+2014/08/28 19:00:02 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'property.page' doesn't exist. The SQL statement executed was: SELECT  `page_name` FROM page .
+in D:\php\htdocs\newWeb\protected\controllers\SeoController.php (40)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 19:00:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'property.page' doesn't exist. The SQL statement executed was: SELECT  `page_name` FROM page ' in D:\php\htdocs\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\php\htdocs\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\php\htdocs\newWeb\protected\controllers\SeoController.php(40): CDbCommand->queryAll()
+#2 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): SeoController->actionIndex()
+#3 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\php\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\php\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('SEO')
+#8 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#10 {main}
+REQUEST_URI=/newWeb/index.php/SEO
+---
+2014/08/28 19:01:43 [error] [php] Trying to get property of non-object (D:\php\htdocs\newWeb\protected\views\seo\index.php:18)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(869): SeoController->renderFile()
+#1 D:\php\htdocs\yii\framework\web\CController.php(782): SeoController->renderPartial()
+#2 D:\php\htdocs\newWeb\protected\controllers\SeoController.php(41): SeoController->render()
+#3 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): SeoController->actionIndex()
+#4 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\php\htdocs\yii\framework\web\CController.php(286): SeoController->runAction()
+#6 D:\php\htdocs\yii\framework\web\CController.php(265): SeoController->runActionWithFilters()
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SeoController->run()
+#8 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/index.php/SEO
+in D:\php\htdocs\newWeb\protected\views\seo\index.php (18)
+in D:\php\htdocs\newWeb\protected\controllers\SeoController.php (41)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 19:02:41 [error] [php] Trying to get property of non-object (D:\php\htdocs\newWeb\protected\views\seo\index.php:18)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(869): SeoController->renderFile()
+#1 D:\php\htdocs\yii\framework\web\CController.php(782): SeoController->renderPartial()
+#2 D:\php\htdocs\newWeb\protected\controllers\SeoController.php(41): SeoController->render()
+#3 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): SeoController->actionIndex()
+#4 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\php\htdocs\yii\framework\web\CController.php(286): SeoController->runAction()
+#6 D:\php\htdocs\yii\framework\web\CController.php(265): SeoController->runActionWithFilters()
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SeoController->run()
+#8 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/index.php/SEO
+in D:\php\htdocs\newWeb\protected\views\seo\index.php (18)
+in D:\php\htdocs\newWeb\protected\controllers\SeoController.php (41)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 19:05:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/index.php/favicon.ico
+---
+2014/08/28 19:16:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/08/28 19:16:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/08/28 19:16:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/index.php/favicon.ico
+---
+2014/08/28 19:16:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/index.php/favicon.ico
+---
+2014/08/28 19:16:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/favicon.ico
+---
+2014/08/28 19:16:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/favicon.ico
+---
+2014/08/28 19:33:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Seo/favicon.ico')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Seo/favicon.ico
+---
+2014/08/28 19:52:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/08/28 19:55:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Seo/favicon.ico')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Seo/favicon.ico
+---
+2014/08/28 19:55:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Seo/favicon.ico')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Seo/favicon.ico
+---
+2014/08/28 20:00:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/favicon.ico
+---
+2014/08/28 20:00:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/favicon.ico
+---
+2014/08/28 20:01:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/saleproperty/favicon.ico
+---
+2014/08/28 20:01:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/saleproperty/favicon.ico
+---
+2014/08/28 20:05:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Rentproperty/favicon.ico
+---
+2014/08/28 20:05:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Rentproperty/favicon.ico
+---
+2014/08/28 20:05:44 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (75)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 20:11:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/favicon.ico
+---
+2014/08/28 20:12:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Rentproperty/favicon.ico
+---
+2014/08/28 20:12:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Rentproperty/favicon.ico
+---
+2014/08/28 20:26:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in D:\php\htdocs\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 D:\php\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\php\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 D:\php\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('myPosts')
+#8 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/my...')
+#9 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#11 {main}
+REQUEST_URI=/newWeb/index.php/Rentproperty/myPosts
+HTTP_REFERER=http://localhost/newWeb/index.php/Saleproperty/myPosts
+---
+2014/08/28 21:36:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('about')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('about')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/about')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Site/about
+---
+2014/08/28 21:37:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in D:\php\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 D:\php\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 D:\php\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 D:\php\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 D:\php\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/page/about')
+#7 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#9 {main}
+REQUEST_URI=/newWeb/index.php/Site/page/about
+---
+2014/08/28 21:38:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('about')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('about')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/site/about
+---
+2014/08/28 21:44:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/site/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/site/page?view=about
+---
+2014/08/28 21:44:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/site/img/photos/4834790926_0228ed6cde_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/site/page?view=about
+---
+2014/08/28 21:44:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/site/img/photos/4834812234_3379989227_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/site/page?view=about
+---
+2014/08/28 21:44:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/site/img/photos/4834826842_cdeb5bc8be_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/site/page?view=about
+---
+2014/08/28 21:44:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/site/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/site/page?view=about
+---
+2014/08/28 21:44:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/site/img/photos/4834790926_0228ed6cde_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/site/page?view=about
+---
+2014/08/28 21:44:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/site/img/photos/4834812234_3379989227_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/site/page?view=about
+---
+2014/08/28 21:44:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/site/img/photos/4834826842_cdeb5bc8be_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/site/page?view=about
+---
+2014/08/28 21:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Site/img/photos/4834826842_cdeb5bc8be_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Site/about
+---
+2014/08/28 21:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Site/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Site/about
+---
+2014/08/28 21:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Site/img/photos/4834790926_0228ed6cde_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Site/about
+---
+2014/08/28 21:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Site/img/photos/4834812234_3379989227_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Site/about
+---
+2014/08/28 21:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Site/img/photos/4834790926_0228ed6cde_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Site/about
+---
+2014/08/28 21:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Site/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Site/about
+---
+2014/08/28 21:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Site/img/photos/4834812234_3379989227_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Site/about
+---
+2014/08/28 21:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/img/photos...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Site/img/photos/4834826842_cdeb5bc8be_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Site/about
+---
+2014/08/28 22:14:41 [error] [php] Undefined variable: model (D:\php\htdocs\newWeb\protected\views\layouts\main.php:91)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 D:\php\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 D:\php\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 D:\php\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 D:\php\htdocs\newWeb\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 D:\php\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 D:\php\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 D:\php\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 D:\php\htdocs\newWeb\protected\controllers\SiteController.php(32): SiteController->render()
+#10 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\php\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 D:\php\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/
+in D:\php\htdocs\newWeb\protected\views\layouts\main.php (91)
+in D:\php\htdocs\newWeb\protected\views\layouts\column1.php (6)
+in D:\php\htdocs\newWeb\protected\controllers\SiteController.php (32)
+2014/08/28 22:16:45 [error] [php] Undefined variable: model (D:\php\htdocs\newWeb\protected\views\layouts\main.php:91)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 D:\php\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 D:\php\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 D:\php\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 D:\php\htdocs\newWeb\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 D:\php\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 D:\php\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 D:\php\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 D:\php\htdocs\newWeb\protected\controllers\SiteController.php(32): SiteController->render()
+#10 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\php\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 D:\php\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/
+in D:\php\htdocs\newWeb\protected\views\layouts\main.php (91)
+in D:\php\htdocs\newWeb\protected\views\layouts\column1.php (6)
+in D:\php\htdocs\newWeb\protected\controllers\SiteController.php (32)
+2014/08/28 22:16:48 [error] [php] Undefined variable: model (D:\php\htdocs\newWeb\protected\views\layouts\main.php:91)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 D:\php\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 D:\php\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 D:\php\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 D:\php\htdocs\newWeb\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 D:\php\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 D:\php\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 D:\php\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 D:\php\htdocs\newWeb\protected\controllers\SiteController.php(32): SiteController->render()
+#10 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\php\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 D:\php\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/
+in D:\php\htdocs\newWeb\protected\views\layouts\main.php (91)
+in D:\php\htdocs\newWeb\protected\views\layouts\column1.php (6)
+in D:\php\htdocs\newWeb\protected\controllers\SiteController.php (32)
+2014/08/28 22:22:24 [error] [php] Undefined variable: model (D:\php\htdocs\newWeb\protected\views\layouts\main.php:91)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 D:\php\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 D:\php\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 D:\php\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 D:\php\htdocs\newWeb\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 D:\php\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 D:\php\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 D:\php\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 D:\php\htdocs\newWeb\protected\controllers\SiteController.php(32): SiteController->render()
+#10 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\php\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 D:\php\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/
+in D:\php\htdocs\newWeb\protected\views\layouts\main.php (91)
+in D:\php\htdocs\newWeb\protected\views\layouts\column1.php (6)
+in D:\php\htdocs\newWeb\protected\controllers\SiteController.php (32)
+2014/08/28 22:23:11 [error] [php] Undefined variable: newUserModel (D:\php\htdocs\newWeb\protected\views\layouts\main.php:80)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 D:\php\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 D:\php\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 D:\php\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 D:\php\htdocs\newWeb\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 D:\php\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 D:\php\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 D:\php\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 D:\php\htdocs\newWeb\protected\controllers\SiteController.php(32): SiteController->render()
+#10 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\php\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 D:\php\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/
+in D:\php\htdocs\newWeb\protected\views\layouts\main.php (80)
+in D:\php\htdocs\newWeb\protected\views\layouts\column1.php (6)
+in D:\php\htdocs\newWeb\protected\controllers\SiteController.php (32)
+2014/08/28 22:26:40 [error] [php] Undefined variable: newUserModel (D:\php\htdocs\newWeb\protected\views\layouts\main.php:80)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 D:\php\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 D:\php\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 D:\php\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 D:\php\htdocs\newWeb\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 D:\php\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 D:\php\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 D:\php\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 D:\php\htdocs\newWeb\protected\controllers\SiteController.php(46): SiteController->render()
+#10 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\php\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 D:\php\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/
+in D:\php\htdocs\newWeb\protected\views\layouts\main.php (80)
+in D:\php\htdocs\newWeb\protected\views\layouts\column1.php (6)
+in D:\php\htdocs\newWeb\protected\controllers\SiteController.php (46)
+2014/08/28 22:27:19 [error] [php] Undefined variable: loginFormModel (D:\php\htdocs\newWeb\protected\views\layouts\main.php:82)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 D:\php\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 D:\php\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 D:\php\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 D:\php\htdocs\newWeb\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 D:\php\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 D:\php\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 D:\php\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 D:\php\htdocs\newWeb\protected\controllers\SiteController.php(46): SiteController->render()
+#10 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\php\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 D:\php\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/
+in D:\php\htdocs\newWeb\protected\views\layouts\main.php (82)
+in D:\php\htdocs\newWeb\protected\views\layouts\column1.php (6)
+in D:\php\htdocs\newWeb\protected\controllers\SiteController.php (46)
+2014/08/28 22:29:40 [error] [php] Undefined variable: loginFormModel (D:\php\htdocs\newWeb\protected\views\layouts\main.php:82)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#1 D:\php\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 D:\php\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 D:\php\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 D:\php\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#5 D:\php\htdocs\newWeb\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 D:\php\htdocs\yii\framework\web\CBaseController.php(126): require()
+#7 D:\php\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 D:\php\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#9 D:\php\htdocs\newWeb\protected\controllers\SiteController.php(46): SiteController->render()
+#10 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 D:\php\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#13 D:\php\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#15 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/
+in D:\php\htdocs\newWeb\protected\views\layouts\main.php (82)
+in D:\php\htdocs\newWeb\protected\views\layouts\column1.php (6)
+in D:\php\htdocs\newWeb\protected\controllers\SiteController.php (46)
+2014/08/28 23:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:05:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:05:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:05:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:05:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:07:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:07:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:07:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:07:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:07:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:09:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:09:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:09:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:09:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:13:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:13:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:30:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:30:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:30:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:30:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:30:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:30:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:30:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:30:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:32:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:32:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:32:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:32:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:32:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:32:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:32:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:32:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:40:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'order clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE userType = :id ORDER BY id DESC LIMIT 10.
+in D:\php\htdocs\newWeb\protected\controllers\UsersController.php (178)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/28 23:40:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'order clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE userType = :id ORDER BY id DESC LIMIT 10' in D:\php\htdocs\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\php\htdocs\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\php\htdocs\yii\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 D:\php\htdocs\yii\framework\db\ar\CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 D:\php\htdocs\newWeb\protected\controllers\UsersController.php(178): CActiveRecord->findAll(Object(CDbCriteria))
+#4 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionAgents()
+#5 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 D:\php\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 D:\php\htdocs\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#12 D:\php\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('Agents')
+#14 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/Agents')
+#15 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#17 {main}
+REQUEST_URI=/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:41:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:41:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:41:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:41:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:41:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:41:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:41:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:41:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:42:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:42:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:42:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:42:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:42:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:43:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:43:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:43:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:43:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:43:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:43:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:43:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:43:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:44:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:44:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:44:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:44:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/Agents
+---
+2014/08/28 23:45:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:45:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:45:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:45:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:45:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:45:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:45:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:45:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:45:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:45:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:45:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:45:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:48:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:48:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:48:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:48:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:48:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:48:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:48:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:48:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:48:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:48:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:48:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:48:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:48:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:48:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:48:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:48:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:50:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:50:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:50:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:50:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:50:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:50:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:50:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:50:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents?page=2
+---
+2014/08/28 23:50:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:50:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:50:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:50:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:50:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:50:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:50:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:50:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:54:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:54:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:54:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:54:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:54:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:54:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:54:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:54:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:56:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:56:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:56:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:56:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:56:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:56:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4947806065_f932310392_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:56:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834201025_e7f66118eb_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/28 23:56:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('users/img/photo...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/users/img/photos/4834197589_84d75a42bd_b.jpg
+HTTP_REFERER=http://localhost/newWeb/index.php/users/Agents
+---
+2014/08/29 00:21:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "User/myProfile".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('User/myProfile')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/index.php/User/myProfile
+HTTP_REFERER=http://localhost/newWeb/index.php
+---

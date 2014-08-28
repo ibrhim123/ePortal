@@ -7,9 +7,20 @@ $this->pageTitle=Yii::app()->name . ' - Contact Us';
 $this->breadcrumbs=array(
 	'Contact',
 );
-?>
+?><section id='page-title' class='small-height'>
+    <section class='container'>
+        <section class='row'>
+            <div class='span8'>
+                <h1>Login</h1>
+                <p>In sit amet arcu quis dolor adipiscing laoreet sed sit amet arcu. Proin non adipiscing felis.</p>
+            </div>
+        </section>
+    </section>
+</section>
 
-<h1>Contact Us</h1>
+<section class='full-width'>
+    <section class='container'>
+
 
 <?php if(Yii::app()->user->hasFlash('contact')): ?>
 
@@ -81,5 +92,6 @@ If you have business inquiries or other questions, please fill out the following
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
-
+</section>
+</section>
 <?php endif; ?>

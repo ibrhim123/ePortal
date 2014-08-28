@@ -13,15 +13,29 @@
             </div>
         </div>
         
+        <?php
+            Yii::app()->clientScript->registerScript(
+                'myHideEffect',
+                '$(".info").animate({opacity: 1.0}, 3000).fadeOut("slow");',
+                CClientScript::POS_READY
+            );
+        ?>
+        <!-- BEGIN PAGE CONTENT-->
+        <?php if(Yii::app()->user->hasFlash('success')):?>
+            <div class="alert alert-success info">
+                <button data-dismiss="alert" class="close"></button> <?php echo Yii::app()->user->getFlash('success'); ?>
+            </div>
+        <?php endif; ?>
+        
         <div class="row-fluid">
             
             <div class="span12">
                
                 <?php if(!empty($data)){ $i = 0;
                     foreach($data as $mypost){
-                     
+                     $i++;
                             ?>                      
-                            <div class="span4 booking-blocks">
+                <div class="span4 booking-blocks" <?php if($i == '4'){?> style="margin-left: 0px !important;" <?php } ?>>
                             <div class="pull-left booking-img">
                                  <?php if($mypost['gallPics'] != NULL){ ?>
 
@@ -58,7 +72,7 @@
                             <div style="overflow:hidden;">
                                     
                                     <a href="#"><h4><?php echo $mypost['title'] ?></h4></a>
-                                    <p><?php  echo substr($mypost['descr'], 0, 300)."..";?><a href="#">read more</a></p>
+                                    <p><?php  $des = CHtml::decode($mypost['descr']); echo substr($des, 0, 300)."..";?></p>
                             </div>
                        
                             </div>

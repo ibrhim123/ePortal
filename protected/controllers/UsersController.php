@@ -6,7 +6,7 @@ class UsersController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='//layouts/main';
         
         public function actions()
 	{
@@ -57,7 +57,7 @@ class UsersController extends Controller
                 array('allow', 'actions'=>$arr, 'users'=>array('@'),
                 ),
                 array('allow',  // allow all users to perform 'index' and 'view' actions
-                'actions'=>array('create','captcha'),
+                'actions'=>array('create','captcha','Agents'),
                 'users'=>array('*'),
                 ),
                 array('deny',  // deny all users
@@ -159,6 +159,35 @@ class UsersController extends Controller
 			'dataProvider'=>$dataProvider,
 		));
 	}
+        
+        public function actionAgents()
+	{
+            
+            $criteria = new CDbCriteria();
+            $criteria->condition = 'userType = :id';
+            //$criteria->order = 'id DESC';
+            $criteria->params = array (':id'=> 'Agent' );
+       
+            $item_count = Users::model()->count($criteria);
+                
+            $pages = new CPagination($item_count);
+            $pages->setPageSize(Yii::app()->params['listPerPage']);
+            $pages->applyLimit($criteria);  // the trick is here!
+        
+            $this->render('agent',array(
+                    'model'=> Users::model()->findAll($criteria), // must be the same as $item_count
+                   'item_count'=>$item_count,
+                   'page_size'=>Yii::app()->params['listPerPage'],
+                   'items_count'=>$item_count,
+                   'pages'=>$pages,
+           ));
+         
+		//$sql = "SELECT * FROM users WHERE userType = 'Agent' ";
+                //$command=Yii::app()->db->createCommand($sql);
+                //$result= $command->queryAll();
+                //$this->render('agent',array('data'=>$result));
+	}
+        
         /**
          * CreatedOn:08-21-2014
          * CreatedBy:Muhammad Ibrahim
@@ -166,7 +195,7 @@ class UsersController extends Controller
         public function actionProfile(){
             //$baseUrl = Yii::app()->request->baseUrl;
             //Yii::app()->clientScript->registerScriptFile($baseUrl.'/public/plugins/jquery-1.10.1.min');
-            Yii::app()->clientScript->registerCoreScript('jquery'); 
+            //Yii::app()->clientScript->registerCoreScript('jquery'); 
             $this->layout = 'admin';
             $this->render('admin/index');           
             //$this->renderFile('admin/index.php');

@@ -8,6 +8,19 @@ $this->breadcrumbs=array(
 	'Login',
 );
 ?>
+<section id='page-title' class='small-height'>
+    <section class='container'>
+        <section class='row'>
+            <div class='span8'>
+                <h1>Login</h1>
+                <p>In sit amet arcu quis dolor adipiscing laoreet sed sit amet arcu. Proin non adipiscing felis.</p>
+            </div>
+        </section>
+    </section>
+</section>
+
+<section class='full-width'>
+    <section class='container'>
 <?php if(Yii::app()->user->hasFlash('success')):?>
     <div class="alert alert-success info">
         <button data-dismiss="alert" class="close"></button> <?php echo Yii::app()->user->getFlash('success'); ?>
@@ -66,3 +79,5 @@ $this->breadcrumbs=array(
 
 <?php $this->endWidget(); ?>
 </div><!-- form -->
+    </section>
+</section>

@@ -40,7 +40,7 @@
 
     <!-- BEGIN LOGO -->
     <a class="brand" href="#">
-        <img src="<?php //echo Yii::app()->request->baseUrl;?>" alt="logo Image here">
+        <img src="<?php echo Yii::app()->request->baseUrl;?>/logo-watermark.png" alt="logo Image here">
     </a>
     <!-- END LOGO -->
     
@@ -62,10 +62,7 @@
                             foreach($pic as $proPic => $val){
                                 $proPic = $val['profilePic'];
                             }
-                            //exit;
-                            //$id = Yii::app()->
-                            //$user=User::model()->find('LOWER(username)=?',array($username));
-                            //Users::model()->findAll(array("condition"=>"role = 'Driver' ","order"=>"uid")), 'uid', 'name'?>
+                            ?>
                             <img alt="DP" width="29" height="29" src="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($proPic)?>" />
 						<span class="username"><?php echo Yii::app()->user->name;?></span>
 						<i class="icon-angle-down"></i>
@@ -138,7 +135,12 @@
                 <span class="title"> <?php echo $userRole; ?> Profile</span>
             </a>
             </li>
-            
+             <li>
+            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/SEO">
+                <i class="icon-user"></i>
+                <span class="title">  Manage SEO</span>
+            </a>
+            </li>
             <li class="">
                 <a href="javascript:;">
                     <i class="icon-search"></i>
@@ -154,6 +156,10 @@
                             <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/myPosts">
                                 View My postings</a>
                         </li>
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/admin">
+                                View All postings</a>
+                        </li>
 
                 </ul>
             </li>
@@ -166,12 +172,16 @@
                 </a>
                 <ul class="sub-menu" style="display: none;">
                         <li>
-                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/Create">
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Rentproperty/Create">
                             Post add</a>
                         </li>
                         <li>
-                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/myPosts">
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Rentproperty/myPosts">
                                 View My postings</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/admin">
+                                View All postings</a>
                         </li>
 
                 </ul>
@@ -218,11 +228,11 @@
                 </a>
                 <ul class="sub-menu" style="display: none;">
                         <li>
-                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/Create">
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Rentproperty/Create">
                             Post add</a>
                         </li>
                         <li>
-                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/myPosts">
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Rentproperty/myPosts">
                                 View My postings</a>
                         </li>
 
@@ -268,11 +278,11 @@
                 </a>
                 <ul class="sub-menu" style="display: none;">
                         <li>
-                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/Create">
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Rentproperty/Create">
                             Post add</a>
                         </li>
                         <li>
-                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Saleproperty/myPosts">
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/index.php/Rentproperty/myPosts">
                                 View My postings</a>
                         </li>
 

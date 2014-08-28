@@ -32,7 +32,7 @@ class SalepropertyController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','myPosts','admin'),
+				'actions'=>array('create','update','myPosts','admin','feature'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -193,7 +193,18 @@ class SalepropertyController extends Controller
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
+        
+        public function actionfeature($id)
+	{
+                $sql = "UPDATE property SET isFeat ='1' WHERE pid = {$id} AND status = '1' "; 
+                $connection=Yii::app()->db; 
+                $command=$connection->createCommand($sql)->execute();
 
+		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+		if(!isset($_GET['ajax']))
+			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+	}
+        
 	/**
 	 * Lists all models.
 	 */

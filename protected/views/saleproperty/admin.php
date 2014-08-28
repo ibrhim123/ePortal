@@ -15,22 +15,11 @@
         
         <div class="row-fluid">
 <?php
-/* @var $this SalepropertyController */
-/* @var $model Saleproperty */
 
-$this->breadcrumbs=array(
-	'Saleproperties'=>array('index'),
-	'Manage',
-);
-
-$this->menu=array(
-	array('label'=>'List Saleproperty', 'url'=>array('index')),
-	array('label'=>'Create Saleproperty', 'url'=>array('create')),
-);
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
-        alert('hi');
+        //alert('hi');
 	$('.search-form').toggle();
 	return false;
 });
@@ -43,7 +32,6 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Saleproperties</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -64,7 +52,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'columns'=>array(
 		'category',
 		'title',
-		'descr',
+		
 		'beds',
 		'baths',
 		'size',
@@ -73,6 +61,22 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'city',
 		array(
 			'class'=>'CButtonColumn',
+                    'template'=>'{email}{down}{delete}',
+    'buttons'=>array
+    (
+        'email' => array
+        (
+            'label'=>'Mark Feature',
+            'imageUrl'=>Yii::app()->request->baseUrl.'/images/pubicon.png',
+            'url'=>'Yii::app()->createUrl("Saleproperty/feature", array("id"=>$data->pid))',
+        ),
+        'down' => array
+        (
+            'label'=>'[-]',
+            'url'=>'"#"',
+            
+        ),
+    ),
 		),
 	),
 )); ?>

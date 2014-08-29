@@ -29,7 +29,16 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+                $sql = "SELECT a.*,b.*  FROM property a JOIN saleproperty b on a.pid = b.pid 
+                        WHERE a.status = 1 AND a.isFeat= 1 ORDER BY a.postedOn DESC LIMIT 4";
+                $command=Yii::app()->db->createCommand($sql);
+                $result['sale']= $command->queryAll();
+                                $sql = "SELECT a.*,b.*  FROM property a JOIN rentproperty b on a.pid = b.pid 
+                        WHERE a.status = 1 AND a.isFeat= 1 ORDER BY a.pid DESC LIMIT 4";
+                $command=Yii::app()->db->createCommand($sql);
+                $result['rent']= $command->queryAll();
+                                
+		$this->render('index',array('data'=>$result));
 	}
         
         public function actionAbout()

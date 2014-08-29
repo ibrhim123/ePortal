@@ -142,7 +142,9 @@
 	<div class="control-group">
              <label class="control-label"><?php echo $form->labelEx($model,'location'); ?></label>
 		<div class="controls">
-                    <?php echo $form->textField($model,'location',array('class'=>'m-wrap large','size'=>60,'maxlength'=>256)); ?>
+                    
+                    <?php 
+                    echo $form->textField($model,'location',array('class'=>'m-wrap large','size'=>60,'maxlength'=>256)); ?>
                     <span for="email" class="help-inline">  <?php echo $form->error($model,'location'); ?></span>
                 </div>    
 	</div> 

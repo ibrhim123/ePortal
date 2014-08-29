@@ -21,8 +21,12 @@ class Controller extends CController
 	 */
 	public $breadcrumbs=array();
         
+        public function checkArray($data){
+            echo '<pre>'; print_r($data); '<pre>'; exit;
+        }
+        
         public function init() {
 			Yii::app()->clientScript->registerCoreScript('jquery');
 			parent::init();
-		}   
+        }   
 }

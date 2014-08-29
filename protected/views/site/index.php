@@ -149,56 +149,24 @@ $this->pageTitle=Yii::app()->name;
                         </div>
                         <div class='featured-items-slider'>
                             <ul class='slides'>
-                                <li>
-                                    <div class='row'>
+                                 <li>
+                                     <div class="row">
+                                <?php if(!empty($data)){
+                                    foreach($data['sale'] as $pro){?>                                  
+                                
+                                    
                                         <div class='span3 featured-item-wrapper'>
                                             <div class='featured-item'>
                                                 <div class='top'>
                                                     <div class='inner-border'>
                                                         <div class='inner-padding'>
                                                             <figure>
-                                                                <img src="img/photos/4834194361_85d5c4a5e0_b.jpg" alt="" />
-                                                                <div class='banner'>For Rent</div>
-                                                                <a href="property.html" class='figure-hover'>Zoom</a>
-                                                            </figure>
-                                                            <h3><a href="property.html">1 Central Park S</a></h3>
-                                                            <p>Las Vegas, NV</p>
-                                                        </div>
-                                                    </div>
-                                                    <i class='bubble'></i>
-                                                </div>
-                                                <div class='bottom'>
-                                                    <div class='inner-border'>
-                                                        <div class='inner-padding'>
-                                                            <p>3 beds  +  1 bath  +  100 sqft</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class='star-rating'>
-                                                <button class='star blue'>1 Star</button>
-                                                <button class='star active'>2 Star</button>
-                                                <button class='star active'>3 Star</button>
-                                                <button class='star'>4 Star</button>
-                                                <button class='star'>5 Star</button>
-                                            </div>
-                                            <div class='price-wrapper'>
-                                                <div class='price'>$2,150</div>
-                                                <div class='rate'>/mo</div>
-                                            </div>
-                                        </div>
-                                        <div class='span3 featured-item-wrapper'>
-                                            <div class='featured-item'>
-                                                <div class='top'>
-                                                    <div class='inner-border'>
-                                                        <div class='inner-padding'>
-                                                            <figure>
-                                                                <img src="img/photos/4834197589_84d75a42bd_b.jpg" alt="" />
+                                                                <img src="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($pro['mainPic']);?>" alt="" />
                                                                 <div class='banner'>For Sale</div>
-                                                                <a href="property.html" class='figure-hover'>Zoom</a>
+                                                                <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>" class='figure-hover'>Zoom</a>
                                                             </figure>
-                                                            <h3><a href="property.html">555 Malcolm X Blvd</a></h3>
-                                                            <p>Los Angeles, CA</p>
+                                                            <h3><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>"><?php echo $pro['title']; ?></a></h3>
+                                                            <p><?php echo $pro['location']; ?>, <?php echo $pro['city']; ?></p>
                                                         </div>
                                                     </div>
                                                     <i class='bubble'></i>
@@ -206,173 +174,43 @@ $this->pageTitle=Yii::app()->name;
                                                 <div class='bottom'>
                                                     <div class='inner-border'>
                                                         <div class='inner-padding'>
-                                                            <p>3 beds  +  1 bath  +  100 sqft</p>
+                                                            <p><?php echo $pro['beds'];?> beds  +  <?php echo $pro['baths'];?> baths +  <?php echo $pro['size'];?> sqft</p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class='star-rating'>
-                                                <button class='star blue'>1 Star</button>
+                                                <button class='star active'>1 Star</button>
                                                 <button class='star active'>2 Star</button>
                                                 <button class='star active'>3 Star</button>
-                                                <button class='star'>4 Star</button>
+                                                <button class='star active'>4 Star</button>
                                                 <button class='star'>5 Star</button>
                                             </div>
-                                        </div>
-                                        <div class='span3 featured-item-wrapper'>
-                                            <div class='featured-item'>
-                                                <div class='top'>
-                                                    <div class='inner-border'>
-                                                        <div class='inner-padding'>
-                                                            <figure>
-                                                                <img src="img/photos/4834201025_e7f66118eb_b.jpg" alt="" />
-                                                                <div class='banner'>For Rent</div>
-                                                                <a href="property.html" class='figure-hover'>Zoom</a>
-                                                            </figure>
-                                                            <h3><a href="property.html">520 W 110th St</a></h3>
-                                                            <p>Las Vegas, NV</p>
-                                                        </div>
-                                                    </div>
-                                                    <i class='bubble'></i>
-                                                </div>
-                                                <div class='bottom'>
-                                                    <div class='inner-border'>
-                                                        <div class='inner-padding'>
-                                                            <p>4 beds  +  2 baths  +  245 sqft</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class='star-rating'>
-                                                <button class='star active'>1 Star</button>
-                                                <button class='star active'>2 Star</button>
-                                                <button class='star active'>3 Star</button>
-                                                <button class='star active'>4 Star</button>
-                                                <button class='star active'>5 Star</button>
-                                            </div>
-                                            <div class='price-wrapper'>
-                                                <div class='price'>$17,000</div>
-                                                <div class='rate'>/year</div>
-                                            </div>
-                                        </div>
-                                        <div class='span3 featured-item-wrapper'>
-                                            <div class='featured-item'>
-                                                <div class='top'>
-                                                    <div class='inner-border'>
-                                                        <div class='inner-padding'>
-                                                            <figure>
-                                                                <img src="img/photos/4834203945_3e56a09048_b.jpg" alt="" />
-                                                                <a href="property.html" class='figure-hover'>Zoom</a>
-                                                            </figure>
-                                                            <h3><a href="property.html">100 W 57th St</a></h3>
-                                                            <p>Los Angeles, CA</p>
-                                                        </div>
-                                                    </div>
-                                                    <i class='bubble'></i>
-                                                </div>
-                                                <div class='bottom'>
-                                                    <div class='inner-border'>
-                                                        <div class='inner-padding'>
-                                                            <p>2 beds  +  2 baths + 168 sqft</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class='star-rating'>
-                                                <button class='star active'>1 Star</button>
-                                                <button class='star active'>2 Star</button>
-                                                <button class='star active'>3 Star</button>
-                                                <button class='star active'>4 Star</button>
-                                                <button class='star active'>5 Star</button>
-                                            </div>
-                                            <div class='price-wrapper'>
-                                                <div class='price'>$3,600</div>
-                                                <div class='rate'>/mo</div>
-                                            </div>
-                                        </div>
+                                       
+                                       
                                     </div>
+
+                                <?php }
+                                } ?>
+                                     </div>
                                 </li>
                                 <li>
-                                    <div class='row'>
+                                <?php if(!empty($data)){
+                                    foreach($data['rent'] as $pro){?>                                  
+                                
+                                    
                                         <div class='span3 featured-item-wrapper'>
                                             <div class='featured-item'>
                                                 <div class='top'>
                                                     <div class='inner-border'>
                                                         <div class='inner-padding'>
                                                             <figure>
-                                                                <img src="img/photos/4834790926_0228ed6cde_b.jpg" alt="" />
-                                                                <div class='banner'>For Sale</div>
-                                                                <a href="property.html" class='figure-hover'>Zoom</a>
-                                                            </figure>
-                                                            <h3><a href="property.html">140 E 63rd St</a></h3>
-                                                            <p>Boston, MA</p>
-                                                        </div>
-                                                    </div>
-                                                    <i class='bubble'></i>
-                                                </div>
-                                                <div class='bottom'>
-                                                    <div class='inner-border'>
-                                                        <div class='inner-padding'>
-                                                            <p>3 beds  +  1 bath  +  100 sqft</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class='star-rating'>
-                                                <button class='star blue'>1 Star</button>
-                                                <button class='star active'>2 Star</button>
-                                                <button class='star active'>3 Star</button>
-                                                <button class='star'>4 Star</button>
-                                                <button class='star'>5 Star</button>
-                                            </div>
-                                            <div class='price-wrapper'>
-                                                <div class='price'>$2,150</div>
-                                                <div class='rate'>/mo</div>
-                                            </div>
-                                        </div>
-                                        <div class='span3 featured-item-wrapper'>
-                                            <div class='featured-item'>
-                                                <div class='top'>
-                                                    <div class='inner-border'>
-                                                        <div class='inner-padding'>
-                                                            <figure>
-                                                                <img src="img/photos/4834812234_3379989227_b.jpg" alt="" />
-                                                                <a href="property.html" class='figure-hover'>Zoom</a>
-                                                            </figure>
-                                                            <h3><a href="property.html">161 E 110th St</a></h3>
-                                                            <p>Los Angeles, CA</p>
-                                                        </div>
-                                                    </div>
-                                                    <i class='bubble'></i>
-                                                </div>
-                                                <div class='bottom'>
-                                                    <div class='inner-border'>
-                                                        <div class='inner-padding'>
-                                                            <p>3 beds  +  1 bath  +  100 sqft</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class='star-rating'>
-                                                <button class='star blue'>1 Star</button>
-                                                <button class='star active'>2 Star</button>
-                                                <button class='star active'>3 Star</button>
-                                                <button class='star'>4 Star</button>
-                                                <button class='star'>5 Star</button>
-                                            </div>
-                                        </div>
-                                        <div class='span3 featured-item-wrapper'>
-                                            <div class='featured-item'>
-                                                <div class='top'>
-                                                    <div class='inner-border'>
-                                                        <div class='inner-padding'>
-                                                            <figure>
-                                                                <img src="img/photos/4834826842_cdeb5bc8be_b.jpg" alt="" />
+                                                                <img src="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($pro['mainPic']);?>" alt="" />
                                                                 <div class='banner'>For Rent</div>
-                                                                <a href="property.html" class='figure-hover'>Zoom</a>
+                                                                <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/Property/Detail?id=<?php echo base64_decode($pro['pid']); ?>" class='figure-hover'>Zoom</a>
                                                             </figure>
-                                                            <h3><a href="property.html">East 61st Street and Park Avenue</a></h3>
-                                                            <p>Los Angeles, CA</p>
+                                                            <h3><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>"><?php echo $pro['title']; ?></a></h3>
+                                                            <p><?php echo $pro['location']; ?>, <?php echo $pro['city']; ?></p>
                                                         </div>
                                                     </div>
                                                     <i class='bubble'></i>
@@ -380,7 +218,7 @@ $this->pageTitle=Yii::app()->name;
                                                 <div class='bottom'>
                                                     <div class='inner-border'>
                                                         <div class='inner-padding'>
-                                                            <p>4 beds  +  2 baths  +  245 sqft</p>
+                                                            <p><?php echo $pro['beds'];?>  +  <?php echo $pro['baths'];?>  +  <?php echo $pro['size'];?> sqft</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -390,50 +228,17 @@ $this->pageTitle=Yii::app()->name;
                                                 <button class='star active'>2 Star</button>
                                                 <button class='star active'>3 Star</button>
                                                 <button class='star active'>4 Star</button>
-                                                <button class='star active'>5 Star</button>
-                                            </div>
-                                            <div class='price-wrapper'>
-                                                <div class='price'>$17,000</div>
-                                                <div class='rate'>/year</div>
+                                                <button class='star'>5 Star</button>
                                             </div>
                                         </div>
-                                        <div class='span3 featured-item-wrapper'>
-                                            <div class='featured-item'>
-                                                <div class='top'>
-                                                    <div class='inner-border'>
-                                                        <div class='inner-padding'>
-                                                            <figure>
-                                                                <img src="img/photos/4947806065_f932310392_b.jpg" alt="" />
-                                                                <a href="property.html" class='figure-hover'>Zoom</a>
-                                                            </figure>
-                                                            <h3><a href="property.html">300 Riverside Dr</a></h3>
-                                                            <p>Boston, MA</p>
-                                                        </div>
-                                                    </div>
-                                                    <i class='bubble'></i>
-                                                </div>
-                                                <div class='bottom'>
-                                                    <div class='inner-border'>
-                                                        <div class='inner-padding'>
-                                                            <p>2 beds  +  2 baths + 168 sqft</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class='star-rating'>
-                                                <button class='star active'>1 Star</button>
-                                                <button class='star active'>2 Star</button>
-                                                <button class='star active'>3 Star</button>
-                                                <button class='star active'>4 Star</button>
-                                                <button class='star active'>5 Star</button>
-                                            </div>
-                                            <div class='price-wrapper'>
-                                                <div class='price'>$3,600</div>
-                                                <div class='rate'>/mo</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        
+                                       
+                                   
+
+                                <?php }
+                                } ?>
                                 </li>
+                                
                             </ul>
                         </div>
                     </div>

@@ -348,8 +348,6 @@
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/public/scripts/form-components.js"></script>
     
 
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/public/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/public/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
     <!-- END PAGE LEVEL SCRIPTS -->
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/public/plugins/data-tables/jquery.dataTables.min.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/public/plugins/data-tables/DT_bootstrap.js"></script>
@@ -359,9 +357,9 @@
 
         jQuery(document).ready(function() {
            App.init();
-	       Login.init();
-		   TableAdvanced.init();
-           FormComponents.init();
+	       //Login.init();
+		   //TableAdvanced.init();
+           //FormComponents.init();
            
     });
 

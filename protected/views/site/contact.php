@@ -11,7 +11,7 @@ $this->breadcrumbs=array(
     <section class='container'>
         <section class='row'>
             <div class='span8'>
-                <h1>Login</h1>
+                <h1>Contact Us</h1>
                 <p>In sit amet arcu quis dolor adipiscing laoreet sed sit amet arcu. Proin non adipiscing felis.</p>
             </div>
         </section>
@@ -48,32 +48,32 @@ If you have business inquiries or other questions, please fill out the following
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->labelEx($model,'name'); ?>
 		<?php echo $form->textField($model,'name'); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->labelEx($model,'email'); ?>
 		<?php echo $form->textField($model,'email'); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->labelEx($model,'subject'); ?>
 		<?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128)); ?>
 		<?php echo $form->error($model,'subject'); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->labelEx($model,'body'); ?>
 		<?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'body'); ?>
 	</div>
 
 	<?php if(CCaptcha::checkRequirements()): ?>
-	<div class="row">
+	<div class="">
 		<?php echo $form->labelEx($model,'verifyCode'); ?>
 		<div>
 		<?php $this->widget('CCaptcha'); ?>
@@ -85,7 +85,7 @@ If you have business inquiries or other questions, please fill out the following
 	</div>
 	<?php endif; ?>
 
-	<div class="row buttons">
+	<div class=" buttons">
 		<?php echo CHtml::submitButton('Submit'); ?>
 	</div>
 

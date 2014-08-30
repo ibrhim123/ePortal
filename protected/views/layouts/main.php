@@ -10,7 +10,21 @@
         <link rel="icon" type="image/png" href="<?php echo Yii::app()->request->baseUrl; ?>/img/favicon.png">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
+        <script type="text/javascript">
+           $(function() {
+            var loc = window.location.href;
+            $('#myNav li').each(function() {
+                var link = $(this).find('a:first').attr('href');
+                //alert(link);
+                if(loc.indexOf(link) >= 0){
+                    $(this).addClass('active');
+                }else{
+                    $(this).removeClass('active');
+                }
+            });
+        });
+        </script>
+        
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/vendor/bootstrap-select.css">
@@ -26,18 +40,18 @@
                 <section class='row'>
                     <div class='span3'>
                         <figure class='logo'>
-                            <a href="index.html">
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>">
                                 <img src="<?php echo Yii::app()->request->baseUrl; ?>/img/main-logo.png" width="115" height="40" alt="ARAB LOGO"/>
                             </a>
                         </figure>
                     </div>
                     <div class='span6'>
-                        <nav class='main-nav'>
+                        <nav class='main-nav' id="myNav">
                             <ul>
-                                <li class='active'><a href="<?php echo Yii::app()->request->baseUrl; ?>">Home</a></li>
-                                <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/Site/about">About</a></li>
+                                <li><a href="<?php echo Yii::app()->request->baseUrl; ?>">Home</a></li>
+                                <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/About">About</a></li>
                                 <li>
-                                    <a href="property.html">Property</a>
+                                    <a href="#">Property</a>
                                 		 <!---   <ul class='dropdown-menu'>
                                         <li class='first-element'><a href="search-location.html">For Sale</a></li>
                                         <li class='dropdown-submenu'>
@@ -62,19 +76,19 @@
                                     </ul>  ---->
                                 </li>
                                 <li>
-                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/Users/Agents">Agents</a>
+                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/Agents">Agents</a>
                                 		 <!---   <ul class='dropdown-menu'>
                                         <li><a href="agent.html">Single agent</a></li>
                                     </ul>    ---->
                                 </li>
                                 <li>
-                                    <a href="blog.html">Blog</a>
+                                    <a href="#">Blog</a>
                                     	 <!---   <ul class='dropdown-menu'>
                                         <li><a href="post.html">Single post</a></li>
                                     </ul>    ---->
                                 </li>
                                 <li>
-                                    <a href="search-grid-no-form.html">Search</a>
+                                    <a href="#">Search</a>
                                     	 <!---   <ul class='dropdown-menu'>
                                         <li><a href="search-grid-no-form.html">Search grid no form</a></li>
                                         <li><a href="search-grid.html">Search grid with form</a></li>
@@ -88,12 +102,12 @@
                     <div class='span3'>
                         <div class='header-buttons'>
                             <?php if(Yii::app()->user->isGuest){ ?>
-                                 <a href="<?php echo Yii::app()->request->baseUrl ?>/index.php/Users/Create" class='add custom-tooltip' title="Register With Us">Register</a>
-                                 <a href="<?php echo Yii::app()->request->baseUrl ?>/index.php/site/login" class='profile custom-tooltip' title="Go to My Profile">Login</a>
+                                 <a href="<?php echo Yii::app()->request->baseUrl ?>/Users/Create" class='add custom-tooltip' title="Register With Us">Register</a>
+                                 <a href="<?php echo Yii::app()->request->baseUrl ?>/site/login" class='profile custom-tooltip' title="Go to My Profile">Login</a>
                             <?php }else{?>
-                                <a href="<?php echo Yii::app()->request->baseUrl ?>/index.php/Users/myProfile" class='profile custom-tooltip' title="Go to My Profile">Profile</a>
+                                <a href="<?php echo Yii::app()->request->baseUrl ?>/Users/myProfile" class='profile custom-tooltip' title="Go to My Profile">Profile</a>
                             <?php } ?>
-                            <a href="<?php echo Yii::app()->request->baseUrl ?>/index.php/site/Contact" class='contact custom-tooltip' title='Got to Contact Form'>Contact</a>
+                            <a href="<?php echo Yii::app()->request->baseUrl ?>/site/Contact" class='contact custom-tooltip' title='Got to Contact Form'>Contact</a>
                         </div>
                     </div>
                 </section>
@@ -203,7 +217,7 @@
                 <section class='row'>
                     <div class='span3'>
                         <figure class='logo footer_logo'>
-                            <a href="index-2.html">
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>">
                                 <img src="<?php echo Yii::app()->request->baseUrl; ?>/img/main-logo-fotter.png" alt=""/>
                             </a>
                         </figure>
@@ -226,7 +240,7 @@
             </section>
         </section>
 
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/vendor/jquery-1.9.1.min.js"></script>
+        
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/vendor/bootstrap.js"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/vendor/bootstrap-select.min.js"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/vendor/jquery.flexslider-min.js"></script>

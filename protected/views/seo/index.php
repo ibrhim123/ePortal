@@ -45,7 +45,7 @@
                                     <td><?php echo ucfirst($meta_info['page_name']); ?></td>
 
 
-                                    <td><a href="/newWeb/index.php/Seo/form?p=<?php echo $meta_info['page_name']; ?>" >View</a></td>
+                                    <td><a href="/newWeb/Seo/form?p=<?php echo $meta_info['page_name']; ?>" >View</a></td>
                                   </tr>         
                                     <?php } } ?>
                     </div>

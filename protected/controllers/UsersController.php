@@ -83,11 +83,12 @@ class UsersController extends Controller
 	 */
 	public function actionCreate()
 	{
-            
+                //Yii::app()->clientScript->registerCoreScript('jquery.ui');
+                //Yii::app()->clientScript->registerCssFile(Yii::app()->baseUrl.'/css/style.css');
 		$model=new Users;
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$this->performAjaxValidation($model);
 
 		if(isset($_POST['Users']))
 		{
@@ -100,7 +101,7 @@ class UsersController extends Controller
                             $this->redirect(array('site/login'));
                         }else{
                             Yii::app()->user->setFlash('error', "There seems some problem!");
-                            $this->redirect(array('site/login'));
+                            $this->redirect(array('Users/create'));
                         }
 				//$this->redirect(array('view','id'=>$model->uid));
 		}

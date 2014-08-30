@@ -38,7 +38,7 @@
                                                 <p><?php echo $pro['location']; ?>, <?php echo $pro['city']; ?></p>
                                             </div>
                                             <div class='pull-right'>
-                                                <span class='price'><?php echo $pro['price']; ?></span>
+                                                <span class='price'>AED <?php echo preg_replace("/[^0-9]/","",$pro['price']); ?></span>
                                             </div>
                                         </div>
                                         <div class='description'>
@@ -118,7 +118,7 @@
                                 <div class='inner'>
                                     <div class='row'>
                                         <div class='pull-left update-box'>
-                                            <p>Last update on <a href="#">04-17-2013</a> by <a href="#">Author</a>.</p>
+                                            <p>Last update on <a href="#"><?php echo date('Y-m-d') ?></a> by <a href="#">Author</a>.</p>
                                         </div>
                                         <!--<div class='pull-right'>
                                             <p>Please <a href="#">login</a> to rate this item.</p>
@@ -134,36 +134,14 @@
                                 </div>
                             </div>
                         </div>
-                        <!--<div class='author-section big-margins'>
-                            <div class='left'>
-                                <div class='inner'>
-                                    <div class='row'>
-                                        <figure>
-
-                                        </figure>
-                                        <div class='text'>
-                                            <h2>Martin J. Doe</h2> <br />
-                                            <span class='job-title'>Agent & Real Estate Specialist</span>
-                                            <p>In porttitor augue vel velit luctus at scelerisque nisi dictum. Ut tempus dignissim mi, at gravida leo porta ut.</p>
-                                            <a href="#" class='follow btn btn-primary'><i class='icon-white icon-plus'></i> Follow</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='right'>
-                                <div class='listings'>
-                                    <span class='number'>25</span> <br />
-                                    <span>listings</span>
-                                </div>
-                            </div>
-                        </div>-->
+                       
                     </section>
                     <?php } ?>
                     <aside class='span3'>
                         <section class='widget'>
                             <section class='widget-title uppercase'>
                                 <div class='inner'>
-                                    <h2>Refine Search</h2>
+                                    <h2> Search</h2>
                                 </div>
                             </section>
                             <section class='widget-content'>
@@ -184,16 +162,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class='widget-section'>
-                                        <div class='inner'>
-                                            <label for="category">Category</label>
-                                            <select name="propertyType" id="category" class='btn-block selectpicker'>
-                                                <option value="all">For Sale</option>
-                                                <option value="all">For Rent</option>
-                                                
-                                            </select>
-                                        </div>
-                                    </div>
+                                   
                                     <div class='widget-section first-half'>
                                         <div class='inner'>
                                             <label for="minPrice">Min. Price</label>
@@ -232,12 +201,7 @@
                                             <span class='measure-type'>sqft</span>
                                         </div>
                                     </div>
-                                    <div class='widget-section'>
-                                        <div class='inner'>
-                                            <label for='range'>Slide Example</label>
-                                            <input type="text" name='size' id='range' class='input-block-level range-example'/>
-                                        </div>
-                                    </div>
+                                  
                                     <section class='widget-buttons'>
                                         <div class='inner'>
                                             <!--<a href="#" class='more-options'>More Options</a> <br />-->
@@ -247,15 +211,91 @@
                                 </form>
                             </section>
                         </section>
+                        <section class="widget">
+                            <section class='widget-title uppercase'>
+                                <div class='inner'>
+                                    <h2>Mortgage Calculator</h2>
+                                </div>
+                            </section>
+                            <section class='widget-content'>             
+                                        <form name=first>
+                                            <div class='widget-section'>
+                                                <div class='inner' style='position: relative;'>
+                                                <label for="size">Loan Amount:</label>
+                                                <input class="input-block-level" name=aa type=text size=15 onkeyup=checnum(this) >
+                                                </div>
+                                            </div>
+                                            <div class='widget-section'>
+                                                <div class='inner' style='position: relative;'>
+                                                <label for="size">Interest Rates:</label>
+                                                <input class="input-block-level" name=bb type=text size=15 onkeyup=checnum(this) >
+                                                </div>
+                                            </div>
+                                            <div class='widget-section'>
+                                                <div class='inner' style='position: relative;'>
+                                                <label for="size">Term(Years):</label>
+                                                <input class="input-block-level" name=cc type=text size=15 onkeyup=checnum(this)>
+                                                </div>
+                                            </div>
+                                            
+                                           <section class="widget-buttons">
+                                                <div class="inner">
+                                                    <!--<a href="#" class='more-options'>More Options</a> <br />-->
+                                                    <input class="btn btn-primary btn-large btn-block  calc" type=button name=ss value=calculate onclick=loan() >
+                                                </div>
+                                             </section>
+                                             
+                                        </form>
+                                </section>                           
+                        </section>
+                        
                     </aside>
                 </section>
             </section>
         </section>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/vendor/jquery.mCustomScrollbar.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.prettyPhoto.js"></script>
-<script>
+<script type="text/javascript">
             jQuery("a[rel^='prettyPhoto']").prettyPhoto({
                 social_tools: false,
                 theme: 'light_square'
               });
+              
+            
+function checnum(as)
+{
+	var dd = as.value;
+	if(isNaN(dd))
+	{
+		dd = dd.substring(0,(dd.length-1));
+		as.value = dd;
+	}		
+}
+function loan()
+{
+	var a = document.first.aa.value;
+	var b = document.first.bb.value;
+	var c = document.first.cc.value;
+	var n = c * 12;
+	var r = b/(12*100);
+	var p = (a * r *Math.pow((1+r),n))/(Math.pow((1+r),n)-1);
+	var prin = Math.round(p*100)/100;
+	//document.first.r1.value = prin;
+	var mon = Math.round(((n * prin) - a)*100)/100;
+	//document.first.r2.value = mon;
+	var tot = Math.round((mon/n)*100)/100;
+	//document.first.r3.value = tot;
+	for(var i=0;i<n;i++)
+	{
+		var z = a * r * 1;
+		var q = Math.round(z*100)/100;
+		var t = p - z;
+		var w = Math.round(t*100)/100;
+		var e = a-t;
+		var l = Math.round(e*100)/100;
+		a=e;
+	}
+        alert('Monthly Payment(EMI):' + prin +'\nMonthly Average Interest:'+ mon + '\nMonthly Interest:' + tot);
+}
+              
 </script>

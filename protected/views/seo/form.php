@@ -31,7 +31,7 @@
         </div>
         <div class="row-fluid">
             <!-- BEGIN FORM-->
-            <form action="/newWeb/index.php/Seo/Up" name="Seo_module" method="POST" class="form-horizontal">
+            <form action="<?php echo Yii::app()->request->baseUrl; ?>/Seo/Up" name="Seo_module" method="POST" class="form-horizontal">
 
 
                 <div class="control-group">

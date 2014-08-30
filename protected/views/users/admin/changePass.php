@@ -61,7 +61,7 @@
                                             <?php endif; ?>
 
 											<!-- BEGIN FORM-->
-                                            <form class="form-horizontal" action="<?php echo Yii::app()->request->baseUrl?>/index.php/users/passChange" method="POST">
+                                            <form class="form-horizontal" action="<?php echo Yii::app()->request->baseUrl?>/users/passChange" method="POST">
                                                     <div class="control-group">
                                                             <label class="control-label">Enter Existing Pasword</label>
                                                             <div class="controls">

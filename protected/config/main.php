@@ -1,5 +1,5 @@
 <?php
-
+//echo phpinfo(); exit;
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
@@ -36,15 +36,20 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
-		
 		'urlManager'=>array(
-			'urlFormat'=>'path',
-			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-			),
-		),
+                    'urlFormat'=>'path',
+                    
+                    'rules'=>array(
+                        '/'=>'site/index',
+                        '/About'=>'Site/about',
+                        '/Agents' => 'Users/Agents',
+                        '/Register' => 'Users/Create',
+                        '/Contact' => 'site/Contact',
+                        
+                        '<_c:(Events)>'=>'<_c>\index',
+                       )
+                ),
+		
 		/*
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',

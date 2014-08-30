@@ -92,22 +92,32 @@ $this->pageTitle=Yii::app()->name;
                             <div class="tab-content">
                                 <div class="tab-pane active" id="tab1">
                                     <div class='inner'>
-                                        <form action="#">
+                                        <form name="searchSale" method="post" action="<?php echo Yii::app()->request->baseUrl; ?>/Property/search">
+                                            
                                             <input type="text" name='search-string' class='search-string' placeholder="eg. 'Dubai', 'Abu Dhabi'"/>
-                                            <input type="text" name='search-year' class='search-year' placeholder="Year"/>
+                                           
                                             <select name="search-bedrooms" class='span2 selectpicker search-select'>
                                                 <option>Bedrooms</option>
                                                 <option>1</option>
                                                 <option>2</option>
                                             </select>
+                                            
                                             <select name="search-bathrooms" class='span2 selectpicker search-select'>
                                                 <option>Bathrooms</option>
                                                 <option>1</option>
                                                 <option>2</option>
                                             </select>
+                                            <input type="hidden" name="seachSort" value="Sale">
                                             <input type="text" name='search-min-price' class='span2 search-price no-margin' placeholder="Min. Price"/>
-                                            <span class='line-divider'>&ndash;</span>
-                                            <input type="text" name='search-max-price' class='span2 search-price' placeholder="Max. Price"/>
+                                            
+                                            <select name="search-cat" class='span2 selectpicker search-select'>
+                                                <option value="apartments">Apartments for Sale</option>
+                                                <option value="house or villa"> Houses & Villas for Sale</option>
+                                                <option value="commercial property">Commercial Property for Sale</option>
+                                                <option value="Towers or Building">Towers & Building for Sale</option>
+                                                <option value="Plots or Land">Plots & Land for Sale</option>
+                                            </select>
+                                            
                                             <button type="submit" class='btn btn-primary search-property'><i class="icon-search icon-white"></i> Search Property</button>
                                         </form>
                                     </div>
@@ -163,9 +173,9 @@ $this->pageTitle=Yii::app()->name;
                                                             <figure>
                                                                 <img src="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($pro['mainPic']);?>" alt="" />
                                                                 <div class='banner'>For Sale</div>
-                                                                <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>" class='figure-hover'>Zoom</a>
+                                                                <a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>" class='figure-hover'>Zoom</a>
                                                             </figure>
-                                                            <h3><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>"><?php echo $pro['title']; ?></a></h3>
+                                                            <h3><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>"><?php echo $pro['title']; ?></a></h3>
                                                             <p><?php echo $pro['location']; ?>, <?php echo $pro['city']; ?></p>
                                                         </div>
                                                     </div>
@@ -174,7 +184,7 @@ $this->pageTitle=Yii::app()->name;
                                                 <div class='bottom'>
                                                     <div class='inner-border'>
                                                         <div class='inner-padding'>
-                                                            <p><?php echo $pro['beds'];?> beds  +  <?php echo $pro['baths'];?> baths +  <?php echo $pro['size'];?> sqft</p>
+                                                            <p><?php echo $pro['beds'];?> beds  +  <?php echo $pro['baths'];?> baths +  <?php echo preg_replace("/[^0-9]/", "", $pro['size']);?> sqft</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -207,9 +217,9 @@ $this->pageTitle=Yii::app()->name;
                                                             <figure>
                                                                 <img src="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($pro['mainPic']);?>" alt="" />
                                                                 <div class='banner'>For Rent</div>
-                                                                <a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/Property/Detail?id=<?php echo base64_decode($pro['pid']); ?>" class='figure-hover'>Zoom</a>
+                                                                <a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/Detail?id=<?php echo base64_decode($pro['pid']); ?>" class='figure-hover'>Zoom</a>
                                                             </figure>
-                                                            <h3><a href="<?php echo Yii::app()->request->baseUrl; ?>/index.php/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>"><?php echo $pro['title']; ?></a></h3>
+                                                            <h3><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>"><?php echo $pro['title']; ?></a></h3>
                                                             <p><?php echo $pro['location']; ?>, <?php echo $pro['city']; ?></p>
                                                         </div>
                                                     </div>
@@ -218,7 +228,7 @@ $this->pageTitle=Yii::app()->name;
                                                 <div class='bottom'>
                                                     <div class='inner-border'>
                                                         <div class='inner-padding'>
-                                                            <p><?php echo $pro['beds'];?>  +  <?php echo $pro['baths'];?>  +  <?php echo $pro['size'];?> sqft</p>
+                                                            <p><?php echo $pro['beds'];?>  +  <?php echo $pro['baths'];?>  +  <?php echo preg_replace("/[^0-9]/","", $pro['size']);?> sqft</p>
                                                         </div>
                                                     </div>
                                                 </div>

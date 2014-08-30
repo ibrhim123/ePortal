@@ -7,6 +7,11 @@ class PropertyController extends Controller
 		$this->render('index');
 	}
         
+        public function actionSearch(){
+            $this->layout = 'main';
+            
+        }
+        
         public function actionDetail(){
             $type = '';
             $this->layout = 'main';
@@ -18,7 +23,6 @@ class PropertyController extends Controller
             $result= $command->queryAll();
             
             foreach($result as $pid){
-             //$proId = $pid['pid'];
              $type = $pid['cat'];
             }
             if($type == 'Sale'){

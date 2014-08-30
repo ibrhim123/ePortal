@@ -4,9 +4,7 @@
 /* @var $form CActiveForm  */
 
 $this->pageTitle=Yii::app()->name . ' - Login';
-$this->breadcrumbs=array(
-	'Login',
-);
+
 ?>
 <section id='page-title' class='small-height'>
     <section class='container'>

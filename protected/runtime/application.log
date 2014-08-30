@@ -5328,3 +5328,154 @@ Stack trace:
 REQUEST_URI=/newWeb/index.php/Property/Detail?id=MTA=
 in D:\php\htdocs\newWeb\protected\controllers\PropertyController.php (35)
 in D:\php\htdocs\newWeb\index.php (22)
+2014/08/29 12:42:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/08/29 12:42:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/08/29 12:42:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/favicon.ico
+---
+2014/08/29 12:42:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Saleproperty/favicon.ico
+---
+2014/08/29 13:17:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.html".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('index.html')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('index.html')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Property/index....')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Property/index.html
+HTTP_REFERER=http://localhost/newWeb/index.php/Property/Detail?id=Ng==
+---
+2014/08/29 13:34:30 [error] [php] Undefined variable: model (D:\php\htdocs\newWeb\protected\views\users\create.php:1)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(869): UsersController->renderFile()
+#1 D:\php\htdocs\yii\framework\web\CController.php(782): UsersController->renderPartial()
+#2 D:\php\htdocs\newWeb\protected\controllers\UsersController.php(103): UsersController->render()
+#3 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): UsersController->actionCreate()
+#4 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(133): UsersController->runAction()
+#6 D:\php\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\php\htdocs\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 D:\php\htdocs\yii\framework\web\filters\CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 D:\php\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 D:\php\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\php\htdocs\yii\framework\web\CController.php(265): UsersController->runActionWithFilters()
+#12 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): UsersController->run()
+#13 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/index.php/Users/Create
+in D:\php\htdocs\newWeb\protected\views\users\create.php (1)
+in D:\php\htdocs\newWeb\protected\controllers\UsersController.php (103)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/08/29 14:13:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/Site/about".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php/Site/...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/about
+---
+2014/08/30 02:33:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/08/30 02:35:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Admin".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('Admin')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('Admin')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Admin')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/site/Admin
+HTTP_REFERER=http://localhost/newWeb/site/login
+---
+2014/08/30 02:36:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Admin".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('Admin')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('Admin')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Admin')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/site/Admin
+HTTP_REFERER=http://localhost/newWeb/site/login
+---
+2014/08/30 02:36:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Admin".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('Admin')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('Admin')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Admin')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/site/Admin
+HTTP_REFERER=http://localhost/newWeb/site/login
+---
+2014/08/30 02:36:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/Users/Profile".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php/Users...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/Admin
+---
+2014/08/30 02:37:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/Users/favicon.ico
+---
+2014/08/30 02:37:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "public/img/update.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('public/img/upda...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/public/img/update.png
+HTTP_REFERER=http://localhost/newWeb/index.php/Users/AdminAgent
+---

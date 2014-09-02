@@ -3,8 +3,6 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
-
- 
         <section id='homepage-slider'>
             <div class='controls-wrapper'>
                 <section class='container'>
@@ -94,23 +92,29 @@ $this->pageTitle=Yii::app()->name;
                                     <div class='inner'>
                                         <form name="searchSale" method="post" action="<?php echo Yii::app()->request->baseUrl; ?>/Property/search">
                                             
-                                            <input type="text" name='search-string' class='search-string' placeholder="eg. 'Dubai', 'Abu Dhabi'"/>
+                                            <input type="text" name='string' class='search-string' placeholder="eg. 'Dubai', 'Abu Dhabi'"/>
                                            
-                                            <select name="search-bedrooms" class='span2 selectpicker search-select'>
-                                                <option>Bedrooms</option>
-                                                <option>1</option>
-                                                <option>2</option>
+                                            <select name="beds" class='span2 selectpicker search-select'>
+                                                <option value="">Bedrooms</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5+">5 and more</option>
                                             </select>
                                             
-                                            <select name="search-bathrooms" class='span2 selectpicker search-select'>
-                                                <option>Bathrooms</option>
-                                                <option>1</option>
-                                                <option>2</option>
+                                            <select name="baths" class='span2 selectpicker search-select'>
+                                                <option value="">Bathrooms</option>
+                                                 <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5+">5 and more</option>
                                             </select>
                                             <input type="hidden" name="seachSort" value="Sale">
-                                            <input type="text" name='search-min-price' class='span2 search-price no-margin' placeholder="Min. Price"/>
+                                            <input type="text" name='min-price' class='span2 search-price no-margin' placeholder="Min. Price"/>
                                             
-                                            <select name="search-cat" class='span2 selectpicker search-select'>
+                                            <select name="cat" class='span2 selectpicker search-select'>
                                                 <option value="apartments">Apartments for Sale</option>
                                                 <option value="house or villa"> Houses & Villas for Sale</option>
                                                 <option value="commercial property">Commercial Property for Sale</option>

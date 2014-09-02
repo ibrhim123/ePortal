@@ -20,6 +20,7 @@
 <section id='content' class='alternate-bg'>
             <section class='container'>
                 <section class='row featured-items'>
+                    
                     <?php foreach($data as $pro){ ?>
                     <section class='span9'>
                         <div class='property-box'>
@@ -118,7 +119,10 @@
                                 <div class='inner'>
                                     <div class='row'>
                                         <div class='pull-left update-box'>
-                                            <p>Last update on <a href="#"><?php echo date('Y-m-d') ?></a> by <a href="#">Author</a>.</p>
+                                            <p>Published on <a href="#">
+                                                <?php  $phpdate = strtotime( $postedOn );
+                                            $mysqldate = date( 'M d Y', $phpdate );
+                                               echo $mysqldate; ?></a> by <a href="#"><?php echo Users::getPoster($poster); ?></a>. </p>
                                         </div>
                                         <!--<div class='pull-right'>
                                             <p>Please <a href="#">login</a> to rate this item.</p>
@@ -134,9 +138,9 @@
                                 </div>
                             </div>
                         </div>
-                       
                     </section>
                     <?php } ?>
+                    
                     <aside class='span3'>
                         <section class='widget'>
                             <section class='widget-title uppercase'>
@@ -250,6 +254,7 @@
                         </section>
                         
                     </aside>
+                    
                 </section>
             </section>
         </section>

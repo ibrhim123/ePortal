@@ -28,20 +28,7 @@
                                 <?php $multimedia = json_decode($mypost['gallPics']);
                                 $c = count($multimedia);
                                 $half = $c/2;
-                                //$name = $type =array();
-                                //if(!empty($c)){
-                                  //  for($i=0;$i<$c;$i++){
-                                    //    if($i <$half){
-                                      //      array_push($name,$multimedia[$i]);
-                                        //}else{
-                                        //    array_push($type,$multimedia[$i]);
-                                        //}
-                                    //}
-                                    //$countInner = count($name);
-                                    //for($j=0; $j< $countInner; $j++){ ?>
-                                        <?php /**<a class="btn" href="#stack<?php echo $j; ?>" data-toggle="modal-<?php echo $j; ?>"><img width="150" height="90" src="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($name[$j])?>" alt="Review Pics"></a>  */?>                                     
-                                    <?php //}
-                                //} 
+                                   
                             }?>
                                 <img width="140" height="93" src="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($mypost['mainPic']);?>" alt="">
                                     <ul class="unstyled">
@@ -57,7 +44,7 @@
                             </div>
                             <div style="overflow:hidden;">
                                     
-                                    <a href="#"><h4><?php echo $mypost['title'] ?></h4></a>
+                                <a href="<?php echo Yii::app()->request->baseUrl;?>/Property/Detail?id=?<?php echo base64_encode($mypost['pid']);?>"><h4><?php echo $mypost['title'] ?></h4></a>
                                     <p><?php  $des = CHtml::decode($mypost['descr']); echo substr($des, 0, 300)."..";?></p>
                             </div>
                        

@@ -10,20 +10,7 @@
         <link rel="icon" type="image/png" href="<?php echo Yii::app()->request->baseUrl; ?>/img/favicon.png">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <script type="text/javascript">
-           $(function() {
-            var loc = window.location.href;
-            $('#myNav li').each(function() {
-                var link = $(this).find('a:first').attr('href');
-                //alert(link);
-                if(loc.indexOf(link) >= 0){
-                    $(this).addClass('active');
-                }else{
-                    $(this).removeClass('active');
-                }
-            });
-        });
-        </script>
+        
         
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-responsive.min.css">
@@ -51,51 +38,15 @@
                                 <li><a href="<?php echo Yii::app()->request->baseUrl; ?>">Home</a></li>
                                 <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/About">About</a></li>
                                 <li>
-                                    <a href="#">Property</a>
-                                		 <!---   <ul class='dropdown-menu'>
-                                        <li class='first-element'><a href="search-location.html">For Sale</a></li>
-                                        <li class='dropdown-submenu'>
-                                            <a href="search-list.html">For Rent</a>
-                                            <ul class='dropdown-menu'>
-                                                <li class='first-element'><a href="search-grid-no-form.html">Sub menu item 1</a></li>
-                                                <li><a href="search-grid.html">Sub menu item 2</a></li>
-                                                <li><a href="search-grid.html">Sub menu item 3</a></li>
-                                                <li class='last-element'><a href="search-grid.html">Sub menu item 4</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class='dropdown-submenu'>
-                                            <a href="search-location.html">Forclosures</a>
-                                            <ul class='dropdown-menu'>
-                                                <li class='first-element'><a href="search-grid.html">Sub menu item 1</a></li>
-                                                <li><a href="search-grid-no-form.html">Sub menu item 2</a></li>
-                                                <li><a href="search-grid-no-form.html">Sub menu item 3</a></li>
-                                                <li class='last-element'><a href="search-grid.html">Sub menu item 4</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class='last-element'><a href="search-grid-no-form.html">New Homes</a></li>
-                                    </ul>  ---->
+                                    <a href="#">Property for Sale</a>
+                                </li>
+                                 <li>
+                                    <a href="#">Property for Rent</a>
                                 </li>
                                 <li>
                                     <a href="<?php echo Yii::app()->request->baseUrl; ?>/Agents">Agents</a>
-                                		 <!---   <ul class='dropdown-menu'>
-                                        <li><a href="agent.html">Single agent</a></li>
-                                    </ul>    ---->
                                 </li>
-                                <li>
-                                    <a href="#">Blog</a>
-                                    	 <!---   <ul class='dropdown-menu'>
-                                        <li><a href="post.html">Single post</a></li>
-                                    </ul>    ---->
-                                </li>
-                                <li>
-                                    <a href="#">Search</a>
-                                    	 <!---   <ul class='dropdown-menu'>
-                                        <li><a href="search-grid-no-form.html">Search grid no form</a></li>
-                                        <li><a href="search-grid.html">Search grid with form</a></li>
-                                        <li><a href="search-list.html">Search list</a></li>
-                                        <li><a href="search-location.html">Search with location</a></li>
-                                    </ul>   ---->
-                                </li>
+                             
                             </ul>
                         </nav>
                     </div>
@@ -140,7 +91,7 @@
                                     <div class='month'>mar</div>
                                 </div>
                                 <div class='text-box'>
-                                    <h3><a href="post.html">How to Choose Property</a></h3>
+                                    <h3><a href="#">How to Choose Property</a></h3>
                                     <span class='author'>posted by admin</span>
                                     <div class='excerpt'>
                                         <p>In porttitor augue vel velit luctus at scelerisque nisi dictum. Ut tempus dignissim mi, at gravida leo.</p>
@@ -153,7 +104,7 @@
                                     <div class='month'>mar</div>
                                 </div>
                                 <div class='text-box'>
-                                    <h3><a href="post.html">Real Estate of Future</a></h3>
+                                    <h3><a href="#">Real Estate of Future</a></h3>
                                     <span class='author'>posted by admin</span>
                                     <div class='excerpt'>
                                         <p>In porttitor augue vel velit luctus at scelerisque nisi dictum. Ut tempus dignissim mi, at gravida leo.</p>

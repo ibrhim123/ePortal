@@ -181,4 +181,11 @@ class Users extends CActiveRecord
             $password = $user->password;
             return $password;
         }
+        
+        public static function getPoster($id){
+        $user = Users::model()->findByPK($id);
+        $fName = $user->firstName;
+        $lName = $user->lastName;
+        return $fName.' '.$lName;
+    }
 }

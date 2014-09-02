@@ -5479,3 +5479,520 @@ Stack trace:
 REQUEST_URI=/newWeb/public/img/update.png
 HTTP_REFERER=http://localhost/newWeb/index.php/Users/AdminAgent
 ---
+2014/09/01 18:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/09/01 18:35:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/Saleproperty/favicon.ico
+---
+2014/09/01 19:43:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/Rentproperty/favicon.ico
+---
+2014/09/01 19:44:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT a.*  FROM property a WHERE pid = .
+in D:\php\htdocs\newWeb\protected\controllers\PropertyController.php (23)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 19:44:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT a.*  FROM property a WHERE pid = ' in D:\php\htdocs\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\php\htdocs\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\php\htdocs\newWeb\protected\controllers\PropertyController.php(23): CDbCommand->queryAll()
+#2 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): PropertyController->actionDetail()
+#3 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\php\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\php\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('Detail')
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Property/Detail')
+#8 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#10 {main}
+REQUEST_URI=/newWeb/Property/Detail?id=?
+HTTP_REFERER=http://localhost/newWeb/Saleproperty/myPosts
+---
+2014/09/01 19:45:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT a.*  FROM property a WHERE pid = .
+in D:\php\htdocs\newWeb\protected\controllers\PropertyController.php (23)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 19:45:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT a.*  FROM property a WHERE pid = ' in D:\php\htdocs\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\php\htdocs\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\php\htdocs\newWeb\protected\controllers\PropertyController.php(23): CDbCommand->queryAll()
+#2 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): PropertyController->actionDetail()
+#3 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\php\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\php\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('Detail')
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Property/Detail')
+#8 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#10 {main}
+REQUEST_URI=/newWeb/Property/Detail?id=?%EF%BF%BD
+HTTP_REFERER=http://localhost/newWeb/Saleproperty/myPosts
+---
+2014/09/01 19:46:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_rounded/loader.gif".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_rounded/loader.gif
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTQ=
+---
+2014/09/01 19:46:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/sprite.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/sprite.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTQ=
+---
+2014/09/01 19:46:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/btnNext.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/btnNext.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTQ=
+---
+2014/09/01 19:46:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/facebook/default_thumbnail.gif".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/facebook/default_thumbnail.gif
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTQ=
+---
+2014/09/01 19:46:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_rounded/btnNext.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_rounded/btnNext.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTQ=
+---
+2014/09/01 20:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_rounded/loader.gif".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_rounded/loader.gif
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=Ng==
+---
+2014/09/01 20:21:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/sprite.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/sprite.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=Ng==
+---
+2014/09/01 20:21:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/sprite.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/sprite.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=Ng==
+---
+2014/09/01 20:21:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_rounded/btnNext.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_rounded/btnNext.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=Ng==
+---
+2014/09/01 20:21:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/btnNext.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/btnNext.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=Ng==
+---
+2014/09/01 20:21:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/facebook/default_thumbnail.gif".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/facebook/default_thumbnail.gif
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=Ng==
+---
+2014/09/01 20:24:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/Users/favicon.ico
+---
+2014/09/01 20:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_rounded/loader.gif".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_rounded/loader.gif
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTQ=
+---
+2014/09/01 20:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/sprite.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/sprite.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTQ=
+---
+2014/09/01 20:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/sprite.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/sprite.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTQ=
+---
+2014/09/01 20:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_rounded/btnNext.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_rounded/btnNext.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTQ=
+---
+2014/09/01 20:27:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/btnNext.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/btnNext.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTQ=
+---
+2014/09/01 20:27:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/facebook/default_thumbnail.gif".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/facebook/default_thumbnail.gif
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTQ=
+---
+2014/09/01 20:27:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/btnPrevious.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/btnPrevious.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTQ=
+---
+2014/09/01 20:32:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/09/01 20:32:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/09/01 20:32:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/Saleproperty/favicon.ico
+---
+2014/09/01 20:32:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/Saleproperty/favicon.ico
+---
+2014/09/01 21:39:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/<')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/Saleproperty/%3C?%20echo%20Yii::app()-%3EcreateUrl(%27Property/downPost%27);%20?%3E
+HTTP_REFERER=http://localhost/newWeb/Saleproperty/myPosts
+---
+2014/09/01 21:41:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('<')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('<')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Saleproperty/<')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/Saleproperty/%3C?%20echo%20Yii::app()-%3EcreateUrl(%27Property/downPost%27);%20?%3E
+HTTP_REFERER=http://localhost/newWeb/Saleproperty/myPosts
+---
+2014/09/01 21:43:53 [error] [exception.CException] exception 'CException' with message 'PropertyController and its behaviors do not have a method or closure named "loadModel".' in D:\php\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\php\htdocs\newWeb\protected\controllers\PropertyController.php(14): CComponent->__call('loadModel', Array)
+#1 D:\php\htdocs\newWeb\protected\controllers\PropertyController.php(14): PropertyController->loadModel('14')
+#2 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): PropertyController->actiondownPost()
+#3 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\php\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\php\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('downPost')
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Property/downPo...')
+#8 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#10 {main}
+REQUEST_URI=/newWeb/index.php/Property/downPost
+HTTP_REFERER=http://localhost/newWeb/Saleproperty/myPosts
+---
+2014/09/01 21:44:18 [error] [exception.CException] exception 'CException' with message 'PropertyController and its behaviors do not have a method or closure named "loadModel".' in D:\php\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\php\htdocs\newWeb\protected\controllers\PropertyController.php(14): CComponent->__call('loadModel', Array)
+#1 D:\php\htdocs\newWeb\protected\controllers\PropertyController.php(14): PropertyController->loadModel('14')
+#2 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): PropertyController->actiondownPost()
+#3 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\php\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\php\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('downPost')
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Property/downPo...')
+#8 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#10 {main}
+REQUEST_URI=/newWeb/index.php/Property/downPost
+HTTP_REFERER=http://localhost/newWeb/Saleproperty/myPosts
+---
+2014/09/01 22:24:08 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (263)
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (68)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:24:11 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (263)
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (68)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:24:32 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (263)
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (68)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:24:34 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (263)
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (68)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:24:35 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (263)
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (68)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:24:38 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (263)
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (68)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:24:39 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (263)
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (68)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:24:41 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (263)
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (68)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:24:43 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (263)
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (68)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:25:02 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (263)
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (68)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:25:03 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (263)
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (68)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:25:25 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (263)
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (68)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:25:27 [warning] [application] Failed to set unsafe attribute "amenty" of "Rentproperty".
+in D:\php\htdocs\newWeb\protected\controllers\RentpropertyController.php (75)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:26:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT a.*  FROM property a WHERE pid = .
+in D:\php\htdocs\newWeb\protected\controllers\PropertyController.php (36)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/01 22:26:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT a.*  FROM property a WHERE pid = ' in D:\php\htdocs\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\php\htdocs\yii\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\php\htdocs\newWeb\protected\controllers\PropertyController.php(36): CDbCommand->queryAll()
+#2 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): PropertyController->actionDetail()
+#3 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\php\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\php\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('Detail')
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Property/Detail')
+#8 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#10 {main}
+REQUEST_URI=/newWeb/Property/Detail?id=?%20%3E
+HTTP_REFERER=http://localhost/newWeb/Rentproperty/myPosts
+---
+2014/09/01 22:27:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_rounded/loader.gif".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_rounded/loader.gif
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTY=%20%3E
+---
+2014/09/01 22:27:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/sprite.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/sprite.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTY=%20%3E
+---
+2014/09/01 22:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/facebook/default_thumbnail.gif".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/facebook/default_thumbnail.gif
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTY=%20%3E
+---
+2014/09/01 22:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_rounded/btnNext.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_rounded/btnNext.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTY=%20%3E
+---
+2014/09/01 22:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/sprite.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/sprite.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTY=%20%3E
+---
+2014/09/01 22:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/btnNext.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/btnNext.png
+HTTP_REFERER=http://localhost/newWeb/Property/Detail?id=?MTY=%20%3E
+---
+2014/09/01 22:30:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/Rentproperty/favicon.ico
+---
+2014/09/01 22:30:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Rentproperty/fa...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/Rentproperty/favicon.ico
+---
+2014/09/02 01:51:22 [error] [php] Undefined variable: type (D:\php\htdocs\newWeb\protected\views\property\details.php:12)
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(869): PropertyController->renderFile()
+#1 D:\php\htdocs\yii\framework\web\CController.php(782): PropertyController->renderPartial()
+#2 D:\php\htdocs\newWeb\protected\controllers\PropertyController.php(51): PropertyController->render()
+#3 D:\php\htdocs\yii\framework\web\actions\CInlineAction.php(49): PropertyController->actionSearch()
+#4 D:\php\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\php\htdocs\yii\framework\web\CController.php(286): PropertyController->runAction()
+#6 D:\php\htdocs\yii\framework\web\CController.php(265): PropertyController->runActionWithFilters()
+#7 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): PropertyController->run()
+#8 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\php\htdocs\newWeb\index.php(22): CWebApplication->run()
+REQUEST_URI=/newWeb/Property/search
+in D:\php\htdocs\newWeb\protected\views\property\details.php (12)
+in D:\php\htdocs\newWeb\protected\controllers\PropertyController.php (51)
+in D:\php\htdocs\newWeb\index.php (22)
+2014/09/02 01:51:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Property/img/ph...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/Property/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/Property/search
+---
+2014/09/02 01:51:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "img".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Property/img/ph...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/Property/img/photos/4834194361_85d5c4a5e0_b.jpg
+HTTP_REFERER=http://localhost/newWeb/Property/search
+---

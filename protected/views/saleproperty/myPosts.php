@@ -13,6 +13,7 @@
             </div>
         </div>
         
+
         <?php
             Yii::app()->clientScript->registerScript(
                 'myHideEffect',
@@ -22,7 +23,7 @@
         ?>
         <!-- BEGIN PAGE CONTENT-->
         <?php if(Yii::app()->user->hasFlash('success')):?>
-            <div class="alert alert-success info">
+            <div class="alert alert-success info" id="res">
                 <button data-dismiss="alert" class="close"></button> <?php echo Yii::app()->user->getFlash('success'); ?>
             </div>
         <?php endif; ?>
@@ -35,27 +36,14 @@
                     foreach($data as $mypost){
                      $i++;
                             ?>                      
-                <div class="span4 booking-blocks" <?php if($i == '4'){?> style="margin-left: 0px !important;" <?php } ?>>
+                <div id="<?php echo $mypost['pid']; ?>" class="span4 booking-blocks" <?php if($i == '4'){?> style="margin-left: 0px !important;" <?php } ?>>
                             <div class="pull-left booking-img">
                                  <?php if($mypost['gallPics'] != NULL){ ?>
 
                                 <?php $multimedia = json_decode($mypost['gallPics']);
                                 $c = count($multimedia);
                                 $half = $c/2;
-                                //$name = $type =array();
-                                //if(!empty($c)){
-                                  //  for($i=0;$i<$c;$i++){
-                                    //    if($i <$half){
-                                      //      array_push($name,$multimedia[$i]);
-                                        //}else{
-                                        //    array_push($type,$multimedia[$i]);
-                                        //}
-                                    //}
-                                    //$countInner = count($name);
-                                    //for($j=0; $j< $countInner; $j++){ ?>
-                                        <?php /**<a class="btn" href="#stack<?php echo $j; ?>" data-toggle="modal-<?php echo $j; ?>"><img width="150" height="90" src="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($name[$j])?>" alt="Review Pics"></a>  */?>                                     
-                                    <?php //}
-                                //} 
+                               
                             }?>
                                 <img width="140" height="93" src="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($mypost['mainPic']);?>" alt="">
                                     <ul class="unstyled">
@@ -71,8 +59,9 @@
                             </div>
                             <div style="overflow:hidden;">
                                     
-                                    <a href="#"><h4><?php echo $mypost['title'] ?></h4></a>
+                                <a href="<?php echo Yii::app()->request->baseUrl;?>/Property/Detail?id=?<?php echo base64_encode($mypost['pid']); ?>" target="_blank"><h4><?php echo $mypost['title'] ?></h4></a>
                                     <p><?php  $des = CHtml::decode($mypost['descr']); echo substr($des, 0, 300)."..";?></p>
+                                    <a onclick="removeAdd(this);" href="#" data-cid="<?php echo $mypost['pid']; ?>"> <i class="icon-remove"></i> Remove Post</a>
                             </div>
                        
                             </div>
@@ -83,4 +72,31 @@
             </div>
         </div>
     </div>
-</div>       
+</div>
+
+<script type="text/javascript">
+
+            function removeAdd(elem){
+
+                var $elem = jQuery(elem), _id  = $elem.attr('data-cid');
+
+                if (_id.length > 0) {
+
+                    $.ajax({
+                        type: "POST",
+                        url:    "<?php echo Yii::app()->createUrl('Property/downPost'); ?>",
+                        data:  {nid:_id},
+                        success: function(msg){
+                            //alert('Your Post Has been Deleted!');
+                            $('#'+_id).hide("slow");
+                            //window.location.reload(true);
+                        },
+                        error: function(xhr){
+                            console.log("failure"+xhr.readyState+this.url);
+                        }
+                    });
+
+                }
+            }
+
+</script>

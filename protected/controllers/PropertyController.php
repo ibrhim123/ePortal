@@ -21,7 +21,7 @@ class PropertyController extends Controller
         
         public function actionSearch(){
             $this->layout = 'main';
-            //Controller::checkArray($_POST);
+            if(isset($_POST['btnSearchSale']){
             $location = $_POST['string'];
             $beds = $_POST['beds'];
             $baths = $_POST['baths'];
@@ -49,6 +49,47 @@ class PropertyController extends Controller
             $result= $command->queryAll();
             
             $this->render('searchResult',  array('data' =>$result));
+            }
+        }
+        
+        public function actionSearchRent(){
+            $this->layout = 'main';
+            
+            if(isset($_POST['btnSearhRent'])){
+            $location = $_POST['search-string'];
+            $beds = $_POST['rbedrooms'];
+            $baths = $_POST['rbathrooms'];
+            $minPrice = $_POST['rmin-price'];
+            $cat = $_POST['rcat'];
+            
+            $sql = "SELECT * FROM rentproperty WHERE 1 = 1";
+            if ($cat) {
+                $sql .= " AND category='$cat'";
+            }
+            if ( !empty($baths) AND $baths<5 ) {
+                $sql .= " AND baths='$baths'";
+            }
+            if (!empty($beds) AND $beds<5) {
+                $sql .= " AND beds='$beds'";
+            }
+            if ($baths=='5+') {
+                $sql .= " AND baths >=5";
+            }
+            if ($beds=='5+') {
+                $sql .= " AND beds >=5";
+            }
+            if ($location){
+                $sql .= " AND location LIKE '%$location%'";
+            }
+            if ($minPrice){
+                $sql .= " AND price>='$minPrice'";
+            }
+            
+            $command=Yii::app()->db->createCommand($sql);
+            $result= $command->queryAll();
+            
+            $this->render('searchRent',  array('data' =>$result));
+            }
         }
         
         public function actionDetail(){

@@ -105,7 +105,7 @@ $this->pageTitle=Yii::app()->name;
                                             
                                             <select name="baths" class='span2 selectpicker search-select'>
                                                 <option value="">Bathrooms</option>
-                                                 <option value="1">1</option>
+                                                <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
                                                 <option value="4">4</option>
@@ -115,6 +115,7 @@ $this->pageTitle=Yii::app()->name;
                                             <input type="text" name='min-price' class='span2 search-price no-margin' placeholder="Min. Price"/>
                                             
                                             <select name="cat" class='span2 selectpicker search-select'>
+                                                 <option value="">Select Property Type</option>
                                                 <option value="apartments">Apartments for Sale</option>
                                                 <option value="house or villa"> Houses & Villas for Sale</option>
                                                 <option value="commercial property">Commercial Property for Sale</option>
@@ -122,29 +123,46 @@ $this->pageTitle=Yii::app()->name;
                                                 <option value="Plots or Land">Plots & Land for Sale</option>
                                             </select>
                                             
-                                            <button type="submit" class='btn btn-primary search-property'><i class="icon-search icon-white"></i> Search Property</button>
+                                            <button type="submit" name="btnSearchSale" class='btn btn-primary search-property'><i class="icon-search icon-white"></i> Search Property</button>
                                         </form>
                                     </div>
                                 </div>
                                 <div class="tab-pane" id="tab2">
                                     <div class='inner'>
-                                        <form action="#">
+                                        <form action="<?php echo Yii::app()->request->baseUrl; ?>/Property/SearchRent" method="POST" name="searchRent">
                                             <input type="text" name='search-string' class='search-string' placeholder="eg. 'Dubai', 'Abu Dhabi'"/>
-                                            <input type="text" name='search-year' class='search-year' placeholder="Year"/>
-                                            <select name="search-bedrooms" class='span2 selectpicker search-select'>
-                                                <option>Bedrooms</option>
-                                                <option>1</option>
-                                                <option>2</option>
+                                            <select name="rbedrooms" class='span2 selectpicker search-select'>
+                                                <option value="">Bedrooms</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5+">5 and more</option>
                                             </select>
-                                            <select name="search-bathrooms" class='span2 selectpicker search-select'>
-                                                <option>Bathrooms</option>
-                                                <option>1</option>
-                                                <option>2</option>
+                                            
+                                            <select name="rbathrooms" class='span2 selectpicker search-select'>
+                                               <option value="">Bathrooms</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5+">5 and more</option>
                                             </select>
-                                            <input type="text" name='search-min-price' class='span2 search-price no-margin' placeholder="Min. Price"/>
-                                            <span class='line-divider'>&ndash;</span>
-                                            <input type="text" name='search-max-price' class='span2 search-price' placeholder="Max. Price"/>
-                                            <button type="submit" class='btn btn-primary search-property'><i class="icon-search icon-white"></i> Search Property</button>
+                                            
+                                            
+                                            <input type="text" name='rmin-price' class='span2 search-price no-margin' placeholder="Min. Price"/>
+                                            
+                                            <select name="rcat" class="span2 selectpicker search-select">
+                                                <option value="">Select Property Type</option>
+                                                <option value="apartments">Apartments for Rent</option>
+                                                <option value="house or villa"> Houses &amp; Villas for Rent</option>
+                                                <option value="commercial property">Commercial Property for Rent</option>
+                                                <option value="Rooms">Rooms for Rent</option>
+                                                <option value="short term (Daily)">Short Term (Daily)</option>
+                                                <option value="short term (Monthly)">Short Term (Monthly)</option>
+                                            </select>
+                                        
+                                            <button type="submit" name="btnSearhRent" class='btn btn-primary search-property'><i class="icon-search icon-white"></i> Search Property</button>
                                         </form>
                                     </div>
                                 </div>

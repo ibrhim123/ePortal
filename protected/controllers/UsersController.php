@@ -183,10 +183,7 @@ class UsersController extends Controller
                    'pages'=>$pages,
            ));
          
-		//$sql = "SELECT * FROM users WHERE userType = 'Agent' ";
-                //$command=Yii::app()->db->createCommand($sql);
-                //$result= $command->queryAll();
-                //$this->render('agent',array('data'=>$result));
+		
 	}
         
         /**

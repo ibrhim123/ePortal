@@ -21,7 +21,7 @@ class PropertyController extends Controller
         
         public function actionSearch(){
             $this->layout = 'main';
-            if(isset($_POST['btnSearchSale']){
+            if(isset($_POST['btnSearchSale'])){
             $location = $_POST['string'];
             $beds = $_POST['beds'];
             $baths = $_POST['baths'];
@@ -51,6 +51,26 @@ class PropertyController extends Controller
             $this->render('searchResult',  array('data' =>$result));
             }
         }
+        
+        public function actionListRent(){
+            $this->layout = 'main';
+            $category   =   Yii::app()->request->getParam('cat');
+            $cat = base64_decode($category);
+            $sql = "SELECT a.*,b.*  FROM property a JOIN rentproperty b on a.pid = b.pid WHERE a.status = 1 AND b.category = '$cat' ORDER BY a.postedOn DESC ";
+            $command=Yii::app()->db->createCommand($sql);
+            $result= $command->queryAll();
+            $this->render('catlist',array('data'=>$result));
+        }       
+        
+        public function actionListSale(){
+            $this->layout = 'main';
+            $category   =   Yii::app()->request->getParam('cat');
+            $cat = base64_decode($category);
+            $sql = "SELECT a.*,b.*  FROM property a JOIN saleproperty b on a.pid = b.pid WHERE a.status = 1 AND b.category = '$cat' ORDER BY a.postedOn DESC "; 
+            $command=Yii::app()->db->createCommand($sql);
+            $result= $command->queryAll();
+            $this->render('catlist',array('data'=>$result));
+        }     
         
         public function actionSearchRent(){
             $this->layout = 'main';
@@ -121,30 +141,5 @@ class PropertyController extends Controller
             $this->render('details',  array('data' =>$res,'type' => $type,'poster' => $poster, 'postedOn' => $pon));
 	}
 
-	// Uncomment the following methods and override them if needed
-	/*
-	public function filters()
-	{
-		// return the filter configuration for this controller, e.g.:
-		return array(
-			'inlineFilterName',
-			array(
-				'class'=>'path.to.FilterClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-
-	public function actions()
-	{
-		// return external action classes, e.g.:
-		return array(
-			'action1'=>'path.to.ActionClass',
-			'action2'=>array(
-				'class'=>'path.to.AnotherActionClass',
-				'propertyName'=>'propertyValue',
-			),
-		);
-	}
-	*/
+	
 }

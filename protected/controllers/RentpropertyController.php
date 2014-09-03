@@ -28,7 +28,7 @@ class RentpropertyController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','Rent'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -60,8 +60,7 @@ class RentpropertyController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
-	{
+	public function actionCreate(){
 		$model=new Rentproperty;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -263,5 +262,15 @@ class RentpropertyController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+        
+         public function actionRent()
+	{
+             $this->layout = 'main';
+            $sql = "SELECT a.*,b.*  FROM property a JOIN rentproperty b on a.pid = b.pid WHERE a.status = 1 ORDER BY a.postedOn DESC ";
+            $command=Yii::app()->db->createCommand($sql);
+            $result= $command->queryAll();
+
+            $this->render('getRentPro',array('data'=>$result));
 	}
 }

@@ -28,7 +28,7 @@ class SalepropertyController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','Sale'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -225,6 +225,16 @@ class SalepropertyController extends Controller
                 $result= $command->queryAll();
                 
                 $this->render('myPosts',array('data'=>$result));
+	}
+        
+        public function actionSale()
+	{       
+                $this->layout = 'main';
+                $sql = "SELECT a.*,b.*  FROM property a JOIN saleproperty b on a.pid = b.pid WHERE a.status = 1  ORDER BY a.postedOn DESC ";
+                $command=Yii::app()->db->createCommand($sql);
+                $result= $command->queryAll();
+                
+                $this->render('getSalePro',array('data'=>$result));
 	}
 
 	/**

@@ -2,7 +2,7 @@
     <section class='container'>
         <section class='row'>
             <div class='span6'>
-                <h1>Search Results for Rent</h1>
+                <h1>Property for Rent</h1>
                 <p>In sit amet arcu quis dolor adipiscing laoreet sed sit amet arcu. Proin non adipiscing felis.</p>
             </div>
         </section>

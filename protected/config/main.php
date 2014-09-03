@@ -16,6 +16,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+                
 	),
         'modules'=>array(
 		// uncomment the following to enable the Gii tool
@@ -35,6 +36,7 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+                
 		// uncomment the following to enable URLs in path-format
 		'urlManager'=>array(
                     'urlFormat'=>'path',

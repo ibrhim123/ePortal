@@ -8,7 +8,7 @@
         </section>
     </section>
 </section>
- <section id='content'>
+<section id='content' class="pt30">
             <section class='container'>
                 <section class='row featured-items'>
                     <section class='span12'>

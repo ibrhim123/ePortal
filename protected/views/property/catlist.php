@@ -2,13 +2,13 @@
     <section class='container'>
         <section class='row'>
             <div class='span6'>
-                <h1>Search Results for Rent</h1>
+                <h1>List of Property</h1>
                 <p>In sit amet arcu quis dolor adipiscing laoreet sed sit amet arcu. Proin non adipiscing felis.</p>
             </div>
         </section>
-    </section>
+    </section> 
 </section>
- <section id='content' class="pt30">
+<section id='content' class="pt30">
             <section class='container'>
                 <section class='row featured-items'>
                     <section class='span12'>
@@ -24,7 +24,7 @@
                                                 <div class='inner-padding'>
                                                     <figure>
                                                         <img src="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($pro['mainPic']);?>" alt="" />
-                                                        <div class='banner'>For Rent</div>
+                                                        <div class='banner'>For <?php echo $pro['cat']; ?></div>
                                                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>" class='figure-hover'>Zoom</a>
                                                     </figure>
                                                     <h3><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>"><?php echo $pro['title']; ?></a></h3>
@@ -44,13 +44,13 @@
                                   
                                     <div class='price-wrapper'>
                                         <div class='price'>AED <?php echo $pro['price']; ?></div>
-                                        <div class='rate'>/<?php echo $pro['rentPolicy']; ?></div>
+                                        
                                     </div>
                                 </div>
 
                                <?php }
                                 }else{
-                                    echo 'No record found';
+                                    echo 'No Post Found in the desired category';
                                 }?>
                             
                             </div>

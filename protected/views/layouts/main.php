@@ -38,10 +38,25 @@
                                 <li><a href="<?php echo Yii::app()->request->baseUrl; ?>">Home</a></li>
                                 <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/About">About</a></li>
                                 <li>
-                                    <a href="#">Property for Sale</a>
+                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/SaleProperty/Sale">Property for Sale</a>
+                                    <ul class='dropdown-menu'>
+                                        <li class='first-element'><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListSale?cat=<?php echo base64_encode('apartments'); ?>">Apartments for Sale</a> </li>
+                                        <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListSale?cat=<?php echo base64_encode('house or villa'); ?>">Houses & Villas for Sale</a></li>
+                                        <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListSale?cat=<?php echo base64_encode('commercial property'); ?>">Commercial Property for Sale</a> </li>
+                                        <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListSale?cat=<?php echo base64_encode('Towers or Building'); ?>">Towers &amp; Building for Sale</a></li>
+                                        <li class='last-element'><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListSale?cat=<?php echo base64_encode('Plots or Land'); ?>">Plots &amp; Land for Sale</a></li>
+                                    </ul> 
                                 </li>
                                  <li>
-                                    <a href="#">Property for Rent</a>
+                                    <a href="<?php echo Yii::app()->request->baseUrl; ?>/RentProperty/Rent">Property for Rent</a>
+                                    <ul class='dropdown-menu'>
+                                        <li class='first-element'><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListRent?cat=<?php echo base64_encode('apartments'); ?>">Apartments for Rent</a>
+                                        <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListRent?cat=<?php echo base64_encode('house or villa'); ?>">Houses &amp; Villas for Rent</a></li>
+                                        <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListRent?cat=<?php echo base64_encode('commercial property'); ?>">Commercial Property for Rent</a> </li>
+                                        <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListRent?cat=<?php echo base64_encode('Room'); ?>">Rooms for Rent</a></li>
+                                        <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListRent?cat=<?php echo base64_encode('short term (Daily)'); ?>">Short Term (Daily)</a></li>
+                                        <li class='last-element'><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListRent?cat=<?php echo base64_encode('short term (Monthly)'); ?>">Short Term (Monthly)</a></li>
+                                    </ul> 
                                 </li>
                                 <li>
                                     <a href="<?php echo Yii::app()->request->baseUrl; ?>/Agents">Agents</a>

@@ -75,7 +75,7 @@ class Rentproperty extends CActiveRecord
 			'title' => 'Title',
 			'descr' => 'Description',
 			'mainPic' => 'Main Picture',
-			'gallPics' => 'Gall Pictures',
+			'gallPics' => 'Gallery Pictures',
 			'baths' => 'Baths',
 			'beds' => 'Beds',
 			'location' => 'Location',

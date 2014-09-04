@@ -17,7 +17,7 @@
             </section>
 </section>
 
-<section id='content' class='alternate-bg'>
+<section id='content' class='alternate-bg pt30'>
             <section class='container'>
                 <section class='row featured-items'>
                     
@@ -28,9 +28,13 @@
                                 <div class='row'>
                                     <div class='left'>
                                         <figure>
+                                            <?php if(!empty($pro['mainPic'])){?>
                                             <a rel="prettyPhoto[gallery]" href="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($pro['mainPic']);?>">
                                                 <img src="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($pro['mainPic']);?>" alt="" />
                                             </a>
+                                            <?php }else{ ?>
+                                             <img src="<?php echo yii::app()->baseUrl;?>/images/empty.png" alt="" />
+                                            <?php } ?>
                                             <div class='banner'><?php echo ucwords($pro['category']);?> -For <?php echo $type; ?> </div>
                                         </figure>
                                         <div class='title-line'>
@@ -142,12 +146,14 @@
                     <?php } ?>
                     
                     <aside class='span3'>
+                        <!--
                         <section class='widget'>
                             <section class='widget-title uppercase'>
                                 <div class='inner'>
                                     <h2> Search</h2>
                                 </div>
                             </section>
+                            
                             <section class='widget-content'>
                                 <form action="#">
                                     <div class='widget-section'>
@@ -208,13 +214,14 @@
                                   
                                     <section class='widget-buttons'>
                                         <div class='inner'>
-                                            <!--<a href="#" class='more-options'>More Options</a> <br />-->
+                                            <!--<a href="#" class='more-options'>More Options</a> <br />
                                             <a href='#' class='btn btn-primary btn-large btn-block'>Update</a>
                                         </div>
                                     </section>
                                 </form>
                             </section>
-                        </section>
+                            
+                        </section>-->
                         <section class="widget">
                             <section class='widget-title uppercase'>
                                 <div class='inner'>

@@ -57,6 +57,7 @@ class PropertyController extends Controller
             $category   =   Yii::app()->request->getParam('cat');
             $cat = base64_decode($category);
             $sql = "SELECT a.*,b.*  FROM property a JOIN rentproperty b on a.pid = b.pid WHERE a.status = 1 AND b.category = '$cat' ORDER BY a.postedOn DESC ";
+            //echo $sql; exit;
             $command=Yii::app()->db->createCommand($sql);
             $result= $command->queryAll();
             $this->render('catlist',array('data'=>$result));

@@ -27,7 +27,7 @@
                                                         <div class='banner'>For Sale</div>
                                                         <a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>" class='figure-hover'>Zoom</a>
                                                     </figure>
-                                                    <h3><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>"><?php echo $pro['title']; ?></a></h3>
+                                                    <h3><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>"><?php echo substr($pro['title'],0,25); ?>..</a></h3>
                                                     <p><?php echo $pro['location']; ?>, <?php echo $pro['city']; ?></p>
                                                 </div>
                                             </div>

@@ -53,7 +53,7 @@
                                         <li class='first-element'><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListRent?cat=<?php echo base64_encode('apartments'); ?>">Apartments for Rent</a>
                                         <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListRent?cat=<?php echo base64_encode('house or villa'); ?>">Houses &amp; Villas for Rent</a></li>
                                         <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListRent?cat=<?php echo base64_encode('commercial property'); ?>">Commercial Property for Rent</a> </li>
-                                        <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListRent?cat=<?php echo base64_encode('Room'); ?>">Rooms for Rent</a></li>
+                                        <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListRent?cat=<?php echo base64_encode('Rooms'); ?>">Rooms for Rent</a></li>
                                         <li><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListRent?cat=<?php echo base64_encode('short term (Daily)'); ?>">Short Term (Daily)</a></li>
                                         <li class='last-element'><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/ListRent?cat=<?php echo base64_encode('short term (Monthly)'); ?>">Short Term (Monthly)</a></li>
                                     </ul> 

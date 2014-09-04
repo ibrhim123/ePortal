@@ -89,7 +89,7 @@
           <div class="control-group">
              <label class="control-label"><?php echo $form->labelEx($model,'descr'); ?></label>
 		<div class="controls">
-                   <?php echo $form->textArea($model,'descr',array('class'=>'span12 ckeditor m-wrap','rows'=>6, 'cols'=>50)); ?>
+                   <?php echo $form->textArea($model,'descr',array('class'=>'span12 m-wrap','rows'=>6, 'cols'=>50)); ?>
                     <span for="email" class="help-inline">  <?php echo $form->error($model,'descr'); ?></span>
                 </div>    
 	</div>

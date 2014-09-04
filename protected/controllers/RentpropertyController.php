@@ -96,9 +96,11 @@ class RentpropertyController extends Controller
                                 $main_filename = $md5_file.substr($img_name,strpos($img_name,'.'));
                                 $lPath =  $_SERVER['DOCUMENT_ROOT'];
                                 $full_path = $lPath.'/newWeb/resources/documents/'.$dir.'/'.$main_filename;
-                                //echo $full_path; exit;
+                                
                                 move_uploaded_file($file['mainPic']['tmp_name'],$full_path);
-                                //$model->profilePic = $new_filename;*/
+                                
+                            }else{
+                                $main_filename = '';
                             }
                             $cat = $_POST['Rentproperty']['category'];
                             $title = CHtml::encode($_POST['Rentproperty']['title']);
@@ -118,6 +120,7 @@ class RentpropertyController extends Controller
                             $parameters = array(":cat"=>'Rent',":user_id"=>$postedBy,":created" =>$createdOn,":feat" => '0',":status"=>'1');
                             Yii::app()->db->createCommand($sql)->execute($parameters);
                             $last_id = Yii::app()->db->getLastInsertID();
+                            if(is_uploaded_file($_FILES['files']['tmp_name']['0'])){
                             for($i=0; $i<count($_FILES['files']['tmp_name']); $i++) {
                                 $md5_file = md5($_FILES['files']['tmp_name'][$i]);
                                 $dir =  substr($md5_file, -2);
@@ -138,6 +141,10 @@ class RentpropertyController extends Controller
                             }else{
                                 $media = json_encode($media);
                             } 
+                            }else{
+                                $media = null;
+                            }
+                            
                             $sql = "insert into rentproperty (pid,category,title,descr,mainPic,gallPics,baths,beds,location,city,size,price,rentPolicy,amenty,furnished)
                             values (:pid, :category, :title, :descr, :mainPic, :gallPics,:baths,:beds,:location,:city,:size,:price,:rentPolicy,:amenty,:furnished)";
                             $params = array(":pid"=>$last_id,":category" =>$cat,":title"=>$title,":descr" =>$descr,":mainPic"=>$main_filename ,":gallPics"=>$media,
@@ -147,6 +154,8 @@ class RentpropertyController extends Controller
                             $newFile = array();
                             $fileType = array();
                             $transaction->commit();
+                            Yii::app()->user->setFlash('success', "Your Add has been Posted!");
+                            $this->redirect('myPosts');
                         }catch (Exception $ex) {
                             $transaction->rollback();
                             echo '<pre>'; print_r($ex); exit;

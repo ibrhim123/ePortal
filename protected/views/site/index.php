@@ -211,12 +211,13 @@ $this->pageTitle=Yii::app()->name;
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class='star-rating'>
-                                                <button class='star active'>1 Star</button>
-                                                <button class='star active'>2 Star</button>
-                                                <button class='star active'>3 Star</button>
-                                                <button class='star active'>4 Star</button>
-                                                <button class='star'>5 Star</button>
+                                           <div class="item-controls">
+                                            <span class="watchlist">
+                                                    <a href="" title="Click here to add in wishlist" class="details-watch-this">&nbsp;</a>
+                                            </span>
+                                            <span class="report-this" id="report_this">
+                                                    <a href="" title="Click here to report this image" >&nbsp;</a>
+                                            </span>
                                             </div>
                                        
                                        
@@ -239,7 +240,7 @@ $this->pageTitle=Yii::app()->name;
                                                             <figure>
                                                                 <img src="<?php echo yii::app()->baseUrl.'/resources.php?r='.base64_encode($pro['mainPic']);?>" alt="" />
                                                                 <div class='banner'>For Rent</div>
-                                                                <a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/Detail?id=<?php echo base64_decode($pro['pid']); ?>" class='figure-hover'>Zoom</a>
+                                                                <a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>" class='figure-hover'>Zoom</a>
                                                             </figure>
                                                             <h3><a href="<?php echo Yii::app()->request->baseUrl; ?>/Property/Detail?id=<?php echo base64_encode($pro['pid']); ?>"><?php echo $pro['title']; ?></a></h3>
                                                             <p><?php echo $pro['location']; ?>, <?php echo $pro['city']; ?></p>
@@ -255,13 +256,16 @@ $this->pageTitle=Yii::app()->name;
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class='star-rating'>
-                                                <button class='star active'>1 Star</button>
-                                                <button class='star active'>2 Star</button>
-                                                <button class='star active'>3 Star</button>
-                                                <button class='star active'>4 Star</button>
-                                                <button class='star'>5 Star</button>
+                                            
+                                            <div class="item-controls">
+                                            <span class="watchlist">
+                                                    <a href="" title="Click here to add in wishlist" class="details-watch-this">&nbsp;</a>
+                                            </span>
+                                            <span class="report-this" id="report_this">
+                                                    <a href="" title="Click here to report this image" >&nbsp;</a>
+                                            </span>
                                             </div>
+                                            
                                         </div>
                                         
                                        

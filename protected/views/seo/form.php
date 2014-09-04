@@ -78,7 +78,7 @@
                         <div class="controls">
                             <input type="hidden" name="YII_CSRF_TOKEN" value="<?php echo Yii::app()->request->csrfToken; ?>">
                             <button type="submit" class="btn blue"><i class="icon-ok"></i> Save</button>
-                            <a href="/admin/Seo"><button type="button" class="btn black" style="width: 82px;">Back</button></a>
+                            <a href="<?php echo Yii::app()->request->baseUrl; ?>/admin/Seo"><button type="button" class="btn black" style="width: 82px;">Back</button></a>
                         </div> 
                     </div>
             </form>

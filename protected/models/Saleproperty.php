@@ -106,10 +106,10 @@ class Saleproperty extends CActiveRecord
 		$criteria->compare('category',$this->category,true);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('descr',$this->descr,true);
-		$criteria->compare('mainPic',$this->mainPic,true);
-		$criteria->compare('gallPics',$this->gallPics,true);
-		$criteria->compare('beds',$this->beds,true);
-		$criteria->compare('baths',$this->baths,true);
+		//$criteria->compare('mainPic',$this->mainPic,true);
+		//$criteria->compare('gallPics',$this->gallPics,true);
+		//$criteria->compare('beds',$this->beds,true);
+		//$criteria->compare('baths',$this->baths,true);
 		$criteria->compare('size',$this->size,true);
 		$criteria->compare('price',$this->price,true);
 		$criteria->compare('location',$this->location,true);

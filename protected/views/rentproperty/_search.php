@@ -11,88 +11,69 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'rpid'); ?>
-		<?php echo $form->textField($model,'rpid'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'pid'); ?>
-		<?php echo $form->textField($model,'pid'); ?>
-	</div>
-
-	<div class="row">
+	<div class="">
 		<?php echo $form->label($model,'category'); ?>
 		<?php echo $form->textField($model,'category'); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->label($model,'title'); ?>
 		<?php echo $form->textField($model,'title'); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->label($model,'descr'); ?>
 		<?php echo $form->textArea($model,'descr',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'mainPic'); ?>
-		<?php echo $form->textField($model,'mainPic'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'gallPics'); ?>
-		<?php echo $form->textArea($model,'gallPics',array('rows'=>6, 'cols'=>50)); ?>
-	</div>
-
-	<div class="row">
+	<div class="">
 		<?php echo $form->label($model,'baths'); ?>
 		<?php echo $form->textField($model,'baths',array('size'=>60,'maxlength'=>190)); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->label($model,'beds'); ?>
 		<?php echo $form->textField($model,'beds',array('size'=>60,'maxlength'=>200)); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->label($model,'location'); ?>
 		<?php echo $form->textArea($model,'location',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->label($model,'city'); ?>
 		<?php echo $form->textField($model,'city',array('size'=>60,'maxlength'=>250)); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->label($model,'size'); ?>
 		<?php echo $form->textArea($model,'size',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->label($model,'price'); ?>
 		<?php echo $form->textField($model,'price',array('size'=>60,'maxlength'=>250)); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->label($model,'rentPolicy'); ?>
 		<?php echo $form->textField($model,'rentPolicy',array('size'=>60,'maxlength'=>100)); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->label($model,'amenty'); ?>
 		<?php echo $form->textArea($model,'amenty',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
-	<div class="row">
+	<div class="">
 		<?php echo $form->label($model,'furnished'); ?>
 		<?php echo $form->textField($model,'furnished',array('size'=>8,'maxlength'=>8)); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+	<div class="">
+		<?php echo CHtml::submitButton('Search',array('class' => 'btn btn-blue')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

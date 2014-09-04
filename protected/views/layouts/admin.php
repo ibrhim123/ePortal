@@ -180,7 +180,7 @@
                                 View My postings</a>
                         </li>
                         <li>
-                            <a href="<?php echo Yii::app()->request->baseUrl;?>/Saleproperty/admin">
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/Rentproperty/admin">
                                 View All postings</a>
                         </li>
 

@@ -665,7 +665,7 @@ footer .footer-bubble {
   transition: all 0.4s ease-in-out;
   padding: 31px 22px 25px 22px;
   display: inline-block;
-  color: #999999;
+  color: #000000;
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;

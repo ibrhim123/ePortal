@@ -2,10 +2,7 @@
 
 class SalepropertyController extends Controller
 {
-	/**
-	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
-	 * using two-column layout. See 'protected/views/layouts/column2.php'.
-	 */
+	
 	public $layout='//layouts/admin';
 
 	/**
@@ -94,6 +91,8 @@ class SalepropertyController extends Controller
                                 //echo $full_path; exit;
                                 move_uploaded_file($file['mainPic']['tmp_name'],$full_path);
                                 //$model->profilePic = $new_filename;*/
+                            }else{
+                                $main_filename = '';
                             }
                             $cat = $_POST['Saleproperty']['category'];
                             $title = CHtml::encode($_POST['Saleproperty']['title']);
@@ -110,26 +109,30 @@ class SalepropertyController extends Controller
                             $parameters = array(":cat"=>'Sale',":user_id"=>$postedBy,":created" =>$createdOn,":feat" => '0',":status"=>'1');
                             Yii::app()->db->createCommand($sql)->execute($parameters);
                             $last_id = Yii::app()->db->getLastInsertID();
-                            for($i=0; $i<count($_FILES['files']['tmp_name']); $i++) {
-                                $md5_file = md5($_FILES['files']['tmp_name'][$i]);
-                                $dir =  substr($md5_file, -2);
-                                $img_name = $_FILES['files']['name'][$i];
-                                $fType = $_FILES['files']['type'][$i];
-                                $lastDot = strrpos($img_name, ".");
-                                $img_name = str_replace(".", "", substr($img_name, 0, $lastDot)) . substr($img_name, $lastDot);
-                                $new_filename = $md5_file.substr($img_name,strpos($img_name,'.'));
-                                $lPath =  $_SERVER['DOCUMENT_ROOT'];
-                                $full_path = $lPath.'/newWeb/resources/documents/'.$dir.'/'.$new_filename;
-                                array_push($newFile, $new_filename);
-                                array_push($fileType,$fType);
-                                move_uploaded_file($_FILES['files']['tmp_name'][$i],$full_path);
-                            }
-                            $media = array_merge($newFile,$fileType);
-                            if(empty($media)){
-                                $media = null;
+                            if(is_uploaded_file($_FILES['files']['tmp_name']['0'])){
+                                for($i=0; $i<count($_FILES['files']['tmp_name']); $i++) {
+                                    $md5_file = md5($_FILES['files']['tmp_name'][$i]);
+                                    $dir =  substr($md5_file, -2);
+                                    $img_name = $_FILES['files']['name'][$i];
+                                    $fType = $_FILES['files']['type'][$i];
+                                    $lastDot = strrpos($img_name, ".");
+                                    $img_name = str_replace(".", "", substr($img_name, 0, $lastDot)) . substr($img_name, $lastDot);
+                                    $new_filename = $md5_file.substr($img_name,strpos($img_name,'.'));
+                                    $lPath =  $_SERVER['DOCUMENT_ROOT'];
+                                    $full_path = $lPath.'/newWeb/resources/documents/'.$dir.'/'.$new_filename;
+                                    array_push($newFile, $new_filename);
+                                    array_push($fileType,$fType);
+                                    move_uploaded_file($_FILES['files']['tmp_name'][$i],$full_path);
+                                }
+                                $media = array_merge($newFile,$fileType);
+                                if(empty($media)){
+                                    $media = null;
+                                }else{
+                                    $media = json_encode($media);
+                                } 
                             }else{
-                                $media = json_encode($media);
-                            } 
+                                $media = null;
+                            }
                             $sql = "insert into saleproperty (pid,category,title,descr,mainPic,gallPics,beds,baths,size,price,location,city)
                             values (:pid, :category, :title, :descr, :mainPic, :gallPics,:beds,:baths,:size,:price,:location,:city)";
                             $params = array(":pid"=>$last_id,":category" =>$cat,":title"=>$title,":descr" =>$descr,":mainPic"=>$main_filename ,":gallPics"=>$media,

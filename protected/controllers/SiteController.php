@@ -37,7 +37,9 @@ class SiteController extends Controller
                         WHERE a.status = 1 AND a.isFeat= 1 ORDER BY a.pid DESC LIMIT 4";
                 $command=Yii::app()->db->createCommand($sql);
                 $result['rent']= $command->queryAll();
-                                
+                
+                Yii::app()->clientScript->registerMetaTag('Test description', 'description');
+                
 		$this->render('index',array('data'=>$result));
 	}
         

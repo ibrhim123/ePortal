@@ -1,17 +1,20 @@
+<div class="page-content">
+    <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <!-- BEGIN PAGE CONTAINER-->
+    <div class="container-fluid">
+        <!-- BEGIN PAGE HEADER-->
+        <div class="row-fluid">
+            <div class="span12">
+
+                <h3 class="page-title">
+                    Administrate Pages
+                 </h3>
+
+            </div>
+        </div>
+        
+        <div class="row-fluid">
 <?php
-/* @var $this PageController */
-/* @var $model Page */
-
-$this->breadcrumbs=array(
-	'Pages'=>array('index'),
-	'Manage',
-);
-
-$this->menu=array(
-	array('label'=>'List Page', 'url'=>array('index')),
-	array('label'=>'Create Page', 'url'=>array('create')),
-);
-
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
 	$('.search-form').toggle();
@@ -55,3 +58,6 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		),
 	),
 )); ?>
+</div>
+    </div>
+</div>

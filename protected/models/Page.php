@@ -28,7 +28,7 @@ class Page extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('page_name, controller, content, createdOn', 'required'),
+			array('page_name, controller, content', 'required'),
 			array('page_name, controller', 'length', 'max'=>255),
 			array('createdOn', 'length', 'max'=>80),
 			// The following rule is used by search().

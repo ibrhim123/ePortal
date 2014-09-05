@@ -1,7 +1,4 @@
-<?php
-/* @var $this PageController */
-/* @var $data Page */
-?>
+
 
 <div class="view">
 
@@ -27,3 +24,4 @@
 
 
 </div>
+    

@@ -1,10 +1,44 @@
-<?php
-/* @var $this PageController */
-/* @var $model Page */
-/* @var $form CActiveForm */
-?>
+<div class="page-content">
 
-<div class="form">
+    <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <!-- BEGIN PAGE CONTAINER-->
+    <div class="container-fluid">
+        <!-- BEGIN PAGE HEADER-->
+        <div class="row-fluid">
+            <div class="span12">
+
+                <h3 class="page-title">
+                    Create New page
+                </h3>
+
+            </div>
+        </div>
+        <!-- END PAGE HEADER-->
+        <!-- BEGIN PAGE CONTENT-->
+        <div class="row-fluid">
+            <div class="span12">
+                <!-- BEGIN SAMPLE FORM PORTLET-->
+                <div class="portlet box blue tabbable">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="icon-reorder"></i>
+                            <span class="hidden-480"> <?php $actionId  = Yii::app()->controller->action->id;
+                                if($actionId == 'update'){
+                                    echo 'Update Page';
+                                }
+                                else{
+                                    echo 'Add Page';
+                                }?></span>
+                        </div>
+                    </div>
+                    <div class="portlet-body form">
+                        <div class="tabbable portlet-tabs">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#portlet_tab1">Default</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="portlet_tab1">
+
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'page-form',
@@ -19,34 +53,39 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="form-actions">
 		<?php echo $form->labelEx($model,'page_name'); ?>
 		<?php echo $form->textField($model,'page_name',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'page_name'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-actions">
 		<?php echo $form->labelEx($model,'controller'); ?>
 		<?php echo $form->textField($model,'controller',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'controller'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-actions">
 		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'content',array('class'=>'span12 m-wrap','rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'content'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'createdOn'); ?>
-		<?php echo $form->textField($model,'createdOn',array('size'=>60,'maxlength'=>80)); ?>
-		<?php echo $form->error($model,'createdOn'); ?>
-	</div>
-
-	<div class="row buttons">
+	<div class="form-actions">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
 
-</div><!-- form -->
+</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE CONTAINER-->
+    </div>
+
+</div>

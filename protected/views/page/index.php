@@ -1,20 +1,23 @@
-<?php
-/* @var $this PageController */
-/* @var $dataProvider CActiveDataProvider */
+<div class="page-content">
+    <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+    <!-- BEGIN PAGE CONTAINER-->
+    <div class="container-fluid">
+        <!-- BEGIN PAGE HEADER-->
+        <div class="row-fluid">
+            <div class="span12">
 
-$this->breadcrumbs=array(
-	'Pages',
-);
+                <h3 class="page-title">
+                    View Page
+                 </h3>
 
-$this->menu=array(
-	array('label'=>'Create Page', 'url'=>array('create')),
-	array('label'=>'Manage Page', 'url'=>array('admin')),
-);
-?>
-
-<h1>Pages</h1>
-
+            </div>
+        </div>
+        
+        <div class="row-fluid">
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
 	'itemView'=>'_view',
 )); ?>
+</div>
+</div>
+</div>

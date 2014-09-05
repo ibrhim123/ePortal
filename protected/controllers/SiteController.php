@@ -43,9 +43,10 @@ class SiteController extends Controller
         
         public function actionAbout()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('pages/about');
+            $sql = 'SELECT * FROM page WHERE page_name = "about"';
+            $command=Yii::app()->db->createCommand($sql);
+            $result= $command->queryAll();
+            $this->render('pages/about',array('data' => $result));
 	}
 
 	/**

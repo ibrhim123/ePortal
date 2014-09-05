@@ -48,7 +48,10 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'filter'=>$model,
 	'columns'=>array(
 		'category',
-		'title',
+		array(
+                    'name' => 'title',
+                    'value' => 'CHtml::decode($data["title"])',
+                ),
 		'baths',
 		'beds',
 		'location',
@@ -56,7 +59,10 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'size',
 		'price',
 		'rentPolicy',
-		'amenty',
+                array(
+                    'name' => 'amenty',
+                    'value' => 'CHtml::decode($data["amenty"])',
+                ),
 		'furnished',
 		
 		array(

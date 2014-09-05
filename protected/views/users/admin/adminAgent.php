@@ -72,30 +72,25 @@ $('.search-form form').submit(function(){
 	'id'=>'users-grid',
 	'dataProvider' =>$model->getAgent(),
 	'filter'=>$model,
-    'pager'=>array(
-        'class'=>'CLinkPager',
-        'pageSize'=>'40',
-    ),
+        'pager'=>array(
+            'class'=>'CLinkPager',
+            'pageSize'=>'40',
+        ),
 	'columns'=>array(
 		'email',
 		'firstName',
 		'lastName',
                 'contact',
 		'createdOn',
-        array(
-            'name'=>'status',
-            'value'=>'$data["status"]==1?"Active":"Inactive"',
-        ),
+                array(
+                    'name'=>'status',
+                    'value'=>'$data["status"]==1?"Active":"Inactive"',
+                ),
 		array(
-            'class' => 'CButtonColumn',
-            'template' => '{update}',
-            'updateButtonUrl' =>'Yii::app()->createUrl("/users/update",array("id" => $data->primaryKey))',
-            'updateButtonImageUrl'=>Yii::app()->request->baseUrl.'/public/img/update.png',
-
-        ),
-
-
-
+                     'header'=>'Delete',    
+                     'class'=>'CButtonColumn',
+                     'template'=>'{delete}'
+                ),
     ),
 )); ?>
                                 </div>

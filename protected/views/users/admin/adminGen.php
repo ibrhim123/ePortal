@@ -83,17 +83,15 @@ $('.search-form form').submit(function(){
 		'lastName',
                 'contact',
 		'createdOn',
-        array(
-            'name'=>'status',
-            'value'=>'$data["status"]==1?"Active":"Inactive"',
-        ),
-		array(
-            'class' => 'CButtonColumn',
-            'template' => '{update}',
-            'updateButtonUrl' =>'Yii::app()->createUrl("/users/update",array("id" => $data->primaryKey))',
-            'updateButtonImageUrl'=>Yii::app()->request->baseUrl.'/public/img/update.png',
-        ),
-        
+                array(
+                    'name'=>'status',
+                    'value'=>'$data["status"]==1?"Active":"Inactive"',
+                ),
+                array(
+                        'header'=>'Delete',    
+                        'class'=>'CButtonColumn',
+                        'template'=>'{delete}'
+                ),
 	),
 )); ?>
 

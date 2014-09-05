@@ -179,7 +179,7 @@
                     <div class='span3'>
                         <figure class='logo footer_logo'>
                             <a href="<?php echo Yii::app()->request->baseUrl; ?>">
-                                <img src="<?php echo Yii::app()->request->baseUrl; ?>/img/main-logo-fotter.png" alt=""/>
+                                <img src="<?php echo Yii::app()->request->baseUrl; ?>/img/main-logo.png" alt=""/>
                             </a>
                         </figure>
                     </div>

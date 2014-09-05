@@ -23,7 +23,7 @@ $this->pageTitle=Yii::app()->name;
                                 <div class='row'>
                                     <div class='span12'>
                                         <div class='text-box span6'>
-                                            <h1><a href="property.html">Great place for artists!</a></h1>
+                                            <h1><a href="#">Great place for artists!</a></h1>
                                             <p>In sit amet arcu quis dolor adipiscing laoreet sed sit amet arcu. Proin non adipiscing felis.</p>
                                         </div>
                                         <div class='description'>
@@ -51,7 +51,7 @@ $this->pageTitle=Yii::app()->name;
                                 <div class='row'>
                                     <div class='span12'>
                                         <div class='text-box span6'>
-                                            <h1><a href="property.html">4 bedrooms apartment for sale!</a></h1>
+                                            <h1><a href="#">4 bedrooms apartment for sale!</a></h1>
                                         <p>Pellentesque viverra lacus quis lacus viverra mattis. Sed sed nisi erat, sed consectetur metus.</p>
                                         </div>
                                         <div class='description'>

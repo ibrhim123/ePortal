@@ -51,40 +51,36 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'filter'=>$model,
 	'columns'=>array(
 		'category',
-		'title',
+		array(
+                    'name' => 'title',
+                    'value' => 'CHtml::decode($data["title"])',
+                ),
 		'size',
 		'price',
-		'location',
+		array(
+                    'name'=>'location',
+                    'value'=>'CHtml::decode($data["location"])',
+                ),
 		'city',
                 array(
-                'header'=>'Mark Feature',
-                'class'=>'CButtonColumn',
-                'template'=>'{feat}',
-                'buttons'=>array(
-                    'feat'=>
-                        array(
-                             'label'=>'Mark Feature',
-                            'imageUrl'=>Yii::app()->request->baseUrl.'/images/pubicon.png',
-                            'url'=>'Yii::app()->createUrl("Saleproperty/feature", array("id"=>$data->pid))',
-                        ),
-                ),
+                    'header'=>'Mark Feature',
+                    'class'=>'CButtonColumn',
+                    'template'=>'{feat}',
+                    'buttons'=>array(
+                        'feat'=>
+                            array(
+                                 'label'=>'Mark Feature',
+                                'imageUrl'=>Yii::app()->request->baseUrl.'/images/feaup.png',
+                                'url'=>'Yii::app()->createUrl("Saleproperty/feature", array("id"=>$data->pid))',
+                            ),
+                    ),
                 ),
             
                 array(
-                'header'=>'Un Mark Feature',
-                'class'=>'CButtonColumn',
-                'template'=>'{unfeat}',
-                'buttons'=>array(
-                    'unfeat'=>
-                        array(
-                             'label'=>'Mark Feature',
-                            'imageUrl'=>Yii::app()->request->baseUrl.'/images/pubicon.png',
-                            'url'=>'Yii::app()->createUrl("Saleproperty/feature", array("id"=>$data->pid))',
-                        ),
+                     'header'=>'Delete',    
+                     'class'=>'CButtonColumn',
+                     'template'=>'{delete}'
                 ),
-                ),
-            
-		
 	),
 )); ?>
         </div>

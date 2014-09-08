@@ -19,6 +19,10 @@ class PropertyController extends Controller
         
         }
         
+        public function actionReplyAdd(){
+            
+        }
+        
         public function actionSearch(){
             $this->layout = 'main';
             if(isset($_POST['btnSearchSale'])){

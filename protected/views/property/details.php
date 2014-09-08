@@ -117,15 +117,24 @@
                                        
                                         </div>
                                     </div>
-                                    <div class="span6 row">
+                                     <div class="span6 row">
                                         <div class="contact-box">
                                             <div class="title-bar">
                                                 <div class="inner">
                                                     <h2>Reply to this Ad:</h2>
                                                 </div>
                                             </div>
-                                        <div class="contact-box-content">
+                                             <div class="contact-box-content">
                                             <div class="inner">
+                                    <?php if(Yii::app()->user->IsGuest){ ?>
+                                      
+                                                <div class="alert alert-error info">
+                                                <strong>Login Required: </strong>
+                                                <a href="<?php echo Yii::app()->request->baseUrl; ?>/Site/login">Login</a> to Post reply on this add.
+                                                </div>
+                                           
+                                    <?php }else{ ?>
+                            
                                                 <div class="alert alert-warning info">
                                                 <strong>Scam Warning: </strong>
                                                 Never wire money or financial info to a seller on the
@@ -139,13 +148,16 @@
                                                         <label for="contact-message">Your Message</label>
                                                         <textarea name="contact-message" required="required" id="contact-message" class="input-block-level  span6" rows="10" placeholder="Your message"></textarea>
                                                         <input type="hidden" name="pID" value="<?php echo $pro['pid'];?>" />
-                                                        <input type="submit" name="btnReply" class="btn btn-success">
+                                                        <input type="submit" value="Send Reply" name="btnReply" class="btn btn-success">
                                                     </form>
                                                 </div>
-                                            </div>
+                                           
+                                    <?php } ?>
+                                                 </div>
                                         </div>
+                                            
                                     </div>
-                                </div>
+                                    </div>
                             </div>
                                     
                                 </div>

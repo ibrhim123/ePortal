@@ -13,6 +13,10 @@
 	<?php echo CHtml::encode($data->pid); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('proType')); ?>:</b>
+	<?php echo CHtml::encode($data->proType); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('uid')); ?>:</b>
 	<?php echo CHtml::encode($data->uid); ?>
 	<br />
@@ -29,9 +33,11 @@
 	<?php echo CHtml::encode($data->message); ?>
 	<br />
 
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('repliedOn')); ?>:</b>
 	<?php echo CHtml::encode($data->repliedOn); ?>
 	<br />
 
+	*/ ?>
 
 </div>

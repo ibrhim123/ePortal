@@ -135,10 +135,16 @@
                 <span class="title"> <?php echo $userRole; ?> Profile</span>
             </a>
             </li>
-             <li>
+            <li>
             <a href="<?php echo Yii::app()->request->baseUrl;?>/SEO">
                 <i class="icon-user"></i>
                 <span class="title">  Manage SEO</span>
+            </a>
+            </li>
+            <li>
+            <a href="<?php echo Yii::app()->request->baseUrl;?>/Replies">
+                <i class="icon-user"></i>
+                <span class="title">  Manage Replies</span>
             </a>
             </li>
             <li class="">
@@ -238,6 +244,24 @@
 
                 </ul>
             </li>
+             <li class="">
+                <a href="javascript:;">
+                    <i class="icon-comments"></i>
+                    <span class="title"> Replies on My Ad</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu" style="display: none;">
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/Replies/Sale">
+                            Replies on Sale Ad</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/Replies/Rent">
+                                Replies on Rent Ad</a>
+                        </li>
+
+                </ul>
+            </li>
             <?php }else { ?>
              <li class="start">
                 <a href="<?php echo Yii::app()->homeUrl;?>">
@@ -288,7 +312,28 @@
 
                 </ul>
             </li>
-             <?php }?>
+            
+            <li class="">
+                <a href="javascript:;">
+                    <i class="icon-comments"></i>
+                    <span class="title"> Replies on My Ad</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu" style="display: none;">
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/Replies/Sale">
+                            Replies on Sale Ad</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo Yii::app()->request->baseUrl;?>/Replies/Rent">
+                                Replies on Rent Ad</a>
+                        </li>
+
+                </ul>
+            </li>
+            
+            <?php }?>
+            
            
             <li>
                 <a href="<?php echo Yii::app()->request->baseUrl;?>/site/logout">

@@ -22,6 +22,11 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'proType'); ?>
+		<?php echo $form->textField($model,'proType',array('size'=>60,'maxlength'=>60)); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'uid'); ?>
 		<?php echo $form->textField($model,'uid'); ?>
 	</div>

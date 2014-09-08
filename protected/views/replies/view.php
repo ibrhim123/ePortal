@@ -23,6 +23,7 @@ $this->menu=array(
 	'attributes'=>array(
 		'rplyId',
 		'pid',
+		'proType',
 		'uid',
 		'userType',
 		'phone',

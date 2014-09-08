@@ -6,6 +6,7 @@
  * The followings are the available columns in table 'replies':
  * @property integer $rplyId
  * @property integer $pid
+ * @property string $proType
  * @property integer $uid
  * @property string $userType
  * @property string $phone
@@ -30,13 +31,13 @@ class Replies extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('pid, uid, userType, phone, message, repliedOn', 'required'),
+			array('pid, proType, uid, userType, phone, message, repliedOn', 'required'),
 			array('pid, uid', 'numerical', 'integerOnly'=>true),
-			array('userType, phone', 'length', 'max'=>60),
+			array('proType, userType, phone', 'length', 'max'=>60),
 			array('repliedOn', 'length', 'max'=>40),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('rplyId, pid, uid, userType, phone, message, repliedOn', 'safe', 'on'=>'search'),
+			array('rplyId, pid, proType, uid, userType, phone, message, repliedOn', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -59,6 +60,7 @@ class Replies extends CActiveRecord
 		return array(
 			'rplyId' => 'Rply',
 			'pid' => 'Pid',
+			'proType' => 'Pro Type',
 			'uid' => 'Uid',
 			'userType' => 'User Type',
 			'phone' => 'Phone',
@@ -87,6 +89,7 @@ class Replies extends CActiveRecord
 
 		$criteria->compare('rplyId',$this->rplyId);
 		$criteria->compare('pid',$this->pid);
+		$criteria->compare('proType',$this->proType,true);
 		$criteria->compare('uid',$this->uid);
 		$criteria->compare('userType',$this->userType,true);
 		$criteria->compare('phone',$this->phone,true);

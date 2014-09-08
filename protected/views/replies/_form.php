@@ -26,6 +26,12 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'proType'); ?>
+		<?php echo $form->textField($model,'proType',array('size'=>60,'maxlength'=>60)); ?>
+		<?php echo $form->error($model,'proType'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'uid'); ?>
 		<?php echo $form->textField($model,'uid'); ?>
 		<?php echo $form->error($model,'uid'); ?>

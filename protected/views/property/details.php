@@ -117,7 +117,39 @@
                                        
                                         </div>
                                     </div>
+                                    <div class="span6 row">
+                                        <div class="contact-box">
+                                            <div class="title-bar">
+                                                <div class="inner">
+                                                    <h2>Reply to this Ad:</h2>
+                                                </div>
+                                            </div>
+                                        <div class="contact-box-content">
+                                            <div class="inner">
+                                                <div class="alert alert-warning info">
+                                                <strong>Scam Warning: </strong>
+                                                Never wire money or financial info to a seller on the
+                                                internet. For your security, all transactions should be done in
+                                                person.
+                                                </div>
+                                                <div class="half first-half">
+                                                    <form action="<?php echo Yii::app()->request->baseUrl; ?>/Property/ReplyAdd" name="postReply" method="POST">
+                                                        <label for="contact-phone">Your Phone</label>
+                                                        <input type="tel" name="contact-phone" required="required" placeholder="(XXX) XXX - XX - XX" id="contact-phone" class="input-block-level span6">
+                                                        <label for="contact-message">Your Message</label>
+                                                        <textarea name="contact-message" required="required" id="contact-message" class="input-block-level  span6" rows="10" placeholder="Your message"></textarea>
+                                                        <input type="hidden" name="pID" value="<?php echo $pro['pid'];?>" />
+                                                        <input type="submit" name="btnReply" class="btn btn-success">
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                                    
+                                </div>
+                                 
                             </div>
                             <div class='bottom'>
                                 <div class='inner'>
@@ -128,20 +160,17 @@
                                             $mysqldate = date( 'M d Y', $phpdate );
                                                echo $mysqldate; ?></a> by <a href="#"><?php echo Users::getPoster($poster); ?></a>. </p>
                                         </div>
-                                        <!--<div class='pull-right'>
-                                            <p>Please <a href="#">login</a> to rate this item.</p>
-                                            <div class='star-rating'>
-                                                <button class='star blue'>1 Star</button>
-                                                <button class='star active'>2 Star</button>
-                                                <button class='star active'>3 Star</button>
-                                                <button class='star'>4 Star</button>
-                                                <button class='star'>5 Star</button>
-                                            </div>
-                                        </div>-->
+                                       
                                     </div>
                                 </div>
                             </div>
+                            
+                            
+                            
+                            
                         </div>
+                        
+                       
                     </section>
                     <?php } ?>
                     

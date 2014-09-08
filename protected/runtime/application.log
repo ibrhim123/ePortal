@@ -7516,3 +7516,86 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/newWeb/index.php/page/favicon.ico
 ---
+2014/09/08 23:00:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/09/08 23:00:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "favicon.ico".' in D:\php\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CController.php(270): CController->missingAction('favicon.ico')
+#1 D:\php\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('favicon.ico')
+#2 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('Users/favicon.i...')
+#3 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#5 {main}
+REQUEST_URI=/newWeb/index.php/Users/favicon.ico
+---
+2014/09/08 23:16:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_rounded/loader.gif".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_rounded/loader.gif
+HTTP_REFERER=http://localhost/newWeb/css/prettyPhoto.css
+---
+2014/09/08 23:16:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/sprite.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/sprite.png
+HTTP_REFERER=http://localhost/newWeb/css/prettyPhoto.css
+---
+2014/09/08 23:16:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_rounded/btnNext.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_rounded/btnNext.png
+HTTP_REFERER=http://localhost/newWeb/css/prettyPhoto.css
+---
+2014/09/08 23:16:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/sprite.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/sprite.png
+HTTP_REFERER=http://localhost/newWeb/css/prettyPhoto.css
+---
+2014/09/08 23:16:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/facebook/default_thumbnail.gif".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/facebook/default_thumbnail.gif
+HTTP_REFERER=http://localhost/newWeb/css/prettyPhoto.css
+---
+2014/09/08 23:16:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/btnNext.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/btnNext.png
+HTTP_REFERER=http://localhost/newWeb/css/prettyPhoto.css
+---
+2014/09/08 23:16:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/prettyPhoto/light_square/btnPrevious.png".' in D:\php\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\php\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('images/prettyPh...')
+#1 D:\php\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\php\htdocs\newWeb\index.php(22): CApplication->run()
+#3 {main}
+REQUEST_URI=/newWeb/images/prettyPhoto/light_square/btnPrevious.png
+HTTP_REFERER=http://localhost/newWeb/css/prettyPhoto.css
+---

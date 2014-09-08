@@ -6,15 +6,23 @@
             <file>file:/D:/php/htdocs/newWeb/protected/views/saleproperty/admin.php</file>
             <file>file:/D:/php/htdocs/newWeb/protected/views/users/admin/adminAgent.php</file>
             <file>file:/D:/php/htdocs/newWeb/protected/controllers/SalepropertyController.php</file>
-            <file>file:/D:/php/htdocs/newWeb/protected/views/seo/form.php</file>
+            <file>file:/D:/php/htdocs/newWeb/protected/views/page/_view.php</file>
             <file>file:/D:/php/htdocs/newWeb/protected/views/users/admin/adminGen.php</file>
+            <file>file:/D:/php/htdocs/newWeb/protected/controllers/PageController.php</file>
+            <file>file:/D:/php/htdocs/newWeb/protected/views/rentproperty/_form.php</file>
+            <file>file:/D:/php/htdocs/newWeb/protected/views/page/index.php</file>
             <file>file:/D:/php/htdocs/newWeb/protected/views/property/searchResult.php</file>
             <file>file:/D:/php/htdocs/newWeb/protected/views/rentproperty/admin.php</file>
             <file>file:/D:/php/htdocs/newWeb/css/style.css</file>
             <file>file:/D:/php/htdocs/newWeb/protected/views/site/index.php</file>
+            <file>file:/D:/php/htdocs/newWeb/protected/views/page/view.php</file>
             <file>file:/D:/php/htdocs/newWeb/protected/controllers/RentpropertyController.php</file>
             <file>file:/D:/php/htdocs/newWeb/protected/views/layouts/main.php</file>
+            <file>file:/D:/php/htdocs/newWeb/protected/views/page/admin.php</file>
+            <file>file:/D:/php/htdocs/newWeb/protected/views/page/_form.php</file>
             <file>file:/D:/php/htdocs/newWeb/protected/views/property/details.php</file>
+            <file>file:/D:/php/htdocs/newWeb/protected/controllers/SiteController.php</file>
+            <file>file:/D:/php/htdocs/newWeb/protected/views/page/create.php</file>
             <file>file:/D:/php/htdocs/newWeb/protected/controllers/PropertyController.php</file>
             <file>file:/D:/php/htdocs/newWeb/protected/views/saleproperty/myPosts.php</file>
             <file>file:/D:/php/htdocs/newWeb/protected/views/rentproperty/myPosts.php</file>

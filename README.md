@@ -1,4 +1,4 @@
 ePortal
 =======
 
-This is a test assignment
+This is a property portal developed using YII framework
